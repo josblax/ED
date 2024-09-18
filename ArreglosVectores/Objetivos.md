@@ -13,6 +13,6 @@
 *     2.2.2\. Como se declara?
 *     2.2.3\.Como se imprime?
 *     2.2.4\. Maneras alternativas para recorrer un arreglo.
-*     2,2,5\. Diferencias entre un arreglo preconstuido y la clase array.
+*     2.2.5\. Diferencias entre un arreglo preconstuido y la clase array.
 *   2.3\. Vector Class [Clase vector]
 * 3\. Entender los contenedores de secuencia y como usar múltiples vectores 
