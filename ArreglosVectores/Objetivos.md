@@ -25,8 +25,7 @@
 *     2.3.8\. Modificadores
 * 3\. Entender los contenedores de secuencia y como usar múltiples vectores.
 * 4\. Unordered Maps [Mapas desordenados]
-*   4.1\. Que es un mapa desordenado?
-*   4.2\. Como se declara?
-*   4.2\. Cuál es la lógica de la estructura <llave, valor>?
-*   
-*   
+*     4.1\. Que es un mapa desordenado?
+*     4.2\. Como se declara?
+*     4.2\. Cuál es la lógica de la estructura <llave, valor>?
+
