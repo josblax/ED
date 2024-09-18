@@ -10,4 +10,4 @@
 *     2,1,5\. Maneras alternativas para recorrer un arreglo.
 *   2.2\. Array Class [Clase arreglos]
 *   2.3\. Vector Class [Clase vector]
-* 3. Entender los contenedores de secuencia y como usar múltiples vectores 
+* 3.\ Entender los contenedores de secuencia y como usar múltiples vectores 
