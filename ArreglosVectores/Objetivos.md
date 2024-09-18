@@ -15,4 +15,12 @@
 *     2.2.4\. Maneras alternativas para recorrer un arreglo.
 *     2.2.5\. Diferencias entre un arreglo preconstuido y la clase array.
 *   2.3\. Vector Class [Clase vector]
+*     2.3.1\. Se anexa librería?
+*     2.3.2\. Como se declara?
+*     2.3.3\.Como se añaden elementos?
+*     2.3.4\. Como se imprime?
+*     2.3.5\. Se puede viajar sobre el vector de otra manera?
+*     2.3.6\. Iteradores en vectores
+*     2.3.7\. Funciones de capacidad
+*     2.3.8\. Modificadores
 * 3\. Entender los contenedores de secuencia y como usar múltiples vectores 
