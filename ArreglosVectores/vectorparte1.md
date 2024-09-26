@@ -96,9 +96,9 @@ for (int i = 0; i < arr.size(); i++)
     std::cout << arr[i] << std::endl;
 }
 
- # VECTOR CLASS
+# VECTOR CLASS
 
- ## •	La clase vector es un contenedor secuencial como la clase array.
+ ## La clase vector es un contenedor secuencial como la clase array.
 
  * Consiste en espacios contiguos de memoria como los arreglos.
  * NO está limitado a tamaños fijos, al contrario, se puede cambiar el tamaño dinámicamente como se necesite para cambiar más elementos.
