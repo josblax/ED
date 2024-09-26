@@ -38,16 +38,16 @@ arreglo[4] = 5;
 
 for (int i=0; i <=TAMANO; i++)
 {
-	cout << arreglo[i]<< endl;
+cout << arreglo[i]<< endl;
 }
 
 ¿Se puede viajar en el arreglo de otra manera?
 Se puede recorrer el arreglo de una manera diferente, usando la asociación llamada “referencia” del arreglo con el operador : (dos puntos)
 
- for (int contador : arreglo)
-  {
-    std::cout << contador << std::endl;
-  }
+for (int contador : arreglo)
+{
+std::cout << contador << std::endl;
+}
   
 Nota: El tipo de variable puede ser cambiado a auto. auto es un tipo de variable comodín que asume su tipo una vez que se hace la asignación.	
  
