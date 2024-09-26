@@ -8,14 +8,13 @@ Tipos de estructuras:
 
 Entender los contenedores de secuencia y como usar múltiples vectores en conjunto con otras estructuras de datos.
 
-# Built-in array.
+# BUILT-IN ARRAY
 
 ## Un arreglo es una estructura simple que contiene elementos homogéneos o de un solo tipo de variable.
 
 ¿Se anexa alguna librería?
 
-#include <array>
-
+NO
 
 ¿Como se declara?
 
@@ -52,7 +51,7 @@ Se puede recorrer el arreglo de una manera diferente, usando la asociación llam
   
 Nota: El tipo de variable puede ser cambiado a auto. auto es un tipo de variable comodín que asume su tipo una vez que se hace la asignación.	
  
-# array class.
+# ARRAY CLASS
 
 ## La clase array es muy similar a la declaración de arreglos tradicional, con la diferencia que es orientada a objetos.
 
