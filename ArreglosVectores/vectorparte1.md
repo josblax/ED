@@ -124,8 +124,10 @@ for (int i = 0; i < arr.size(); i++)
 
 ¿Como se declara?
 
-```
 vector <tipo_variable > nombre_vector;
+
+```
+vector<int> mivector;
 ```
 vector<int> mivector;
 
