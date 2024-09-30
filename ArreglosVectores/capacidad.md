@@ -8,8 +8,8 @@ Elementos de capacidad:
 * shrink_to_fit() – Reduce la capacidad del contenedor para adaptarse a su tamaño y destruye todos los elementos más allá de la capacidad.
 * reserve() – Solicita que la capacidad del vector sea al menos suficiente para contener n elementos.
 
- ```C++
 
+```C++
     vector<int> v1; 
     for (int i = 1; i <= 5; i++)
         v1.push_back(i);
