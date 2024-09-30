@@ -21,12 +21,12 @@ NO
 <tipo_variable> nombre_arreglo[# elementos n] {valor#1, valor#2, …, valor#n};
 
 
-```
+```C++
 
 const int TAMANO = 5;
 int arreglo[TAMANO] {1,2,3,4,5};
 
-¿Como se asigna?
+//¿Como se asigna?
 
 nombre_arreglo[#elemento] = valor;
 
