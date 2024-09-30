@@ -6,3 +6,7 @@
 ## Declaración de Funciones.
 En C++ una función debe ser declarada _arriba_ de la función main(), en otros lenguajes la función puede estar arriba o debajo de la función main(), pero, en C++ solo puede estar arriba, si deseamos poner nuestras funciones por debajo de la función, se debe usar la declaración de la función prototipo.
 
+## Función prototipo. Es la cabecera o primera línea de una función, seguido de un punto y coma.
+
+### Declaración de la función prototipo:
+_tipo_retorno_ Nombre_funcion( Lista_Declaracion_Parametros );
