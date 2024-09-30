@@ -9,8 +9,8 @@ Elementos de capacidad:
 * reserve() – Solicita que la capacidad del vector sea al menos suficiente para contener n elementos.
 
  ```C++
-vector<int> v1;
- 
+
+    vector<int> v1; 
     for (int i = 1; i <= 5; i++)
         v1.push_back(i);
  
