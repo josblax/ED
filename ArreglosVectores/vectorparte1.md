@@ -126,7 +126,7 @@ for (int i = 0; i < arr.size(); i++)
 
 vector <tipo_variable > nombre_vector;
 
-```
+```C++
 vector<int> mivector;
 ```
 vector<int> mivector;
@@ -136,7 +136,7 @@ vector<int> mivector;
 Se usa la función .push_back(elemento);
 	
 Ejemplo:
-```
+```C++
 mivector.push_back(3);
 
 //¿Como se imprime?
@@ -150,7 +150,7 @@ for (int i=0; i <=mivector.size(); i++)
 ¿Se puede viajar en el arreglo de otra manera?
 
 Se puede recorrer el arreglo de una manera diferente, usando la asociación llamada “referencia” del arreglo con el operador : (dos puntos)
-```
+```C++
 for (int contador : mivector)
   {
     std::cout << contador << std::endl;
