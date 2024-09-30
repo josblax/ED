@@ -27,10 +27,7 @@ https://github.com/josblax/ED/blob/5463d69d3e91288dac7713fe0ae148f5d02e39bb/code
 ¿Se puede viajar en el arreglo de otra manera?
 Se puede recorrer el arreglo de una manera diferente, usando la asociación llamada “referencia” del arreglo con el operador : (dos puntos)
 
-for (int contador : arreglo)
-{
-std::cout << contador << std::endl;
-}
+https://github.com/josblax/ED/blob/14fbd4f3e32ab09373432fd9f10ebe2cf149ae82/codepieces/array3.cpp
   
 Nota: El tipo de variable puede ser cambiado a auto. auto es un tipo de variable comodín que asume su tipo una vez que se hace la asignación.	
  
