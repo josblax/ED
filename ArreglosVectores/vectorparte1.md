@@ -40,13 +40,26 @@ arreglo[4] = 5;
 ```
 ¿Como se imprime?
 
-https://github.com/josblax/ED/blob/5463d69d3e91288dac7713fe0ae148f5d02e39bb/codepieces/array2.cpp
+
+```C++
+for (int i=0; i <=TAMANO; i++)
+{
+	cout << arreglo[i]<< endl;
+}
+```
 
 ¿Se puede viajar en el arreglo de otra manera?
 Se puede recorrer el arreglo de una manera diferente, usando la asociación llamada “referencia” del arreglo con el operador : (dos puntos)
 
-https://github.com/josblax/ED/blob/14fbd4f3e32ab09373432fd9f10ebe2cf149ae82/codepieces/array3.cpp
-  
+```C++
+
+for (int contador : arreglo)
+  {
+    std::cout << contador << std::endl;
+  }
+
+
+```
 Nota: El tipo de variable puede ser cambiado a auto. auto es un tipo de variable comodín que asume su tipo una vez que se hace la asignación.	
  
 # ARRAY CLASS
@@ -78,11 +91,12 @@ for (int i=0; i <=TAMANO; i++)
 ¿Se puede viajar en el arreglo de otra manera?
 Se puede recorrer el arreglo de una manera diferente, usando la asociación llamada “referencia” del arreglo con el operador : (dos puntos)
 
+```C++
 for (int contador : arr)
   {
     std::cout << contador << std::endl;
   }
-  
+```
 
 Nota: El tipo de variable puede ser cambiado a auto. auto es un tipo de variable comodín que asume su tipo una vez que se hace la asignación.
 
@@ -90,11 +104,12 @@ La diferencia entre el arreglo anterior es que se pueden usar funciones añadida
 
 Ejemplo:
 
+``` C++
 for (int i = 0; i < arr.size(); i++)
 {
     std::cout << arr[i] << std::endl;
 }
-
+```
 # VECTOR CLASS
 
  ## La clase vector es un contenedor secuencial como la clase array.
@@ -109,8 +124,9 @@ for (int i = 0; i < arr.size(); i++)
 
 ¿Como se declara?
 
+```
 vector <tipo_variable > nombre_vector;
-
+```
 vector<int> mivector;
 
 ¿Como se añaden elementos?
@@ -118,26 +134,26 @@ vector<int> mivector;
 Se usa la función .push_back(elemento);
 	
 Ejemplo:
-
+```
 mivector.push_back(3);
 
-¿Como se imprime?
+//¿Como se imprime?
 
 for (int i=0; i <=mivector.size(); i++)
 {
 	cout << mivector[i]<< endl;
 }
-
+```
  
 ¿Se puede viajar en el arreglo de otra manera?
 
 Se puede recorrer el arreglo de una manera diferente, usando la asociación llamada “referencia” del arreglo con el operador : (dos puntos)
-
+```
 for (int contador : mivector)
   {
     std::cout << contador << std::endl;
   }
-
+```
 Nota: El tipo de variable puede ser cambiado a auto.	
 
 vector es la una clase que contiene el contenedor vector y sus funciones. Se define dentro del <vector> archivo de encabezado. 
