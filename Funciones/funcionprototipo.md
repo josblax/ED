@@ -31,3 +31,7 @@ La forma general de un encabezado de función de C++ es:
 
 
 > La instrucción ***return*** es un componente que define el tipo de retorno del resultado que devuelve la función que se declara en la cabecera de la función.
+
+***Lista_Declaracion_Parametros*** Es una secuencia opcional de una o más declaraciones de parámetros separadas por comas, cada una de las cuales tiene la forma:
+
+\***<tipo_variable>***  **nombre_parámetro***
