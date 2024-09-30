@@ -30,4 +30,4 @@ La forma general de un encabezado de función de C++ es:
    ***ReturnType*** **nombreFuncion**( Lista_Declaracion_Parametros )
 
 
-<span style="color:blue">some *blue* text</span>.
+> La instrucción ***return*** es un componente que define el tipo de retorno del resultado que devuelve la función que se declara en la cabecera de la función.
