@@ -13,7 +13,7 @@ Iteradores:
 * crend() – Devuelve un iterador inverso constante que apunta al elemento teórico que precede al primer elemento del vector (considerado como extremo inverso)
 
 
-```
+```C++
 vector<int> v1;
 
     for (int i = 1; i <= 5; i++)
@@ -34,7 +34,7 @@ vector<int> v1;
     cout << "Salida de crbegin hasta crend : " endl;
     for (auto j = v1.crbegin(); j != v1.crend(); ++j)
         cout << *j << " ";
-}
+
 
 ```
  
