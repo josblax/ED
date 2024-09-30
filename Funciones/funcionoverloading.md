@@ -4,5 +4,5 @@ Una función **overloading** es el proceso de crear funciones múltiples con el 
 
 Una función con “firmas” consiste en el nombre de la función con una lista de parámetros de la función.
 
-a)	Nunca una función overloading incluye un retorno. **return**.
-b)	Los parámetros pueden variar en número, tipo y orden.
+1.Nunca una función overloading incluye un retorno. **return**.
+2.	Los parámetros pueden variar en número, tipo y orden.
