@@ -10,3 +10,15 @@ En C++ una función debe ser declarada _arriba_ de la función main(), en otros 
 
 ### Declaración de la función prototipo:
 _tipo_retorno_ Nombre_funcion( Lista_Declaracion_Parametros );
+
+
+## Mi primera función.
+El ejercicio de hoy implica una serie de ejercicios que muestran algunas de las características de las funciones de C++, los ejercicios se dividen en dos categorías:
+
+* En la primera parte, comenzaremos explorando la naturaleza de los parámetros de función y qué reglas rigen la relación entre los parámetros y sus argumentos.
+* También examinaremos los diferentes tipos de parámetros disponibles en C ++.
+
+* RECUERDA. Un **parámetro** es cuando defines en la lista de parámetros, tanto en la función prototipo, como en la definición de la función. 
+*Por el contrario, un argumento se define en la función, cuando esta es llamada y se asignan valores a los a la función dentro de los paréntesis ya sea como constantes o variables.
+
+* En la segunda parte, examinaremos la relación entre las definiciones que aparecen en diferentes funciones, y algunas de las reglas de alcance en C++.
