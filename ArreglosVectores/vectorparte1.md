@@ -22,7 +22,7 @@ https://github.com/josblax/ED/blob/98e23a3f2dc483c909e03ac7eecbc178fde84d86/code
 
 ¿Como se imprime?
 
-(https://github.com/josblax/ED/blob/5463d69d3e91288dac7713fe0ae148f5d02e39bb/codepieces/array2.cpp)
+https://github.com/josblax/ED/blob/5463d69d3e91288dac7713fe0ae148f5d02e39bb/codepieces/array2.cpp
 
 ¿Se puede viajar en el arreglo de otra manera?
 Se puede recorrer el arreglo de una manera diferente, usando la asociación llamada “referencia” del arreglo con el operador : (dos puntos)
