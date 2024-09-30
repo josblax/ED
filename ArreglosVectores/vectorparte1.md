@@ -50,10 +50,11 @@ array<int, 5> arreglo{1,2,3,4,5};
 
 ¿Como se imprime?
 
-for (int i=0; i <=TAMANO; i++)
+```for (int i=0; i <=TAMANO; i++)
 {
 	cout << arreglo[i]<< endl;
 }
+```
 
 ¿Se puede viajar en el arreglo de otra manera?
 Se puede recorrer el arreglo de una manera diferente, usando la asociación llamada “referencia” del arreglo con el operador : (dos puntos)
