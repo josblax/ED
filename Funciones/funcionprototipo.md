@@ -9,7 +9,7 @@ En C++ una función debe ser declarada _arriba_ de la función main(), en otros 
 ## Función prototipo. Es la cabecera o primera línea de una función, seguido de un punto y coma.
 
 ### Declaración de la función prototipo:
-_tipo_retorno_ Nombre_funcion( Lista_Declaracion_Parametros );
+_tipo_retorno_ nombreFuncion( Lista_Declaracion_Parametros );
 
 
 ## Mi primera función.
@@ -22,3 +22,9 @@ El ejercicio de hoy implica una serie de ejercicios que muestran algunas de las 
 Por el contrario, un argumento se define en la función, cuando esta es llamada y se asignan valores a los a la función dentro de los paréntesis ya sea como constantes o variables.
 
 * En la segunda parte, examinaremos la relación entre las definiciones que aparecen en diferentes funciones, y algunas de las reglas de alcance en C++.
+
+## Parte I: Mecanismos de paso de parámetros
+
+La forma general de un encabezado de función de C++ es:
+
+   ***ReturnType Nombre*** nombreFuncion ( Lista_Declaracion_Parametros )
