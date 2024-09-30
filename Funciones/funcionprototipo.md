@@ -18,7 +18,7 @@ El ejercicio de hoy implica una serie de ejercicios que muestran algunas de las 
 * En la primera parte, comenzaremos explorando la naturaleza de los parámetros de función y qué reglas rigen la relación entre los parámetros y sus argumentos.
 * También examinaremos los diferentes tipos de parámetros disponibles en C ++.
 
-* RECUERDA. Un **parámetro** es cuando defines en la lista de parámetros, tanto en la función prototipo, como en la definición de la función. 
+> RECUERDA. Un **parámetro** es cuando defines en la lista de parámetros, tanto en la función prototipo, como en la definición de la función. 
 *Por el contrario, un argumento se define en la función, cuando esta es llamada y se asignan valores a los a la función dentro de los paréntesis ya sea como constantes o variables.
 
 * En la segunda parte, examinaremos la relación entre las definiciones que aparecen en diferentes funciones, y algunas de las reglas de alcance en C++.
