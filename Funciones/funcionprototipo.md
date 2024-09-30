@@ -35,3 +35,13 @@ La forma general de un encabezado de función de C++ es:
 ***Lista_Declaracion_Parametros*** Es una secuencia opcional de una o más declaraciones de parámetros separadas por comas, cada una de las cuales tiene la forma:
 
 \<tipo_variable>  **nombre_parámetro**
+
+Donde \<tipo_variable> es un tipo válido, según las especificaciones del lenguaje y nombre_parámetro es un identificador válido.
+
+> Si tu función lleva más de un parámetro este debe estar separado por comas.
+
+## Parámetros x Valor y parámetros x referencia
+
+* Un parámetro cuyo Tipo NO va seguido de un signo ampersand (&) se denomina parámetro x valor. Un parámetro x valor es una variable local a la función, tal que cuando se llama a la función, recibe una copia del valor del argumento correspondiente.
+* Un parámetro cuyo Tipo va seguido de un signo ampersand (&) se denomina parámetro x referencia. Un parámetro x referencia es un alias (por ejemplo, otro nombre) para su argumento correspondiente. Y el valor del argumento que se pasa, será modificado.
+
