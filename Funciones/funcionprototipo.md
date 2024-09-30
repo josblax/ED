@@ -28,3 +28,6 @@ Por el contrario, un argumento se define en la función, cuando esta es llamada 
 La forma general de un encabezado de función de C++ es:
 
    ***ReturnType*** **nombreFuncion**( Lista_Declaracion_Parametros )
+
+
+<span style="color:blue">some *blue* text</span>.
