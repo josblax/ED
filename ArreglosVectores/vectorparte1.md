@@ -50,7 +50,8 @@ array<int, 5> arreglo{1,2,3,4,5};
 
 ¿Como se imprime?
 
-```for (int i=0; i <=TAMANO; i++)
+```C++
+for (int i=0; i <=TAMANO; i++)
 {
 	cout << arreglo[i]<< endl;
 }
