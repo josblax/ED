@@ -34,4 +34,4 @@ La forma general de un encabezado de función de C++ es:
 
 ***Lista_Declaracion_Parametros*** Es una secuencia opcional de una o más declaraciones de parámetros separadas por comas, cada una de las cuales tiene la forma:
 
-\<tipo_variable>  **nombre_parámetro***
+\<tipo_variable>  **nombre_parámetro**
