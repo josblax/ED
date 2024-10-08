@@ -9,6 +9,7 @@ using namespace std;
 using namespace std::chrono;
 //funcion prototipo
 void burbuja(vector<double>& v);
+void seleccion(vector<double>& v);
 void imprime(vector<double> v);
 int main()
 {
@@ -26,15 +27,34 @@ int main()
         double num = distribution(gen);
         v1000.push_back(num);
     }
-    imprime(v1000);
+    //imprime(v1000);
     auto start1000 = high_resolution_clock::now();
-    burbuja(v1000);
+    seleccion(v1000);
     auto stop1000 = high_resolution_clock::now();
     auto duration1000 = 
         duration_cast<milliseconds>(stop1000 - 
             start1000);
     cout << "Duracion " << duration1000.count();
-    imprime(v1000);
+    //imprime(v1000);
+}
+
+void seleccion(vector<double>& v) 
+{
+    int indiceMin = 0;
+    for (int i = 0; i < v.size(); i++) 
+    {
+        indiceMin = i;
+        for (int j = i + 1; j < v.size(); j++) 
+        {
+            if (v[j] < v[indiceMin]) 
+            {
+                indiceMin = j;
+            }
+        }
+        double temp = v[indiceMin];
+        v[indiceMin] = v[i];
+        v[i] = temp;
+    }
 }
 
 void burbuja(vector<double> &v)
