@@ -8,11 +8,11 @@
 using namespace std;
 using namespace std::chrono;
 //funcion prototipo
-//void burbuja(vector<double>& v);
+void burbuja(vector<double>& v);
 void imprime(vector<double> v);
 int main()
 {
-   // vector con 1000 elementos
+    // vector con 1000 elementos
     vector<double> v1000;
     random_device rd;
     default_random_engine gen(rd());
@@ -21,14 +21,41 @@ int main()
 
     // generar 1000 datos con una
     // instrucción cíclico
-    for (int i = 0; i < 1000; i++) 
+    for (int i = 0; i < 20; i++)
     {
         double num = distribution(gen);
         v1000.push_back(num);
     }
     imprime(v1000);
+    auto start1000 = high_resolution_clock::now();
+    burbuja(v1000);
+    auto stop1000 = high_resolution_clock::now();
+    auto duration1000 = 
+        duration_cast<milliseconds>(stop1000 - 
+            start1000);
+    cout << "Duracion " << duration1000.count();
+    imprime(v1000);
+}
 
-    
+void burbuja(vector<double> &v)
+{
+    double temp = 0;
+    bool swapp = true;
+
+    while (swapp) 
+    {
+        swapp = false;
+        for (int i = 0; i < v.size()-1; i++) 
+        {
+            if (v[i] > v[i+1]) 
+            {
+                temp = v[i + 1];
+                v[i + 1] = v[i];
+                v[i] = temp;
+                swapp = true;
+            }
+        }
+    }
 }
 
 void imprime(vector<double> v)
