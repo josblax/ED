@@ -1,10 +1,22 @@
+// ConsoleApplication18.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
 #include <iostream>
 #include <iomanip>
 #include <vector>
 #include <unordered_map>
 #include <map>
 using namespace std;
-
+void imprime(vector<int> v)
+{
+	for (auto elemento : v)
+	{
+		cout << elemento << " , ";
+	}
+	cout << endl;
+	system("pause");
+	system("cls");
+}
 void burbuja(vector<int>& v)
 {
 	double temp = 0;
@@ -31,12 +43,12 @@ int main()
 	vector<int> v, vpar, vimpar;
 	vector<int> v1{ 1,2,3,5,6,7,8,9 };
 	//secuencia
-	for (int i = 0; i <8; i++) 
+	for (int i = 0; i <7; i++) 
 	{
 		if (v1[i + 1] - v1[i] != 1) 
 		{
 			cout << "elemento faltante "
-				<< v1[i] + 1;
+				<< v1[i] + 1 << endl;
 		}
 	}
 
@@ -56,9 +68,9 @@ int main()
 			vimpar.push_back(num1);
 		}
 	}
-	
+	imprime(v);
 	burbuja(v);
-	cout << v[0] << v[1] << v[2];
+	cout << "tres mayores : "<<v[0] << v[1] << v[2];
 	// numero -> frecuencia
 	
 	
