@@ -92,5 +92,44 @@ Ejemplo:
 <img src="https://github.com/josblax/ED/blob/main/imagenes/clase2.jpg" alt="Layout app" width="200" height="200">
 </p>
 
+# Introducción a programación orientada a objetos. (OOP)
+
+* Clases
+* Objetos
+
+## Paradigmas de programación.
+* Procedural
+* OOP (Programación Orientada a Objetos)
+
+## OOP.
+* Los objetos encapsulan comportamientos y datos.
+
+Los tres principios de la OOP.
+* Encapsulación
+* Herencia
+* Polimorfismo.
+
+## Encapsulación: Miembros de funciones y datos.
+
+* El principio de encapsulación “Unifica” los datos y las funciones en un objeto.
+* Es uno de los principios de OOP.
+
+## La encapsulación provee:
+
+### Seguridad:
+*Esconde o hace invisible información
+* Los datos quedan protegidos del “mundo exterior”, esto se puede definir como cualquier cosa fuera del mismo objeto. Ejemplo, proteger el valor de los saldos de los clientes de una institución bancaria.
+* Portabilidad. Tenemos la ventaja de mover nuestro objeto, en nuestros programas, sin cambiar los atributos o funciones que afectan nuestro objeto.
+* Una clase representa el “diseño” o “plano” para un objeto. En un ejemplo real, vienen a ser los planos de la casa para construir dichas casas, o el diseño de un circuito eléctrico, que dará vida a nuestro componente electrónico.
+
+El significado de la encapsulación es asegurarse de que los datos "sensibles" estén ocultos a los usuarios. Para lograr esto, debe declarar las variables/atributos de clase como privados (no se puede acceder desde fuera de la clase). Si desea que otros lean o modifiquen el valor de un miembro privado, puede proporcionar métodos públicos get y set.
+
+¿Entonces como establecer los valores de las variables?
+
+La manera correcta de actualizar es a través de un establecer información es a través de tres métodos:
+
+* Constructor. Es un método especial que es invocado automáticamente al tiempo de la creación de un objeto. Es usado para inicializar los elementos de los datos. Tiene el  mismo nombre que la clase. Y se puede usar para inicializar los valores.
+* Setter. Es una función que ayuda a establecer el valor de un dato privado. El cuál puede ser modificado mediante este método. La nomenclatura normalmente debe ser la palabra “set” y el nombre del elemento de datos del que se quiere obtener. Normalmente es para establecer información almacenada a través de la misma clase.
+* Getter. Es una función que ayuda a obtener el valor de un dato privado. El cuál no puede ser modificado mediante este método. La nomenclatura normalmente debe ser la palabra “get” y el nombre del elemento de datos del que se quiere obtener. Normalmente es para obtener información almacenada, pero no modificarla.
 
 
