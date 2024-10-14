@@ -89,3 +89,29 @@ Una función con “firmas” consiste en el nombre de la función con una lista
 1.Nunca una función overloading incluye un retorno. **return**.
 2.	Los parámetros pueden variar en número, tipo y orden.
 
+```C++
+#include <iostream>
+using namespace std;
+// Declaración de funciones sobrecargadas
+void imprime(int numInt) {
+    cout << "Entero: " << numInt << endl;
+}
+
+void imprime(double numDouble) {
+    cout << "Doble flotante: " << numDouble << endl;
+}
+
+void print(const string& st) {
+    cout << "String: " << st << endl;
+}
+
+int main() {
+    // Llamadas a las funciones sobrecargadas
+    print(34);           // Llama a la versión que acepta un int
+    print(45.78);         // Llama a la versión que acepta un double
+    print("Hola!");      // Llama a la versión que acepta una cadena
+
+    return 0;
+}
+
+```
