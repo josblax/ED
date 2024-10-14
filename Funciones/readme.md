@@ -79,3 +79,13 @@ void imprime(vector<int> v)
 
 * Un parámetro cuyo Tipo NO va seguido de un signo ampersand (&) se denomina parámetro x valor. Un parámetro x valor es una variable local a la función, tal que cuando se llama a la función, recibe una copia del valor del argumento correspondiente.
 * Un parámetro cuyo Tipo va seguido de un signo ampersand (&) se denomina parámetro x referencia. Un parámetro x referencia es un alias (por ejemplo, otro nombre) para su argumento correspondiente. Y el valor del argumento que se pasa, será modificado.
+
+# Funciones Overloading
+
+Una función **overloading** es el proceso de crear funciones múltiples con el mismo nombre pero con diferentes “firmas” o tipos y formas de lista de parámetros.
+
+Una función con “firmas” consiste en el nombre de la función con una lista de parámetros de la función.
+
+1.Nunca una función overloading incluye un retorno. **return**.
+2.	Los parámetros pueden variar en número, tipo y orden.
+
