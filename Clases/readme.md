@@ -88,6 +88,9 @@ out (ortput):
 
 Ejemplo:
 
+<p align="center">
+<img src="https://github.com/josblax/ED/blob/main/imagenes/clase2.jpg" alt="Layout app" width="200" height="200">
+</p>
 
 
 
