@@ -48,3 +48,28 @@ for (int i = 0; i < TAMANO; ++i) {
 
 Es una estructura de datos que permite almacenar y buscar elementos de manera rápida. Mediante una heurística convierte las llaves de una secuencia en indices dentro de un contenedor.
 
+```C++
+#include <iostream>
+#include <unordered_map>
+#include <string>
+using namespace std;
+int main() {
+    // Crear una tabla hash (unordered_map)
+    unordered_map<int, string> Estudiantes;
+
+    // Insertar elementos en la tabla hash
+    Estudiantes[10] = "Maria";
+    Estudiantes[20] = "Clara";
+    Estudiantes[30] = "Alejandro";
+    Estudiantes[40] = "Princesa";
+
+    // Buscar e imprimir un elemento usando su clave (número de identificación)
+    int cuenta = 40;
+    if (Estudiantes.find(id) != Estudiantes.end()) {
+        cout << "Cuenta: " << cuenta << ", Nombre: " << Estudiantes[cuenta] << endl;
+    } else {
+        cout << "ID no encontrado." << std::endl;
+    }
+
+}
+```
