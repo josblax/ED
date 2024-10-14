@@ -47,4 +47,9 @@ Debida a la naturaleza y dominio es complejo.
 
 * Nos ayuda a modelar nuestras clases durante el diseño.
 
-Una notación de clase es una representación gráfica se usa para representar la clase y sus relaciones en el modelado de orientado-objetos
+Una notación de clase es una representación gráfica se usa para representar la clase y sus relaciones en el modelado de orientado-objetos.
+
+<p align="center">
+<img src=["https://github.com/josblax/AplicacionesMoviles/blob/main/Images/mc.png](https://github.com/josblax/ED/blob/main/imagenes/clase.jpg)" alt="Layout app" width="200" height="200">
+</p>
+
