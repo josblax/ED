@@ -28,6 +28,19 @@ Ventajas:
 
 ## Mapas no ordenados (unordered_maps)
 
+Como se declaran? 
+
+```C++
+unordered_map<double, int> frecuencia;
+```
+
+Como se alimentan?
+```C++
+for (int i = 0; i < TAMANO; ++i) {
+        frecuencia[numeros[i]]++;
+    }
+```
+
 * Implementación basadas en tablas hash
 * Los elementos, como su nombre lo dice se mantienen desordenados.
 
