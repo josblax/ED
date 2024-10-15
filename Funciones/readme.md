@@ -101,15 +101,15 @@ void imprime(double numDouble) {
     cout << "Doble flotante: " << numDouble << endl;
 }
 
-void print(const string& st) {
+void imprime(const string& st) {
     cout << "String: " << st << endl;
 }
 
 int main() {
     // Llamadas a las funciones sobrecargadas
-    print(34);           // Llama a la versión que acepta un int
-    print(45.78);         // Llama a la versión que acepta un double
-    print("Hola!");      // Llama a la versión que acepta una cadena
+    imprime(34);           // Llama a la versión que acepta un int
+    imprime(45.78);         // Llama a la versión que acepta un double
+    imprime("Hola!");      // Llama a la versión que acepta una cadena
 
     return 0;
 }
