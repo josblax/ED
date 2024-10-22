@@ -1,8 +1,6 @@
-#include <iostream>
-using namespace std;
-// class
 class Alumno 
 {
+public:
 	//atributos
 	int numCuenta;
 	string nombreCompleto;
@@ -10,6 +8,12 @@ class Alumno
 	int materiasCursando;
 	int materiasPorCursar;
 	//constructor
+public:
+	Alumno() 
+	{
+		this->numCuenta = 0;
+		this->nombreCompleto = "";
+	}
 	Alumno(int nc, string nombre)
 	{
 		this->numCuenta = nc;
@@ -20,5 +24,10 @@ class Alumno
 
 int main()
 {
-
+	Alumno alumno1();
+	Alumno alumno2(12345, "Jose Blancas");
+	cout << alumno2.numCuenta 
+		<< endl;
+	cout << alumno2.nombreCompleto 
+		<< endl;
 }
