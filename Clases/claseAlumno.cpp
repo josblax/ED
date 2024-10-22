@@ -1,3 +1,7 @@
+#include <iostream>
+using namespace std;
+
+// class
 class Alumno 
 {
 public:
@@ -19,15 +23,19 @@ public:
 		this->numCuenta = nc;
 		this->nombreCompleto = nombre;
 	}
-
+	// getters
+	int getNumCuenta() 
+	{
+		return this->numCuenta;
+	}
+	string getNombre() 
+	{
+		return this->nombreCompleto;
+	}
 };
 
 int main()
 {
-	Alumno alumno1();
-	Alumno alumno2(12345, "Jose Blancas");
-	cout << alumno2.numCuenta 
-		<< endl;
-	cout << alumno2.nombreCompleto 
-		<< endl;
+	
 }
+
