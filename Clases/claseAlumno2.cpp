@@ -1,3 +1,7 @@
+// ConsoleApplication21.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
 #include <vector>
 using namespace std;
 // Globales
@@ -42,12 +46,14 @@ public:
 
     static void imprimeDatos(vector<Alumno> va) 
     {
-        for (int i = 0; i <= va.size(); i++) 
+        cout << va.size() << endl;
+        for (int i = 0; i < va.size(); i++) 
         {
+            
             cout << "================" << endl;
             cout << "nombre : " << va[i].nombreCompleto << endl;
             cout << "nc : " << va[i].nc << endl;
-            for (int j = 0; j <= va[i].v2.size(); j++) 
+            for (int j = 0; j <= va[i].v2.size()-1; j++) 
             {
                 cout << "materia : " <<
                     va[i].v2[j].materia << endl;
