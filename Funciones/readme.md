@@ -60,7 +60,10 @@ int main() {
 ***Lista_Declaracion_Parametros*** Es una secuencia opcional de una o más declaraciones de parámetros separadas por comas, cada una de las cuales tiene la forma:
 
 
-> int suma**(int a, int b)** {
+> int suma(int a, int b)
+> {
+> 
+> }
 
 
 \<tipo_variable>  **nombre_parámetro**
