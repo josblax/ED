@@ -80,6 +80,90 @@ void imprime(vector<int> v)
 * Un parámetro cuyo Tipo NO va seguido de un signo ampersand (&) se denomina parámetro x valor. Un parámetro x valor es una variable local a la función, tal que cuando se llama a la función, recibe una copia del valor del argumento correspondiente.
 * Un parámetro cuyo Tipo va seguido de un signo ampersand (&) se denomina parámetro x referencia. Un parámetro x referencia es un alias (por ejemplo, otro nombre) para su argumento correspondiente. Y el valor del argumento que se pasa, será modificado.
 
+```C++
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+//variable global. Se definen fuera de cualquier función
+int opcion;
+double saldoActual = 5000, retiro, deposito;
+// función prototipo
+void menu();
+void imprimeSaldo(double saldo1);
+void retirar(double saldo1);
+void depositar(double deposito);
+ 
+void imprime() 
+{
+    std::cout << "Hello World!\n";
+}
+ 
+int main()
+{
+    imprime();
+    do {
+        menu();
+        switch (opcion)
+        {
+        case 1:
+            imprimeSaldo(saldoActual);
+            break;
+        case 2:
+            cout << "Ingrese el monto a retirar: ";
+            cin >> retiro;
+            retirar(retiro);
+            break;
+        case 3:
+            cout << "Ingrese el monto a depositar: ";
+            cin >> deposito;
+            depositar(deposito);
+            break;
+        default:
+            break;
+        }
+    } while (opcion != 4);
+}
+ 
+void depositar(double deposito1) 
+{
+    saldoActual = saldoActual + deposito1;
+    cout << "Su saldo actual es: " << saldoActual << endl;
+ 
+}
+ 
+    void retirar(double retiro1)
+    {
+        if (retiro1 > saldoActual)
+        {
+            cout << "Saldo insuficiente" << endl;
+        }
+        else
+        {
+            saldoActual = saldoActual - retiro1;
+        }
+        cout << "Su saldo actual es: " << saldoActual << endl;
+    }
+ 
+    void imprimeSaldo(double saldo1)
+    {
+        cout << "El saldo actual es: " << saldo1 << endl;
+    }
+ 
+    void menu()
+    {
+        cout << "Bienvenido al cajero automatico" << endl;
+        cout << "1. Consultar saldo" << endl;
+        cout << "2. Retirar" << endl;
+        cout << "3. Depositar" << endl;
+        cout << "4. Salir" << endl;
+        cout << "Seleccione una opcion: ";
+        cin >> opcion;
+        cout << "La opcion seleccionada es: " << opcion << endl; 
+    }
+
+```
+
 # Funciones Overloading
 
 Una función **overloading** es el proceso de crear funciones múltiples con el mismo nombre pero con diferentes “firmas” o tipos y formas de lista de parámetros.
