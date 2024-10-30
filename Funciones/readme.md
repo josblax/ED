@@ -46,6 +46,8 @@ Donde \<tipo_variable> es un tipo válido, según las especificaciones del lengu
 
 > Si tu función lleva más de un parámetro este debe estar separado por comas.
 
+
+
 ```C++
 // ConsoleApplication12.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
@@ -75,10 +77,16 @@ void imprime(vector<int> v)
     system("cls");
 }
 ```
-## Parámetros x Valor y parámetros x referencia
 
-* Un parámetro cuyo Tipo NO va seguido de un signo ampersand (&) se denomina parámetro x valor. Un parámetro x valor es una variable local a la función, tal que cuando se llama a la función, recibe una copia del valor del argumento correspondiente.
-* Un parámetro cuyo Tipo va seguido de un signo ampersand (&) se denomina parámetro x referencia. Un parámetro x referencia es un alias (por ejemplo, otro nombre) para su argumento correspondiente. Y el valor del argumento que se pasa, será modificado.
+## Ejemplo práctico: Establece las operaciones básicas de un cajero automático:
+Realice un programa en C++ que represente las operaciones básicas de un cajero automático, que son consulta de saldo de una cuenta, y retiro de efectivo de una cuenta.
+En el proceso inicial considera la validación mediante un password, si este es válido podrá continuar la operación.
+Para el proceso de consulta, deberá mostrar en pantalla el saldo, usando una función donde imprima el valor del saldo. Considere que la variable donde guarde el saldo, debe ser una variable global.
+Para el proceso de retiro deberá preguntar por la cantidad a retirar en pantalla, validar que la cantidad no exceda al saldo, usar parámetro por referencia para modificar el saldo, en caso de que el retiro se ejecute.
+Si obtiene el saldo y no excede la cantidad de la que puede disponer, deberá “simular” la operación de entrega de efectivo y descontar la cantidad del saldo y enviar petición de actualización del saldo a la central.
+
+El proceso no tiene ciclos, es decir solo puede hacer una operación a la vez y terminará el servicio.
+
 
 ```C++
 
@@ -161,6 +169,17 @@ void depositar(double deposito1)
         cin >> opcion;
         cout << "La opcion seleccionada es: " << opcion << endl; 
     }
+
+```
+
+2. Haga un nuevo código que incluya funciones saldo, retiro que incluya funciones prototipo y sus definiciones. 
+## Parámetros x Valor y parámetros x referencia
+
+* Un parámetro cuyo Tipo NO va seguido de un signo ampersand (&) se denomina parámetro x valor. Un parámetro x valor es una variable local a la función, tal que cuando se llama a la función, recibe una copia del valor del argumento correspondiente.
+* Un parámetro cuyo Tipo va seguido de un signo ampersand (&) se denomina parámetro x referencia. Un parámetro x referencia es un alias (por ejemplo, otro nombre) para su argumento correspondiente. Y el valor del argumento que se pasa, será modificado.
+
+```C++
+
 
 ```
 
