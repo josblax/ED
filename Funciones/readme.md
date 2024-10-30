@@ -299,5 +299,41 @@ int main() {
 
     return 0;
 }
+```
+## Ejemplo de la calculadora, usando todas las posibles combinaciones de tipos de variable, usando funciones overloading, solo se muestra la operación suma().
+```C++
+// ConsoleApplication19.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
 
+#include <iostream>
+#include "Header.h"
+using namespace std;
+// Funciones prototipo
+void suma(int a, int b);
+void suma(double a, double b);
+void suma(float a, float b);
+void suma(string a, string b);
+void suma(int a, double b);
+void suma(double a, int b);
+void suma(int a, float b);
+void suma(float a, int b);
+int main()
+{
+	// Ejercicio 4
+	suma(1, 2);
+	suma(3.4, 5.6);
+}
+// Definicion de la funcion
+void suma(int a, int b) 
+{
+	cout << a + b << endl;
+}
+void suma(double a, double b)
+{
+	cout << a + b << endl;
+}
+void suma(float a, float b) 
+{
+	cout << a + b << endl;
+}
 ```
