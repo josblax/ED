@@ -337,3 +337,85 @@ void suma(float a, float b)
 	cout << a + b << endl;
 }
 ```
+
+
+## Ejemplo. Usando funciones overloading crear una función llamada calculaArea(), que pueda calcular el área de al menos cuatro figuras geométricas. Hacer un menú de opciones que muestre las opciones de cálculo de área, por ejemplo: cuadrado, triangulo equilátero, circulo, rectángulo etc. Dependiendo de los datos de entrada serán los parámetros y argumentos a usar en la función, pero solo puede usar un solo nombre de función.
+```C++
+
+#include <iostream>
+#include <cmath> 
+using namespace std;
+
+// Sobrecarga de la función calculaArea
+
+// Área del cuadrado: lado * lado
+double calculaArea(double lado) {
+    return lado * lado;
+}
+
+// Área del triángulo equilátero: (sqrt(3) / 4) * lado * lado
+double calculaArea(double base, double altura) {
+    return 0.5 * base * altura;
+}
+
+// Área del círculo: pi * radio * radio
+double calculaArea(float radio) {
+    return 3.1416 * radio * radio;
+}
+
+// Área del rectángulo: largo * ancho
+double calculaArea(int largo, int ancho) {
+    return largo * ancho;
+}
+
+int main() {
+    int opcion;
+    cout << "Calculadora de áreas" << endl;
+    cout << "1. Cuadrado" << endl;
+    cout << "2. Triángulo equilátero" << endl;
+    cout << "3. Círculo" << endl;
+    cout << "4. Rectángulo" << endl;
+    cout << "Seleccione una opción: ";
+    cin >> opcion;
+
+    switch(opcion) {
+        case 1: {
+            double lado;
+            cout << "Ingrese el lado del cuadrado: ";
+            cin >> lado;
+            cout << "Área del cuadrado: " << calculaArea(lado) << endl;
+            break;
+        }
+        case 2: {
+            double base, altura;
+            cout << "Ingrese la base del triángulo equilátero: ";
+            cin >> base;
+            cout << "Ingrese la altura del triángulo equilátero: ";
+            cin >> altura;
+            cout << "Área del triángulo equilátero: " << calculaArea(base, altura) << endl;
+            break;
+        }
+        case 3: {
+            float radio;
+            cout << "Ingrese el radio del círculo: ";
+            cin >> radio;
+            cout << "Área del círculo: " << calculaArea(radio) << endl;
+            break;
+        }
+        case 4: {
+            int largo, ancho;
+            cout << "Ingrese el largo del rectángulo: ";
+            cin >> largo;
+            cout << "Ingrese el ancho del rectángulo: ";
+            cin >> ancho;
+            cout << "Área del rectángulo: " << calculaArea(largo, ancho) << endl;
+            break;
+        }
+        default:
+            cout << "Opción no válida" << endl;
+    }
+
+    return 0;
+}
+
+```
