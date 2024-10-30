@@ -35,6 +35,25 @@ La forma general de un encabezado de función de C++ es:
 
    ***ReturnType*** **nombreFuncion**( Lista_Declaracion_Parametros )
 
+   ## Ejemplo de una función con retorno.
+
+ ```C++
+
+#include <iostream>
+using namespace std;
+
+int suma(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int resultado = suma(5, 3);
+    cout << "Suma: " << resultado << endl;
+    return 0;
+}
+
+ ```
+
 
 > La instrucción ***return*** es un componente que define el tipo de retorno del resultado que devuelve la función que se declara en la cabecera de la función.
 
