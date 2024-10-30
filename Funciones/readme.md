@@ -173,14 +173,96 @@ void depositar(double deposito1)
 
 ```
 
-2. Haga un nuevo código que incluya funciones saldo, retiro que incluya funciones prototipo y sus definiciones. 
+
 ## Parámetros x Valor y parámetros x referencia
 
 * Un parámetro cuyo Tipo NO va seguido de un signo ampersand (&) se denomina parámetro x valor. Un parámetro x valor es una variable local a la función, tal que cuando se llama a la función, recibe una copia del valor del argumento correspondiente.
 * Un parámetro cuyo Tipo va seguido de un signo ampersand (&) se denomina parámetro x referencia. Un parámetro x referencia es un alias (por ejemplo, otro nombre) para su argumento correspondiente. Y el valor del argumento que se pasa, será modificado.
 
+## Ejemplo: Haga un nuevo código que incluya funciones saldo, retiro que incluya funciones prototipo y sus definiciones. 
+
 ```C++
 
+#include <iostream>
+#include <iomanip>
+using namespace std;
+//variable global. Se definen fuera de cualquier función
+int opcion;
+double  retiro, deposito;
+// función prototipo
+void menu();
+void imprimeSaldo(double saldo1);
+void retirar(double saldo1, double &sa);
+void depositar(double deposito, double &sa);
+ 
+void imprime() 
+{
+    std::cout << "Hello World!\n";
+}
+ 
+int main()
+{
+    double saldoActual = 5000;
+    imprime();
+    do {
+        menu();
+        switch (opcion)
+        {
+        case 1:
+            imprimeSaldo(saldoActual);
+            break;
+        case 2:
+            cout << "Ingrese el monto a retirar: ";
+            cin >> retiro;
+            retirar(retiro,saldoActual);
+            break;
+        case 3:
+            cout << "Ingrese el monto a depositar: ";
+            cin >> deposito;
+            depositar(deposito, saldoActual);
+            break;
+        default:
+            break;
+        }
+    } while (opcion != 4);
+}
+ 
+void depositar(double deposito1, double &sa) 
+{
+    sa = sa + deposito1;
+    cout << "Su saldo actual es: " << sa << endl;
+ 
+}
+ 
+    void retirar(double retiro1, double &sa)
+    {
+        if (retiro1 > sa)
+        {
+            cout << "Saldo insuficiente" << endl;
+        }
+        else
+        {
+            sa = sa - retiro1;
+        }
+        cout << "Su saldo actual es: " << sa << endl;
+    }
+ 
+    void imprimeSaldo(double saldo1)
+    {
+        cout << "El saldo actual es: " << saldo1 << endl;
+    }
+ 
+    void menu()
+    {
+        cout << "Bienvenido al cajero automatico" << endl;
+        cout << "1. Consultar saldo" << endl;
+        cout << "2. Retirar" << endl;
+        cout << "3. Depositar" << endl;
+        cout << "4. Salir" << endl;
+        cout << "Seleccione una opcion: ";
+        cin >> opcion;
+        cout << "La opcion seleccionada es: " << opcion << endl; 
+    }
 
 ```
 
