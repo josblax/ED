@@ -445,3 +445,16 @@ int main() {
 }
 
 ```
+# Funciones Recursivas
+
+Funciones Recursivas (Algoritmos avanzados). Una función recursiva se llama a sí misma de manera directa o indirecta (vía otra función). 
+
+Es en su mayoría como una función normal excepto que al menos se llama una vez a sí misma y contiene una solución base que es la solución más simple del problema. 
+
+Esta solución simple es un booleano (condición lógica) que cuando esta es verdadera, es decir se cumple se detiene de llamar a la función nuevamente. 
+
+Esto es cuando no hay más cálculos que procesar. 
+
+Estas condiciones simples son instrucciones if-else con la instrucción return. 
+
+	
