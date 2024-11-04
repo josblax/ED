@@ -467,16 +467,37 @@ Esta solución simple es un booleano (condición lógica) que cuando esta es ver
 
 Estas condiciones simples son instrucciones if-else con la instrucción return.
 
-```Python
+```C++
+// Recursivas.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
 
-def suma(n):
-    if n == 1:
-        return 1
-    else:
-        s = n+(suma(n-1))
-    print(s)
-    return(s)
-suma(5)
+#include <iostream>
+using namespace std;
+int suma1=0;
+int suma(int num) 
+{
+	if (num == 1) 
+	{
+		cout << "Condicion mas simple : " << num << ", suma1: " << suma1+1 << endl;
+		return 1;
+	}
+	else 
+	{
+		
+		 suma1 = num + suma(num - 1);
+		 cout << "Retornando a llamada de : " << num << ", suma1: " << suma1 << endl;
+	}
+	
+	return suma1;
+
+}
+
+int main()
+{
+	
+	cout << "Resultado en main() : " << suma(5) << endl;
+}
+
 
 ```
 
