@@ -4,7 +4,7 @@
 #include <vector>
 using namespace std;
 // Globales
-int numMaterias;
+
 
 //class
 class Materias 
@@ -72,6 +72,8 @@ public:
     {
         Alumno alumno;
         Materias mat;
+        int numMaterias;
+
         cout << "Nombre : ";
         cin >> alumno.nombreCompleto;
         cout << "Matricula : ";
@@ -80,30 +82,31 @@ public:
         cin >> numMaterias;
         for (int i = 0; i < numMaterias; i++) 
         {
+            string materia;
+            double calificacion;
             cout << "Nombre Materia : ";
-            cin >> mat.materia;
+            cin >> materia;
             cout << "Calificacion : ";
-            cin >> mat.calificacion;
+            cin >> calificacion;
+            mat.setCalificacion(calificacion);
+            mat.setMateria(materia);
             alumno.v2.push_back(mat);
         }
         v1.push_back(alumno);
     }
 
-    static void imprimeDatos(vector<Alumno> va) 
+    static void imprimeDatos(const vector<Alumno>& va) 
     {
-        cout << va.size() << endl;
-        for (int i = 0; i < va.size(); i++) 
+        cout << "Total Alumnos " << va.size() << endl;
+        for (const auto& alumno : va) 
         {
-            
             cout << "================" << endl;
-            cout << "nombre : " << va[i].nombreCompleto << endl;
-            cout << "nc : " << va[i].nc << endl;
-            for (int j = 0; j <= va[i].v2.size()-1; j++) 
+            cout << "Nombre : " << alumno.getNombreCompleto() << endl;
+            cout << "NC " << alumno.getNc() << endl;
+            for (const auto& mat : alumno.getMaterias()) 
             {
-                cout << "materia : " <<
-                    va[i].v2[j].materia << endl;
-                cout << "calificacion : " <<
-                    va[i].v2[j].calificacion << endl;
+                cout << "Materia " << mat.getMateria() << endl;
+                cout << "Calificacion " << mat.getCalificacion() << endl;
             }
             cout << "================" << endl;
         }
