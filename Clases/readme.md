@@ -138,3 +138,19 @@ La manera correcta de actualizar es a través de un establecer información es a
 Es una relación entre dos clases, donde una subclase puede heredar las propiedades y métodos de otra clase, en C se conocen como super clases. Nos ayuda a reutilizar el código y mantener una coherencia lógica entre subclases y superclases para no definir características repetitivas entre diferentes clases, por ejemplo movimiento en muchos tipos de clase es muy común.
 
 En el ejemplo mostrado abajo, la clase Enemigo, representa la superclase, y las clases Orco y Dragos son subclases que comparten atributos en común como tipo y vida.
+
+```C++
+class Enemigo
+{
+public:
+  int vida;
+  double ataque;
+public:
+  
+};
+void informacion()
+{
+    cout << "Vida: " << vida << "Ataque: " << ataque << endl; 
+}
+```
+
