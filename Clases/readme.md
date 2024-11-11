@@ -133,3 +133,8 @@ La manera correcta de actualizar es a través de un establecer información es a
 * Getter. Es una función que ayuda a obtener el valor de un dato privado. El cuál no puede ser modificado mediante este método. La nomenclatura normalmente debe ser la palabra “get” y el nombre del elemento de datos del que se quiere obtener. Normalmente es para obtener información almacenada, pero no modificarla.
 
 
+## Herencia:
+
+Es una relación entre dos clases, donde una subclase puede heredar las propiedades y métodos de otra clase, en C se conocen como super clases. Nos ayuda a reutilizar el código y mantener una coherencia lógica entre subclases y superclases para no definir características repetitivas entre diferentes clases, por ejemplo movimiento en muchos tipos de clase es muy común.
+
+En el ejemplo mostrado abajo, la clase Enemigo, representa la superclase, y las clases Orco y Dragos son subclases que comparten atributos en común como tipo y vida.
