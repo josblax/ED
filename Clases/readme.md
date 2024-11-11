@@ -146,11 +146,11 @@ public:
   int vida;
   double ataque;
 public:
-  
-};
-void informacion()
+  void informacion()
 {
     cout << "Vida: " << vida << "Ataque: " << ataque << endl; 
 }
+};
+
 ```
 
