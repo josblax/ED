@@ -22,6 +22,8 @@ public:
 		string genero,
 		string tipo,
 		double duracion,
+		vector<string> actores,
+		vector<string> directores,
 		string region,
 		int cantidad,
 		bool referenciaLimitada) :
@@ -30,6 +32,8 @@ public:
 	    genero(genero),
 		tipo(tipo),
 		duracion(duracion),
+		actores(actores),
+		directores(directores),
 		region(region),
 		cantidad(cantidad),
 		referenciaLimitada(referenciaLimitada)
