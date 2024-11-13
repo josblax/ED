@@ -102,4 +102,8 @@ for (int i = 0; i < arr.size(); i++)
 }
 ```
 
-# Indexación de un arreglo<img width="490" alt="image" src="https://github.com/user-attachments/assets/b3e24f42-eb02-4a27-baac-bea6f1b434c7">
+# Indexación de un arreglo
+
+* La indexación de un arreglo es la definición de como accesar los valores de un arreglo.
+
+
