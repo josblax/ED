@@ -1,4 +1,4 @@
-# Arreglos
+# Arreglos 1 dimensionesión
 
 Las arreglos y vectores son estructuras de datos que contienen más de un elemento. Tipos de estructuras:
 
@@ -101,3 +101,5 @@ for (int i = 0; i < arr.size(); i++)
     std::cout << arr[i] << std::endl;
 }
 ```
+
+# Indexación de un arreglo<img width="490" alt="image" src="https://github.com/user-attachments/assets/b3e24f42-eb02-4a27-baac-bea6f1b434c7">
