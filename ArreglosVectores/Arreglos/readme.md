@@ -1,4 +1,4 @@
-# Arreglos 1 dimensionesión
+# Arreglos 1 dimensión
 
 Las arreglos y vectores son estructuras de datos que contienen más de un elemento. Tipos de estructuras:
 
@@ -155,6 +155,30 @@ for (int i=0 ; i <=9 ;  i++ ){
 
 	i) El índice esta denotado como “i”, y este se incrementa de 0 hasta 9.
 	ii) naturales[i], denota el valor que tenemos guardado en la posición del índice. Y por lo tanto imprimirá el 	valor que contiene el arreglo.
+
+
+Ejercicios.
+
+1. Generar el código necesario en C# para declarar un arreglo que contenga los nombres de los meses del año y asignar dichos valores a cada posición. Tip : Usar tipo de variable “string” y asina el nombre a cada posición relativa, es decir la posición cero corresponde a “enero”, la posición relativa uno corresponde a “febrero” etc.
+2. Imprime el arreglo usando la instrucción “for” usando el índice y accesa el arreglo meses e imprime los valores del arreglo, debe imprimir “enero”, “febrero”, etc.
+3. Generar el código necesario en C# para declarar un arreglo que contenga los nombres de los planetas del sistema solar y asignar dichos valores a cada posición. Tip : Usar tipo de variable “string” y asina el nombre a cada posición relativa, es decir la posición cero corresponde a “mercurio”, la posición relativa uno corresponde a “venus” etc. 
+3. Imprime el arreglo usando la instrucción “for” usando el índice y accesa el arreglo planetas e imprime los valores del arreglo, debe imprimir “enero”, “febrero”, etc.
+
+## Arreglos dos dimensiones
+
+Ejercicios
+
+La siguiente practica cuenta para el proyecto final.
+
+1. El juego sudoku es muy famoso, y es una matriz. De que dimensión es y cuantas casillas tiene? 
+
+2. El juego de ajedrez otro juego super famoso y antiguo. De que dimensión es su tablero y cuantas casillas tiene?
+
+3. Que es un diferencia hay entre los colores HTML y los colores RGB? Son equivalentes?
+
+4. Cuál sería el código del color azul medianoche en HTML y RGB?
+
+5. Documentar como hacer la suma y multiplicación de matrices. Describe un pequeño proceso, para la multiplicación y suma de matrices de dimensión de 2x2. Y pon un ejemplo, si lo tomas de algún libro de matemáticas o internet, cita la fuente. Nota: No uses Wikipedia.
 
 
 
