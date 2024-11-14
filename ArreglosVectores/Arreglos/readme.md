@@ -193,7 +193,10 @@ La siguiente practica cuenta para el proyecto final.
 
 ## Sintaxis para declarar un arreglo de dos dimensiones
 
-![image](https://github.com/user-attachments/assets/64baf44b-432e-4c39-9322-a92c17a85c5c)
+![image](https://github.com/user-attachments/assets/78aff20e-2bf7-4627-a2aa-04923996daad)
+
+
+
 
 
 
