@@ -234,8 +234,10 @@ Ejercicio uno. Se le pide imprimir un matriz de 4 elementos de tipo int y de dos
 Que necesito en mi código?
 1. Declarar la matriz de dos por dos con los valores arriba mostrados. (Refierase a los ejercicios anteriores, si no sabe como hacerlo).
 2. Usar la primera instrucción “for” para recorrer los renglones. 
-> SE INICIALIZA LA VARIABLE i EN 0 HASTA (n-1) ELEMENTOS, SI ES DE DOS RENGLONES ENTONCES SE HARÁ HASTA 1 ESTO SE DEBE A LA RESTA DE 2-1 .
+> SE INICIALIZA LA VARIABLE i EN 0 HASTA (n-1) ELEMENTOS, SI ES DE DOS RENGLONES ENTONCES SE HARÁ HASTA 1 ESTO SE DEBE A LA RESTA DE 2-1.
+
 > EL LIMITE SE VALIDA HASTA 1. EN NUESTRO CASO LA VALIDACIÓN SERÍA i <= 1, NOTA PARA LA TAREA : Es equivalente a i <= n-1; si el arreglo es de 9 x 9, la validación del limite sería hasta 8
+
 > SE INCREMENTA EL CONTADOR EN 1 (i++)
 
 
