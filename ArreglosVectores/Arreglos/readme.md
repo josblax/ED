@@ -181,6 +181,19 @@ La siguiente practica cuenta para el proyecto final.
 5. Documentar como hacer la suma y multiplicación de matrices. Describe un pequeño proceso, para la multiplicación y suma de matrices de dimensión de 2x2. Y pon un ejemplo, si lo tomas de algún libro de matemáticas o internet, cita la fuente. Nota: No uses Wikipedia.
 
 
+## Arreglos de dos dimensiones (Dimensión de un arreglo bidimensional)
+
+* Como mencionamos el arreglo bidimensional es una colección de valores, del mismo tipo de datos, de un valor finito. Que se componen de renglones y columnas, normalmente denominados nxm.
+
+* Donde n es el número de renglones. Y m es el número de columnas. La identificación de las posiciones es (renglón, columna) es decir (1,1), (1,2), (2,1) & (2,2). 
+
+* Un arreglo de dos dimensiones se conoce también como matriz. Usare este nombre indistintamente como equivalente de arreglo de dos dimensiones.
+
+<img width="311" alt="Screenshot 2024-11-14 at 7 44 20 AM" src="https://github.com/user-attachments/assets/2468a7bb-fdca-4cc3-a9c5-acb3c07ddf15">
+
+
+
+
 
 
 
