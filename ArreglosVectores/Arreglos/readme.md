@@ -219,7 +219,29 @@ Aquí se muestra el ejemplo:
 
 ![image](https://github.com/user-attachments/assets/6476f710-1e7d-42b8-9e2e-4b8d799404f5)
 
+## Código necesario:
 
+![image](https://github.com/user-attachments/assets/4f07d09e-c0c7-4732-a800-ef3a590df911)
+
+## Como se recorre el arreglo:
+
+
+
+
+## Ejercicio. Declare la matriz siguiente:
+Generar el código necesario en C# para declarar un arreglo bidimensional que contenga los valores y las dimensiones de matriz mostrada abajo, para aquellas casillas en blanco, asignar el valor de cero “0”. Tip. Esta es una matriz de 9x9 con 81 casillas, al inicializar el valor recuerda esto.  Recuerda separar por llaves, ejemplo el primer renglón y 
+segundo renglón serían:
+{ {0, 3, 0, 0, 0, 0, 0, 0, 0} ,
+  {0, 2, 0, 9, 0, 6, 3, 0, 0 }, ….
+}
+
+
+
+Fuente imagen Sudoku : https://www.theguardian.com/lifeandstyle/2019/nov/04/sudoku-2596-easy
+
+
+
+![image](https://github.com/user-attachments/assets/f3548951-0bdf-4d9a-ba02-7548e13d6865)
 
 
 
