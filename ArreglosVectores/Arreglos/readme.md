@@ -111,6 +111,13 @@ for (int i = 0; i < arr.size(); i++)
   
 * El primer elemento de un arreglo, SIEMPRE, será el **índice 0**, en este caso, lo he llamado elemento 0, el segundo elemento será el índice 1, y este es el elemento 1, y sucesivamente hasta el último elemento. De tal manera que si es un arreglo de 10 elementos, como el ejemplo de la presentación anterior. El índice irá de 0 a 9, que nos da como resultado 10 elementos.
 
+## Acceso y asignación de valores a un arreglo
+
+Ejercicio uno. Se le pide crear un arreglo de 10 elementos de tipo int. Que almacene los números naturales, de cero a nueve. 
+
+
+<p style="text-align:center;">{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}</p>
+
 
 
 
