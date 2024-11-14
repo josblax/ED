@@ -225,10 +225,27 @@ Aquí se muestra el ejemplo:
 
 ## Como se recorre el arreglo:
 
+Ejemplo. 
+
+Recorrer e imprimir los valores de un arreglo bidimensional (matriz) de tipo int de  4 elementos y dos dimensiones
+
+Ejercicio uno. Se le pide imprimir un matriz de 4 elementos de tipo int y de dos dimensiones con valores como se muestra en la figura abajo.
+
+Que necesito en mi código?
+1. Declarar la matriz de dos por dos con los valores arriba mostrados. (Refierase a los ejercicios anteriores, si no sabe como hacerlo).
+2. Usar la primera instrucción “for” para recorrer los renglones. 
+> SE INICIALIZA LA VARIABLE i EN 0 HASTA (n-1) ELEMENTOS, SI ES DE DOS RENGLONES ENTONCES SE HARÁ HASTA 1 ESTO SE DEBE A LA RESTA DE 2-1 .
+> EL LIMITE SE VALIDA HASTA 1. EN NUESTRO CASO LA VALIDACIÓN SERÍA i <= 1, NOTA PARA LA TAREA : Es equivalente a i <= n-1; si el arreglo es de 9 x 9, la validación del limite sería hasta 8
+> SE INCREMENTA EL CONTADOR EN 1 (i++)
 
 
 
-## Ejercicio. Declare la matriz siguiente:
+
+
+## Ejercicio. 
+
+### Declare e imprima la siguiente matriz:
+
 Generar el código necesario en C# para declarar un arreglo bidimensional que contenga los valores y las dimensiones de matriz mostrada abajo, para aquellas casillas en blanco, asignar el valor de cero “0”. Tip. Esta es una matriz de 9x9 con 81 casillas, al inicializar el valor recuerda esto.  Recuerda separar por llaves, ejemplo el primer renglón y 
 segundo renglón serían:
 { {0, 3, 0, 0, 0, 0, 0, 0, 0} ,
