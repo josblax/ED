@@ -106,4 +106,11 @@ for (int i = 0; i < arr.size(); i++)
 
 * La indexación de un arreglo es la definición de como accesar los valores de un arreglo.
 
+<img width="528" alt="image" src="https://github.com/user-attachments/assets/65b11f48-2250-4ac3-a010-1fc5c9ecef9a">
+
+  
+* El primer elemento de un arreglo, SIEMPRE, será el **índice 0**, en este caso, lo he llamado elemento 0, el segundo elemento será el índice 1, y este es el elemento 1, y sucesivamente hasta el último elemento. De tal manera que si es un arreglo de 10 elementos, como el ejemplo de la presentación anterior. El índice irá de 0 a 9, que nos da como resultado 10 elementos.
+
+
+
 
