@@ -126,6 +126,38 @@ Código necesario.
 4. Declaración del arreglo, como vimos en el ejemplo anterior para declarar un arreglo de 10 elementos tipo entero, sería:
    > int naturales[];
 
+## Asignación de valores
+
+Hay dos tipos de asignación, de un arreglo:
+1. En la declaración del arreglo, como se vio en la presentación anterior sería:
+   > int[ ] naturales = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9}; 
+Nota: De la declaración el cambio es que no se pone el número de elementos. 
+
+## Segunda forma de asignación:
+La segunda manera sería una asignación manual asignando el valor usando los corchetes para indicar en que localidad queremos guardar el valor, ejemplos:
+> naturales[0] = 0;
+> naturales[1] = 1;
+> naturales[2] = 2;
+> Así sucesivamente hasta llegar a naturales[9] = 9;
+
+El número que esta entre corchetes es la localidad o índice del arreglo donde estamos guardado el valor.
+El número a la derecha del símbolo igual (=), es el valor que estamos asignando a la localidad o índice. OJO En este caso coinciden el índice con, el valor, pero si asignaras los meses del año el valor sería diferente. 
+
+
+## Código necesario:
+Una vez que tengo mi arreglo declarado y lleno. Anexo el código necesario en un archivo de texto aparte. Ejemplificando las dos maneras de alimentar nuestro arreglo. practicaH1.txt
+Para accesar, es decir recorrer el arreglo, generalmente lo podemos asociar a una instrucción “for” para recorrer elemento por elemento e imprimirlo. Las instrucciones serían :
+```C++
+for (int i=0 ; i <=9 ;  i++ ){
+	 cout << “numero [”  <<  i  <<  ”] tiene el valor : “ << naturales[i];
+}
+```
+
+	i) El índice esta denotado como “i”, y este se incrementa de 0 hasta 9.
+	ii) naturales[i], denota el valor que tenemos guardado en la posición del índice. Y por lo tanto imprimirá el 	valor que contiene el arreglo.
+
+
+
 
 
 
