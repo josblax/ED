@@ -115,9 +115,9 @@ for (int i = 0; i < arr.size(); i++)
 
 Ejercicio uno. Se le pide crear un arreglo de 10 elementos de tipo int. Que almacene los números naturales, de cero a nueve. 
 
-<center>Centered text</center>
+```HTML
 <p style="text-align:center;">{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}</p>
-
+```
 
 
 
