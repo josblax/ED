@@ -240,6 +240,10 @@ Que necesito en mi código?
 
 > SE INCREMENTA EL CONTADOR EN 1 (i++)
 
+> USAR LA INSTRUCCIÓN cout USANDO EL ARREGLO DECLARADO DE DOS X DOS Y LOS INDICES QUE EN ESTE CASO SERAN [ i , j ]
+
+![image](https://github.com/user-attachments/assets/6a984858-a94c-4a87-ad08-b09b4066680b)
+
 
 
 
