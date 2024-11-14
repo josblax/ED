@@ -157,7 +157,7 @@ for (int i=0 ; i <=9 ;  i++ ){
 	ii) naturales[i], denota el valor que tenemos guardado en la posición del índice. Y por lo tanto imprimirá el 	valor que contiene el arreglo.
 
 
-Ejercicios.
+# Ejercicios G.
 
 1. Generar el código necesario en C# para declarar un arreglo que contenga los nombres de los meses del año y asignar dichos valores a cada posición. Tip : Usar tipo de variable “string” y asina el nombre a cada posición relativa, es decir la posición cero corresponde a “enero”, la posición relativa uno corresponde a “febrero” etc.
 2. Imprime el arreglo usando la instrucción “for” usando el índice y accesa el arreglo meses e imprime los valores del arreglo, debe imprimir “enero”, “febrero”, etc.
@@ -166,7 +166,7 @@ Ejercicios.
 
 ## Arreglos dos dimensiones
 
-Ejercicios
+# Ejercicios H
 
 La siguiente practica cuenta para el proyecto final.
 
@@ -248,7 +248,7 @@ Que necesito en mi código?
 
 
 
-## Ejercicio. 
+# Ejercicio I. 
 
 ### Declare e imprima la siguiente matriz:
 
