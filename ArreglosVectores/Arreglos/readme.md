@@ -196,6 +196,37 @@ La siguiente practica cuenta para el proyecto final.
 ![image](https://github.com/user-attachments/assets/78aff20e-2bf7-4627-a2aa-04923996daad)
 
 
+## Ejemplo crear un arreglo bidimensional (matriz) de tipo int de  4 elementos y dos dimensiones<img width="1248" 
+
+Ejercicio uno. Se le pide crear un matiz de 4 elementos de tipo int y de dos dimensiones, con los valores mostradas en la figura abajo.
+
+![image](https://github.com/user-attachments/assets/7da210c5-19c9-42fe-8c02-8676cad21065)
+
+## Requerimientos:
+
+1. El tipo de variable que usaremos, en este caso int.
+2. El nombre de una variable para almacenar nuestra matriz, en este caso lo llamaremos matriz1.
+3. El número de elementos a almacenar será 4.
+4. Los valores a almacenar son {1,2,3,4}, como se muestra en la figura de arriba.
+
+## Código necesario.
+1. Una variable que me sirva para almacenar los cuatro elementos de la matriz, y llamaremos matriz.
+2. El tipo de variable que usaremos, que en este caso será int, ya que lo que necesitamos almacenar son los números {1,2,3,4}.
+3. Si quiero alimentar directamente los números en la declaración será necesario usar llaves {}, para alimentar los valores, al ser una matriz de dos por dos. Es necesario adicionar llaves {} por cada renglón de valores, estos separados por comas. 
+4. Y separar por comas el grupo de valores por renglón igualmente.
+
+Aquí se muestra el ejemplo:
+
+![image](https://github.com/user-attachments/assets/0bbaabcf-5c49-4a99-8ba3-90de9329af73)
+
+
+
+
+
+
+
+
+
 
 
 
