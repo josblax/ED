@@ -119,4 +119,13 @@ Ejercicio uno. Se le pide crear un arreglo de 10 elementos de tipo int. Que alma
 > {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
 
 
+Código necesario.
+1. Una variable que me sirva para almacenar los números naturales, desde cero hasta 9. En este caso será un arreglo que llamaremos “naturales”.
+2. El tipo de variable que usaremos, que en este caso será int, ya que lo que necesitamos almacenar los números naturales.
+3. El número de elementos que necesitamos, que será 10, ya que este es el número de elementos que necesitamos.
+4. Declaración del arreglo, como vimos en el ejemplo anterior para declarar un arreglo de 10 elementos tipo entero, sería:
+   > int naturales[];
+
+
+
 
