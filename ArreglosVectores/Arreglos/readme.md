@@ -217,7 +217,8 @@ Ejercicio uno. Se le pide crear un matiz de 4 elementos de tipo int y de dos dim
 
 Aquí se muestra el ejemplo:
 
-![image](https://github.com/user-attachments/assets/0bbaabcf-5c49-4a99-8ba3-90de9329af73)
+![image](https://github.com/user-attachments/assets/6476f710-1e7d-42b8-9e2e-4b8d799404f5)
+
 
 
 
