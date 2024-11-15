@@ -162,7 +162,7 @@ for (int i=0 ; i <=9 ;  i++ ){
 1. Generar el código necesario en C++ para declarar un arreglo que contenga los nombres de los meses del año y asignar dichos valores a cada posición. Tip : Usar tipo de variable “string” y asigna el nombre a cada posición relativa, es decir la posición cero corresponde a “enero”, la posición relativa uno corresponde a “febrero” etc.
 2. Imprime el arreglo usando la instrucción “for” usando el índice y accesa el arreglo meses e imprime los valores del arreglo, debe imprimir “enero”, “febrero”, etc.
 3. Generar el código necesario en C++ para declarar un arreglo que contenga los nombres de los planetas del sistema solar y asignar dichos valores a cada posición. Tip : Usar tipo de variable “string” y asina el nombre a cada posición relativa, es decir la posición cero corresponde a “mercurio”, la posición relativa uno corresponde a “venus” etc. 
-3. Imprime el arreglo usando la instrucción “for” usando el índice y accesa el arreglo planetas e imprime los valores del arreglo, debe imprimir “enero”, “febrero”, etc.
+3. Imprime el arreglo usando la instrucción “for” usando el índice y accesa el arreglo planetas e imprime los valores del arreglo, debe imprimir “mercurio”, “venus”, etc.
 
 ## Arreglos dos dimensiones
 
