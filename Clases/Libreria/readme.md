@@ -24,3 +24,8 @@ Ejemplos:
 Ejemplo se anexa
 Considere las variables necesarias para mantener la información del párrafo anterior,
 incluyendo el inventario de los productos.
+
+![image](https://github.com/user-attachments/assets/e4c2bd8d-af3d-4f8a-9cd7-05d810c033f7)
+
+
+
