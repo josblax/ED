@@ -70,32 +70,27 @@ Considere o haga lo siguiente:
 10. Después de discutir con los administradores de la librería se ha decidido agregar la función de recompensas de librería que otorga incentivos de comida de la cafetería después de cada 3 libros prestados a un usuario, para incentivar la lectura. ¿Cómo se debe implementar esta función? Elabore como implementar
 este proceso con lo elaborado.
 
-Definición de Clases
+# Definición de Clases
 
-Clase Material: Clase base que contiene la información común a todos los materiales.
+## Clase Material: Clase base que contiene la información común a todos los materiales.
 
-Clases Derivadas: Libro, CD, Pelicula que heredan de Material.
+## Clases Derivadas: Libro, CD, Pelicula que heredan de Material.
 
-Clase Usuario: Atributos: matricula, nombre, AP, direccion, telefono, activo, prestamos.
+## Clase Usuario: Atributos: userId, nombre, AP, direccion, telefono, activo, prestamos.
+    Funciones: constructor, registrarPrestamo, calcularDeuda, puedePrestar.
 
-Métodos: constructor, registrarPrestamo, calcularDeuda, puedePrestar.
+## Clase Direccion: Atributos: calle, numero, numeroInterno, colonia, municipio, pais.
+    Funciones: constructor.
 
-Clase Direccion:
+## Clase Prestamo: Atributos: idMaterial, fechaPrestamo, diasPrestamo, tipo, prestamoVencido.
 
-Atributos: calle, numero, numeroInterno, colonia, municipio, pais.
+## Clase Libreria: Contiene el inventario de materiales y la lista de usuarios.
 
-Métodos: constructor.
+# Crear el programa en C++ que contenga los siguientes elementos:
 
-Clase Prestamo:
-
-Atributos: idMaterial, fechaPrestamo, diasPrestamo, tipo, prestamoVencido.
-
-Clase Libreria: Contiene el inventario de materiales y la lista de usuarios.
-
-Crear el programa en C++ que contenga los siguientes elementos:
-
-1. Clases
-2. Vectores y/o arreglos.
-3. funciones
-4. Estructuras
-5. Datos de prueba suficientes, no solo un dato.
+1. Diagrama de Clases
+2. Clases
+3. Vectores y/o arreglos.
+4. funciones
+5. Estructuras
+6. Datos de prueba suficientes, no solo un dato.
