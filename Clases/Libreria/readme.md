@@ -70,6 +70,28 @@ Considere o haga lo siguiente:
 10. Después de discutir con los administradores de la librería se ha decidido agregar la función de recompensas de librería que otorga incentivos de comida de la cafetería después de cada 3 libros prestados a un usuario, para incentivar la lectura. ¿Cómo se debe implementar esta función? Elabore como implementar
 este proceso con lo elaborado.
 
+Definición de Clases
+
+Clase Material: Clase base que contiene la información común a todos los materiales.
+
+Clases Derivadas: Libro, CD, Pelicula que heredan de Material.
+
+Clase Usuario: Atributos: matricula, nombre, AP, direccion, telefono, activo, prestamos.
+
+Métodos: constructor, registrarPrestamo, calcularDeuda, puedePrestar.
+
+Clase Direccion:
+
+Atributos: calle, numero, numeroInterno, colonia, municipio, pais.
+
+Métodos: constructor.
+
+Clase Prestamo:
+
+Atributos: idMaterial, fechaPrestamo, diasPrestamo, tipo, prestamoVencido.
+
+Clase Libreria: Contiene el inventario de materiales y la lista de usuarios.
+
 Crear el programa en C++ que contenga los siguientes elementos:
 
 1. Clases
