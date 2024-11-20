@@ -10,6 +10,7 @@ Ejemplos:
 * 9781546038399
 * CSE370
 * 503022700024
+
 b) [string] Título, ejemplo “Zootopia”
 c) [string] Genero, ejemplo “Comedia, Familia, animación.
 d) [string] Tipo, “Película”, “CD Música”, “Videojuego”
