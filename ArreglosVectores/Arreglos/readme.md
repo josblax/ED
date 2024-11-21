@@ -14,14 +14,14 @@ Un arreglo es una estructura simple que contiene elementos homogéneos o de un s
 
 NO
 
-¿Como se declara?
+### ¿Como se declara?
 
 <tipo_variable> nombre_arreglo[# elementos n] {valor#1, valor#2, …, valor#n};
 ```C++
 const int TAMANO = 5;
 int arreglo[TAMANO] {1,2,3,4,5};
 ```
-//¿Como se asigna?
+### ¿Como se asigna?
 ```C++
 nombre_arreglo[#elemento] = valor;
 
@@ -34,7 +34,7 @@ arreglo[4] = 5;
 
 ```
 
-¿Como se imprime?
+### ¿Como se imprime?
 ```C++
 
 for (int i=0; i <=TAMANO; i++)
@@ -64,7 +64,7 @@ La clase array es una secuencia de elementos de secuencia.
 #include <array>
 ```
 
-## ¿Como se declara?
+### ¿Como se declara?
 
 array <tipo_variable, # elementos n > nombre_arreglo {valor#1, valor#2, …, valor#n};
 
@@ -72,7 +72,7 @@ array <tipo_variable, # elementos n > nombre_arreglo {valor#1, valor#2, …, val
 array<int, 5> arreglo{1,2,3,4,5};
 ```
 
-## ¿Como se imprime?
+### ¿Como se imprime?
 
 ```C++
 for (int i=0; i <=TAMANO; i++)
