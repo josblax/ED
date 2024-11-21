@@ -7,7 +7,8 @@ Clase array.
 
 Entender los contenedores de secuencia y como usar múltiples vectores en conjunto con otras estructuras de datos.
 
-BUILT-IN ARRAY
+## BUILT-IN ARRAY
+
 Un arreglo es una estructura simple que contiene elementos homogéneos o de un solo tipo de variable.
 ¿Se anexa alguna librería?
 
@@ -63,7 +64,7 @@ La clase array es una secuencia de elementos de secuencia.
 #include <array>
 ```
 
-¿Como se declara?
+## ¿Como se declara?
 
 array <tipo_variable, # elementos n > nombre_arreglo {valor#1, valor#2, …, valor#n};
 
@@ -71,7 +72,7 @@ array <tipo_variable, # elementos n > nombre_arreglo {valor#1, valor#2, …, val
 array<int, 5> arreglo{1,2,3,4,5};
 ```
 
-¿Como se imprime?
+## ¿Como se imprime?
 
 ```C++
 for (int i=0; i <=TAMANO; i++)
