@@ -53,7 +53,7 @@ for (int contador : arreglo)
 
 Nota: El tipo de variable puede ser cambiado a auto. auto es un tipo de variable comodín que asume su tipo una vez que se hace la asignación.  
 
-ARRAY CLASS
+## ARRAY CLASS
 La clase array es muy similar a la declaración de arreglos tradicional, con la diferencia que es orientada a objetos.
 Los objetos son entidades contenidas en sí mismos y tienen comportamientos (“behaviors”)
 La clase array es una secuencia de elementos de secuencia.
