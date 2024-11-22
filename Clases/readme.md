@@ -155,4 +155,6 @@ public:
 };
 
 ```
+## Polimorfismo
 
+Polimorfismo permite a objetos de diferentes tipos ser usados como objetos de una base común a una base derivada como puede ser Libro, Musica y Pelicula.
