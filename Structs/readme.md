@@ -167,3 +167,43 @@ struct Alumno
 11. Impresión del Tamaño del Vector v1 Después de la Inserción: Se imprime el tamaño actual del vector v1 nuevamente.
 
 Este código es útil para agregar nuevos alumnos a una lista (vector) y mantener un registro de sus datos.
+
+# Diferencia Clases versus Structs.
+
+En C++, puede elegir entre declarar un objeto como una estructura o una clase. 
+
+* Ambos pueden utilizar funciones de miembro y herencia y tienen una mezcla de campos públicos, protegidos y privados. 
+* La principal diferencia entre una clase y una estructura es que las variables y métodos miembros de una estructura son públicos, mientras que las variables y métodos miembros de una clase son privados.
+
+En el ejemplo siguiente, se declaran dos tipos de datos equivalentes para mostrar cómo una estructura establece por defecto (no usa palabras clave públicas, privadas o protegidas) a sus miembros como públicos, mientras que una clase predeterminada es privada. fuente: The C++ Workshop, Dale Green 2020. 
+
+```C++
+#include <iostream>
+using namespace std;
+
+struct MiEstructura 
+{
+    int numeroInt=5;
+};
+
+class MiClase 
+{
+    int numeroInt=10;
+};
+
+int main()
+{
+    // Creacion de una instancia de una estructura
+    MiEstructura miInstanciaStruct;
+    // Creacion de una instancia de una clase
+    MiClase miInstanciaClase;
+
+   // Permitido hacer la siguiente operacion, porque es publica
+    int i = miInstanciaStruct.numeroInt;
+    // No permitido hacer la siguiente operacion porque es privada
+    int j = miInstanciaClase.numeroInt;
+}
+
+```
+
+Estos objetos son idénticos excepto por este detalle. Una instancia de una estructura en C++ es exactamente igual que una instancia de una clase. En el código compilado, son idénticos; El uso de memoria, el tiempo de acceso y la alineación de memoria son exactamente los mismos, y no hay sobrecarga asociada con uno sobre el otro. Una estructura se usa tradicionalmente como un tipo de datos antiguos sin formato (POD) para ayudar con la compatibilidad con versiones anteriores de las bibliotecas C. Un tipo POD es una clase o estructura que no tiene constructores, destructores ni funciones de miembro virtual. 
