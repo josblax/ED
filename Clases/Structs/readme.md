@@ -19,4 +19,8 @@ struct identificador
 	// inserta aquí instrucciones de la función 1
 }
 
+<tipo_dato> nombre_funcion2()
+{
+	// inserta aquí instrucciones de la función 2
+}
 ```
