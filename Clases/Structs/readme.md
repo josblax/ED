@@ -52,4 +52,23 @@ struct Alumno
 Es un objeto específico que se crea a partir de una clase. Esta ocupa memoria durante la ejecución de un programa y tiene su propio estado y comportamiento. La palabra instancia indica la relación 
 de un objeto con su clase.
 
+## Ejemplo:
+```C++
+int main()
+{
+    // crear una instancia de la estructura alumno
+    Alumno jose;
+    // Agregar datos a la instancia jose
+    jose.nombre = "Jose Luis";
+    jose.ap = "Blancas";
+    jose.am = "Ruiz";
+    jose.cuenta = 123456;
+// imprimir los valores de la instancia jose
+    cout << "nombre : " << jose.nombre;
+    cout << "apellido paterno : " << jose.ap;
+    cout << "apellido materno : " << jose.am;
+    cout << "matricula : " << jose.cuenta;
+}
+
+```
 
