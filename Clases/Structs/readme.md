@@ -24,3 +24,32 @@ struct identificador
 	// inserta aquí instrucciones de la función 2
 }
 ```
+
+## Ejemplo Declaración. 
+
+Ejemplo: Crear una estructura llamada Alumno que contenga los siguientes datos:
+•	Nombre del Alumno
+•	Apellido Materno
+•	Apellido Paterno
+•	Número de cuenta
+
+
+## Código
+
+```C++
+struct Alumno 
+{
+    string nombre;
+    string ap;
+    string am;
+    int cuenta;
+// Abajo se pueden añadir diferentes funciones, como añadir o dar de alta datos
+```
+
+## Como se crea una instancia de mi estructura Alumno?
+
+### Definición una instancia 
+Es un objeto específico que se crea a partir de una clase. Esta ocupa memoria durante la ejecución de un programa y tiene su propio estado y comportamiento. La palabra instancia indica la relación 
+de un objeto con su clase.
+
+
