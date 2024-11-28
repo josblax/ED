@@ -4,6 +4,8 @@
 * Las funciones pueden ser llamadas o invocadas cuando son necesitadas.
 * Ayuda a desglosar un problema en partes más manejables.
 
+___
+
 ## Funciones prototipo y definiciones de una función.
 
 * Una función es un bloque de código que podemos usar cuando es necesario dentro de la ejecución de un programa.
