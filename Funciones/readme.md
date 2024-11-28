@@ -63,9 +63,41 @@ void suma()
 }
 
 ```
+## Como se llama a una Función? 
 
+En C++, no puedes definir una función dentro de otra función. Esto significa que las definiciones anidadas de funciones no están permitidas en el lenguaje estándar. Sin embargo, puedes lograr un comportamiento similar utilizando funciones lambda (funciones anónimas), que son soportadas desde C++11.
 
-## Ejemplo de una función con retorno.
+Las funciones lambda permiten definir una función dentro de otra función y utilizarlas como variables locales. Aquí tienes un ejemplo:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Definir una función lambda
+    auto suma = [](int a, int b) -> int {
+        return a + b;
+    };
+
+    // Usar la función lambda
+    int resultado = suma(5, 3);
+    cout << "Suma: " << resultado << endl;
+
+    return 0;
+}
+```
+
+En este ejemplo, la función lambda `suma` se define dentro del `main` y se usa como una variable local. Esto te permite encapsular lógica dentro de funciones sin tener que definirlas a nivel global o como métodos de clases.
+
+¡Espero que esto te haya sido de ayuda! Si tienes más preguntas o necesitas más ejemplos, estaré encantado de asistirte.
+
+> Una función puede ser llamada dentro de cualquier otra función, incluyendo la funcion **main()**
+
+## Se puede definir una Función dentro de otra Función? 
+
+> NO, no se p
+
+## Ejemplo de una función con retorno y con parámetros.
 
  ```C++
 
