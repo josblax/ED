@@ -393,7 +393,10 @@ int main() {
     return 0;
 }
 ```
-## Ejemplo de la calculadora, usando todas las posibles combinaciones de tipos de variable, usando funciones overloading, solo se muestra la operación suma().
+## Ejemplo de la calculadora usando funciones overloading. 
+
+Usando todas las posibles combinaciones de tipos de variable, usando funciones overloading, solo se muestra la operación suma().
+
 ```C++
 // ConsoleApplication19.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
@@ -434,9 +437,7 @@ void suma(float a, float b)
 ___
 
 
-## Funciones Overloading
-
-### Ejemplo. 
+### Ejemplo usando una función calculaArea() para diferentes figuras geométricas. 
 
 Usando funciones overloading crear una función llamada calculaArea(), que pueda calcular el área de al menos cuatro figuras geométricas. Hacer un menú de opciones que muestre las opciones de cálculo de área, por ejemplo: cuadrado, triangulo equilátero, circulo, rectángulo etc. Dependiendo de los datos de entrada serán los parámetros y argumentos a usar en la función, pero solo puede usar un solo nombre de función.
 ```C++
