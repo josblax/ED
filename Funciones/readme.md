@@ -40,6 +40,13 @@ ___
 
 La forma general de un encabezado de función de C++ es:
 
+
+```C++
+<tipo_retorno> nombrefuncion(Lista Parametros)
+{
+
+}
+```
    ***ReturnType*** **nombreFuncion**( Lista_Declaracion_Parametros )
 
    ## Ejemplo de una función con retorno.
