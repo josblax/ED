@@ -65,37 +65,23 @@ void suma()
 ```
 ## Como se llama a una Función? 
 
-La función puede ser invocada desde cualquier otra función y si esta tine parametros dbes anexar las variables o constantes que reciba la función separado por comas `,`
+Una función puede ser llamada dentro de cualquier otra función, incluyendo la funcion **main()** y si esta tiene parametros debes anexar las variables o constantes que reciba la función separado por comas `,`
 
 ## Ejemplo de llamada
 
-> Una función puede ser llamada dentro de cualquier otra función, incluyendo la funcion **main()**
+```cpp
+
+int main()
+{
+   suma();
+}
+
+```
 
 ## Se puede definir una Función dentro de otra Función? 
 
-En C++, no puedes definir una función dentro de otra función. Esto significa que las definiciones anidadas de funciones no están permitidas en el lenguaje estándar. Sin embargo, puedes lograr un comportamiento similar utilizando funciones lambda (funciones anónimas), que son soportadas desde C++11.
+> No puedes definir una función dentro de otra función. Esto significa que las definiciones anidadas de funciones no están permitidas en el lenguaje estándar. Sin embargo, puedes lograr un comportamiento similar utilizando funciones lambda (funciones anónimas), que son soportadas desde C++11.
 
-Las funciones lambda permiten definir una función dentro de otra función y utilizarlas como variables locales. Aquí tienes un ejemplo:
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    // Definir una función lambda
-    auto suma = [](int a, int b) -> int {
-        return a + b;
-    };
-
-    // Usar la función lambda
-    int resultado = suma(5, 3);
-    cout << "Suma: " << resultado << endl;
-
-    return 0;
-}
-```
-
-En este ejemplo, la función lambda `suma` se define dentro del `main` y se usa como una variable local. Esto te permite encapsular lógica dentro de funciones sin tener que definirlas a nivel global o como métodos de clases.
 
 ## Ejemplo de una función con retorno y con parámetros.
 
