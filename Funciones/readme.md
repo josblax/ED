@@ -78,7 +78,11 @@ Donde \<tipo_variable> es un tipo válido, según las especificaciones del lengu
 
 > Si tu función lleva más de un parámetro este debe estar separado por comas.
 
+___
 
+## Ejemplo de una funcion prototipo.
+
+Una funcion prototipo tiene multiples propositos, el mas basico es el hecho de poder mover la definicion de la funcion en la parte inferior de la funcion **main()** que genera un codigo de mas facil lectura.  
 
 ```C++
 // ConsoleApplication12.cpp : This file contains the 'main' function. Program execution begins and ends there.
