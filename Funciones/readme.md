@@ -38,10 +38,9 @@ Por el contrario, un argumento se define en la función, cuando esta es llamada 
 
 ___
 
-### Parte I: Mecanismos de paso de parámetros y retorno de resultados.
+### Parte I: Estructura General de una función.
 
 La forma general de un encabezado de función de C++ es:
-
 
 ```C++
 <tipo_retorno> nombrefuncion(Lista Parametros)
@@ -49,6 +48,22 @@ La forma general de un encabezado de función de C++ es:
 
 }
 ```
+## Ejemplo de una función sin retorno y sin parámetros 
+
+```C++
+
+void suma()
+{
+   int n1, n2;
+   cout << "Ingresa el numero 1 : ";
+   cin >> n1;
+   cout << "INgresa el numero 2 : ":
+   cin >> n2;
+   cout << "La suma es : " << (n1+n2) << endl;
+}
+
+```
+
 
 ## Ejemplo de una función con retorno.
 
