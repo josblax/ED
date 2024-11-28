@@ -67,7 +67,7 @@ void suma()
 
 Una función puede ser llamada dentro de cualquier otra función, incluyendo la funcion **main()** y si esta tiene parametros debes anexar las variables o constantes que reciba la función separado por comas `,`
 
-## Ejemplo de llamada
+## Ejemplo de llamada de una función sin retorno y sin parámetros.
 
 ```cpp
 
@@ -78,10 +78,11 @@ int main()
 
 ```
 
-## Se puede definir una Función dentro de otra Función? 
+### Se puede definir una Función dentro de otra Función? 
 
 > No puedes definir una función dentro de otra función. Esto significa que las definiciones anidadas de funciones no están permitidas en el lenguaje estándar. Sin embargo, puedes lograr un comportamiento similar utilizando funciones lambda (funciones anónimas), que son soportadas desde C++11.
 
+___
 
 ## Ejemplo de una función con retorno y con parámetros.
 
@@ -94,16 +95,23 @@ int suma(int a, int b) {
     return a + b;
 }
 
+ ```
+
+
+> La instrucción ***return*** es un componente que define el tipo de retorno del resultado que devuelve la función que se declara en la cabecera de la función.
+
+
+## Ejemplo de llamada de una función con retorno y con parámetros.
+
+```cpp
+
 int main() {
     int resultado = suma(5, 3);
     cout << "Suma: " << resultado << endl;
     return 0;
 }
 
- ```
-
-
-> La instrucción ***return*** es un componente que define el tipo de retorno del resultado que devuelve la función que se declara en la cabecera de la función.
+```
 
 ___
 
