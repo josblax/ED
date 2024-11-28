@@ -19,7 +19,9 @@ En C++ una función debe ser declarada _arriba_ de la función main(), en otros 
 
 ### Declaración de la función prototipo:
 
-_tipo_retorno_ nombreFuncion( Lista_Declaracion_Parametros );
+```C++
+<tipo_retorno> nombrefuncion(Lista Parametros);
+```
 
 
 ## Mi primera función.
@@ -47,9 +49,8 @@ La forma general de un encabezado de función de C++ es:
 
 }
 ```
-   ***ReturnType*** **nombreFuncion**( Lista_Declaracion_Parametros )
 
-   ## Ejemplo de una función con retorno.
+## Ejemplo de una función con retorno.
 
  ```C++
 
