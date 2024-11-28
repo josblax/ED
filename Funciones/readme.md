@@ -115,7 +115,9 @@ void imprime(vector<int> v)
 }
 ```
 
-## Ejemplo práctico: Establece las operaciones básicas de un cajero automático:
+## Ejemplo práctico integral: Establece las operaciones básicas de un cajero automático:
+
+
 > Realice un programa en C++ que represente las operaciones básicas de un cajero automático, que son consulta de saldo de una cuenta, y retiro de efectivo de una cuenta.
 
 > Para el proceso de consulta, deberá mostrar en pantalla el saldo, usando una función donde imprima el valor del saldo. Considere que la variable donde guarde el saldo, debe ser una variable global.
@@ -209,14 +211,16 @@ void depositar(double deposito1)
     }
 
 ```
-
+___
 
 ## Parámetros x Valor y parámetros x referencia
 
 * Un parámetro cuyo Tipo NO va seguido de un signo ampersand (&) se denomina parámetro x valor. Un parámetro x valor es una variable local a la función, tal que cuando se llama a la función, recibe una copia del valor del argumento correspondiente.
 * Un parámetro cuyo Tipo va seguido de un signo ampersand (&) se denomina parámetro x referencia. Un parámetro x referencia es un alias (por ejemplo, otro nombre) para su argumento correspondiente. Y el valor del argumento que se pasa, será modificado.
 
-## Ejemplo: Haga un nuevo código que incluya las funciones prototipo y sus definiciones y use parametros por valor y por referencia, segun sea el caso. 
+## Ejemplo: Parámetros x valor y Parámetros por referencia.
+
+Haga un nuevo código que incluya las funciones prototipo y sus definiciones y use parametros por valor y por referencia, segun sea el caso. 
 
 ```C++
 
@@ -302,6 +306,7 @@ void depositar(double deposito1, double &sa)
     }
 
 ```
+___
 
 ## Funciones Overloading
 
