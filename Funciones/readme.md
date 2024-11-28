@@ -34,6 +34,8 @@ Por el contrario, un argumento se define en la función, cuando esta es llamada 
 
 * En la segunda parte, examinaremos la relación entre las definiciones que aparecen en diferentes funciones, y algunas de las reglas de alcance en C++.
 
+___
+
 ### Parte I: Mecanismos de paso de parámetros y retorno de resultados.
 
 La forma general de un encabezado de función de C++ es:
