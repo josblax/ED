@@ -65,7 +65,9 @@ void suma()
 ```
 ## Como se llama a una Función? 
 
-La función es invocada
+La función puede ser invocada desde cualquier otra función y si esta tine parametros dbes anexar las variables o constantes que reciba la función separado por comas `,`
+
+## Ejemplo de llamada
 
 > Una función puede ser llamada dentro de cualquier otra función, incluyendo la funcion **main()**
 
