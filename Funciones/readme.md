@@ -215,7 +215,7 @@ void depositar(double deposito1)
 * Un parámetro cuyo Tipo NO va seguido de un signo ampersand (&) se denomina parámetro x valor. Un parámetro x valor es una variable local a la función, tal que cuando se llama a la función, recibe una copia del valor del argumento correspondiente.
 * Un parámetro cuyo Tipo va seguido de un signo ampersand (&) se denomina parámetro x referencia. Un parámetro x referencia es un alias (por ejemplo, otro nombre) para su argumento correspondiente. Y el valor del argumento que se pasa, será modificado.
 
-## Ejemplo: Haga un nuevo código que incluya funciones saldo, retiro que incluya funciones prototipo y sus definiciones. 
+## Ejemplo: Haga un nuevo código que incluya las funciones prototipo y sus definiciones y use parametros por valor y por referencia, segun sea el caso. 
 
 ```C++
 
@@ -302,7 +302,7 @@ void depositar(double deposito1, double &sa)
 
 ```
 
-# Funciones Overloading
+## Funciones Overloading
 
 Una función **overloading** es el proceso de crear funciones múltiples con el mismo nombre pero con diferentes “firmas” o tipos y formas de lista de parámetros.
 
@@ -375,7 +375,7 @@ void suma(float a, float b)
 ```
 
 
-## Ejemplo. Usando funciones overloading crear una función llamada calculaArea(), que pueda calcular el área de al menos cuatro figuras geométricas. Hacer un menú de opciones que muestre las opciones de cálculo de área, por ejemplo: cuadrado, triangulo equilátero, circulo, rectángulo etc. Dependiendo de los datos de entrada serán los parámetros y argumentos a usar en la función, pero solo puede usar un solo nombre de función.
+### Ejemplo. Usando funciones overloading crear una función llamada calculaArea(), que pueda calcular el área de al menos cuatro figuras geométricas. Hacer un menú de opciones que muestre las opciones de cálculo de área, por ejemplo: cuadrado, triangulo equilátero, circulo, rectángulo etc. Dependiendo de los datos de entrada serán los parámetros y argumentos a usar en la función, pero solo puede usar un solo nombre de función.
 ```C++
 
 #include <iostream>
@@ -455,7 +455,7 @@ int main() {
 }
 
 ```
-# Funciones Recursivas
+## Funciones Recursivas
 
 Funciones Recursivas (Algoritmos avanzados). Una función recursiva se llama a sí misma de manera directa o indirecta (vía otra función). 
 
@@ -467,7 +467,7 @@ Esto es cuando no hay más cálculos que procesar.
 
 Estas condiciones simples son instrucciones if-else con la instrucción return. 
 
-# Otra definicion 
+### Otra definicion 
 
 Una función recursiva se llama a sí misma de manera directa o indirecta (vía otra función).
 
