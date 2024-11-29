@@ -579,7 +579,7 @@ int main()
 
 ## Glosario
 
-* **Variable Global** Es una declaración de cualquier tipo de variable o estructura, fuera de la función main()
+* **Variable Global** Es una declaración de cualquier tipo de variable o estructura, fuera de la función main() o cualquier funcion
 * **Variable Local** Es una declaración de una variable o estructura dentro de una función.
 * **Parámetro** Es el componente de una función que recibe datos para ser procesados.
 * **Argumento** Es el componente de una función que pasa datos a la función cuando esta es llamada o invocada.
