@@ -57,7 +57,7 @@ void suma()
    int n1, n2;
    cout << "Ingresa el numero 1 : ";
    cin >> n1;
-   cout << "INgresa el numero 2 : ":
+   cout << "INgresa el numero 2 : ";
    cin >> n2;
    cout << "La suma es : " << (n1+n2) << endl;
 }
