@@ -578,8 +578,7 @@ int main()
 ```
 
 ## Glosario
-
-* **Variable Global** Es una declaración de cualquier tipo de variable o estructura, fuera de la función main() o cualquier funcion
+* **Tipo de dato VOID** Un tipo de dato VOID se usa en una función cuando no se requiere devolver un resultado a la función.
 * **Variable Local** Es una declaración de una variable o estructura dentro de una función.
 * **Parámetro** Es el componente de una función que recibe datos para ser procesados.
 * **Argumento** Es el componente de una función que pasa datos a la función cuando esta es llamada o invocada.
