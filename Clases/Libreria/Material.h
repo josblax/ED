@@ -39,7 +39,22 @@ public:
     void setCantidad(int cantidad) { this->cantidad = cantidad; }
     void setReferenciaLimitada(bool referenciaLimitada) { this->referenciaLimitada = referenciaLimitada; }
     void setAnnio(int annio) { this->annio = annio; }
+
+    virtual void mostrarInfo() const 
+    {
+        cout << boolalpha;
+        cout << "ID: " << id << endl;
+        cout << "Titulo: " << titulo << endl;
+        cout << "Genero: " << genero << endl;
+        cout << "Tipo: " << tipo << endl;
+        cout << "Regio: " << region<< endl;
+        cout << " Cantidad: " << cantidad << endl;
+        cout << "Referencia: " << referenciaLimitada << endl;
+        cout << "A#o: " << annio << endl;
+    }
 };
 
+#endif
+#pragma once
 #endif
 #pragma once
