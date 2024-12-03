@@ -1,3 +1,6 @@
+#include <iostream>
+#include <vector>
+#include <string>
 #include "Material.h"
 using namespace std;
 
@@ -12,7 +15,7 @@ public:
 	Pelicula(string id, string titulo, string genero, string tipo, string region, int cantidad, bool referenciaLimitada, int annio,
 		int duracion,
 		vector<string> actores,
-		vector<string> directores) 
+		vector<string> directores)
 		: Material(id, titulo, genero, tipo, region, cantidad, referenciaLimitada, annio),
 		duracion(duracion),
 		actores(actores),
@@ -26,4 +29,12 @@ public:
 	void setDuracion(const int  duracion) { this->duracion = duracion; }
 	void setActores(const vector<string>& actores) { this->actores = actores; }
 	void setDirectores(const vector<string>& directores) { this->directores = directores; }
+
+	//Override
+	void mostrarInfo() const override
+	{
+		Material::mostrarInfo();
+		cout << "Duracion: " << duracion << endl;
+		
+	}
 };
