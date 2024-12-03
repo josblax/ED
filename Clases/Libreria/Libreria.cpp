@@ -11,6 +11,7 @@
 #include "Pelicula.cpp"
 #include "Profesor.cpp"
 #include "Estudiante.cpp"
+#include "Lista.cpp"
 
 using namespace std;
 
@@ -18,9 +19,26 @@ using namespace std;
 
 int main()
 {
+    vector<Material*> inventario;
+    // Inclusión de Lista Ligada
+    LL<Material*> inventario2;
+    vector<string> canciones = { "Springtime, ", "The Returner, ", "All Without Within" };
+    vector<string> autores = { "Gabriel Garcia Marquez" };
+    vector<string> actores = { "Jason Baterman, ", "Ginnifer Goodwin" };
+    vector<string> directores = { "Rich Moore" };
+    inventario2.agregaInicio(new Libro("ID123", "Cien A#os de soledad", "Realismo Magico", "Libro", "Argentina", 10, true, 1923, "9786070728792", 464, autores, "Editorial Diana")); 
+    inventario2.agregaInicio(new Musica("CD001", "The Returner", "Folk Funk Soul", "Musica", "US", 2, true, 2023, "Allison Russell", "The Returner", canciones)); 
+    inventario2.agregaInicio(new Pelicula("ID001", "Zootopia", "Comedia, Familia, Animacion", "Película", "México", 2, false, 2014, 108, actores, directores)); 
+    // Mostrar inventario 
+    cout << "Inventario de Lista de Materiales:" << endl; 
+    inventario2.imprimirLista();
+    cout << endl;
+    cout << "*******************************************" << endl;
+    // Termina inclusión Ligada
+
     // Libro Constructor
     cout << "===================================================================" << endl;
-    vector<string> autores = { "Gabriel Garcia Marquez" };
+    
     Libro libro("ID123", "Cien A#os de soledad", "Realismo Magico", "Libro", "Argentina", 10, true, 1923, "9786070728792", 464, autores, "Editorial Diana");
     // Accesando Informacion con Getters
     cout << "ID: " << libro.getId() << endl;
@@ -37,7 +55,7 @@ int main()
     cout << endl;
     cout << "===================================================================" << endl;
     //Musica Constructor
-    vector<string> canciones = { "Springtime, ", "The Returner, ", "All Without Within" };
+   
     Musica musica("CD001", "The Returner", "Folk Funk Soul", "Musica", "US", 2, true, 2023, "Allison Russell", "The Returner", canciones);
     // Accesando informacion Musica 
     cout << "Artista: " << musica.getArtista() << endl;
@@ -64,8 +82,7 @@ int main()
     cout << endl;
     // Pelicula Constructor
     cout << "===================================================================" << endl;
-    vector<string> actores = { "Jason Baterman, ", "Ginnifer Goodwin" };
-    vector<string> directores = { "Rich Moore" };
+    
     Pelicula pelicula("ID001", "Zootopia", "Comedia, Familia, Animacion", "Película", "México", 2, false, 2014, 108, actores, directores);
     // Accesando informacion usando getters 
     cout << "ID: " << pelicula.getId() << endl;
@@ -113,4 +130,15 @@ int main()
     vector<string> prestamosEstudiante = { "Libro3", "Libro4" };
     Estudiante estudiante("E001", "Jose", "Lopez", "Calzada de los misterios", "55-59-87-62", true, prestamosEstudiante, "30012345","ISC");
     cout << "Estudiante: " << estudiante.getNombre() << " " << estudiante.getAP() << ", Carrera: " << estudiante.getCarrera() << endl;
+
+    inventario.push_back(new Libro("ID123", "Cien A#os de soledad", "Realismo Magico", "Libro", "Argentina", 10, true, 1923, "9786070728792", 464, autores, "Editorial Diana"));
+    inventario.push_back(new Musica("CD001", "The Returner", "Folk Funk Soul", "Musica", "US", 2, true, 2023, "Allison Russell", "The Returner", canciones));
+    inventario.push_back(new Pelicula("ID001", "Zootopia", "Comedia, Familia, Animacion", "Película", "México", 2, false, 2014, 108, actores, directores));
+    cout << "----------------------------------------" << endl;
+    for (auto& material : inventario) 
+    {
+        cout << "Polimorfismo :" << endl;
+        material->mostrarInfo();
+        cout << "----------------------------------------" << endl;
+    }
 }
