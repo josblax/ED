@@ -1,5 +1,7 @@
 # Lista Doblemente Ligada
 
+Una doble doblemente ligada es casi lo mismo que una lista ligada simple, execto que se conecta en sentido contrario, es decir, del final de la lista, al inicio de la lista, con esto reduce la complejidad al buscar elementos desde el final de la lista.
+
 ## Clase Nodo
 
 ```Cplusplus
