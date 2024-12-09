@@ -11,14 +11,12 @@ class Nodo
 public:
     int dato;
     Nodo* siguiente;
-    Nodo* anterior;
 // Constuctor
 public:
     Nodo(int dato)
     {
         this->dato = dato;
         this->siguiente = NULL;
-        this->anterior = NULL;
     }
 };
 ```
