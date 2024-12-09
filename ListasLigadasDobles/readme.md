@@ -103,4 +103,62 @@ public:
         cout << endl;
     }
 };
+
+ void eliminaInicio() 
+ {
+     if (head == NULL) 
+     {
+         cout << "Lista Vacía " << endl;
+         return;
+     }
+     Nodo* temp = head;
+     if (temp->siguiente == NULL) 
+     {
+         head = NULL;
+         tail = NULL;
+         cout << "Valor de nodo a borrar " << temp->dato << endl;
+         delete temp;
+         return;
+     }
+     else 
+     {
+         head = temp->siguiente;
+         temp->siguiente->anterior = NULL;
+         cout << "Valor de nodo a borrar " << temp->dato << endl;
+         delete temp;
+     }
+ }
+
+ void eliminaFin() 
+ {
+     if (head == NULL)
+     {
+         cout << "Lista Vacía " << endl;
+         return;
+     }
+     Nodo* temp = head;
+     if (temp->siguiente == NULL and temp->anterior == NULL)
+     {
+         head = NULL;
+         tail = NULL;
+         cout << "Valor de nodo a borrar " << temp->dato << endl;
+         delete temp;
+         return;
+     }
+     else 
+     {
+         Nodo* temp = head;
+         Nodo* temp1 = head;
+         // mientras el apuntador no es  NULL,
+         while (temp->siguiente != NULL)
+         {
+             temp1 = temp;
+             temp = temp->siguiente;
+
+         }
+         cout << "temp1 : " << temp1->dato << endl;
+         cout << "temp : " << temp->dato << endl;
+         
+     }
+ }
 ```
