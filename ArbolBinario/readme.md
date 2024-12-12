@@ -6,4 +6,5 @@ A diferencia de las listas, un arbol se define por ramas (branches), que serán 
 <p align="center">
 <img src="https://courses.cs.washington.edu/courses/cse143/21au/lectures/21/tree.png" alt="Layout app">
 </p>
+fuente imagen: https://courses.cs.washington.edu/courses/cse143/21au/lectures/21
 
