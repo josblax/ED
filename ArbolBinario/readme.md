@@ -114,3 +114,34 @@ void enOrden(Nodo* temp)
     }
 }
 ```
+
+> PreOrder. Visita primero el Nodo raíz, después la parte izquierda y por último la parte derecha.
+
+```Cplusplus
+void preOrden(Nodo* temp)
+{
+    if (temp == NULL)
+    {
+        return;
+    }
+    cout << temp->dato << " ";
+    preOrden(temp->izq);
+    preOrden(temp->der);
+
+}
+```
+
+> PostOrden. Visita primero el la rama izquierda del árbol, después la rama derecha y por último la raíz
+
+```Cplusplus
+void postOrden(Nodo* temp)
+{
+    if (temp == NULL)
+    {
+        return;
+    }
+    postOrden(temp->izq);
+    postOrden(temp->der);
+    cout << temp->dato << " ";
+}
+```
