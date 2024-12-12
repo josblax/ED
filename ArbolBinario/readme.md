@@ -1,6 +1,8 @@
 # Arbol Binario
 
-## Estructura Nodo para un árbol binario
+## Clase Nodo
+
+### Estructura Nodo para un árbol binario
 
 A diferencia de las listas, un arbol se define por ramas (branches), que serán el punto de unión entre nodos, y específicamente en un árbol binario, se tiene una rama izquierda y una rama derecha.
 <p align="center">
@@ -10,7 +12,7 @@ fuente imagen: https://courses.cs.washington.edu/courses/cse143/21au/lectures/21
 
 ___
 
-## Declaración estructura
+## Declaración de la estructura Nodo
 
 ```Cplusplus
 class Nodo {
@@ -28,11 +30,11 @@ class Nodo {
 ```
 ___
 
-## Clase Arbol
+### Clase Arbol
 
 La clase árbol mantiene las funciones de inserción, recorrido, eliminación y administración del árbol. Su estructura inicial constituye un apuntador de tipo Nodo que apunta a Nulo. A partir de ahí se guardarán los valores iniciando con la raíz.
 
-## Clase Arbol
+### Clase Arbol
 
 ```Cplusplus
 class Arbol 
@@ -50,7 +52,7 @@ public:
 };
 ```
 
-## Función para insertar nodos basado en el valor del Nodo raiz
+### Función para insertar nodos basado en el valor del Nodo raiz
 
 ```Cplusplus
 void insertaNodo(int num) 
