@@ -61,10 +61,10 @@ int main()
     // crear una instancia de la estructura alumno
     Alumno juanpueblo;
     // Agregar datos a la instancia jose
-    jose.nombre = "Juan";
-    jose.ap = "Pueblo";
-    jose.am = "Ciudadano";
-    jose.cuenta = 123456;
+    juanpueblo.nombre = "Juan";
+    juanpueblo.ap = "Pueblo";
+    juanpueblo.am = "Ciudadano";
+    juanpueblo.cuenta = 123456;
 // imprimir los valores de la instancia juanpueblo
     cout << "nombre : " << juanpueblo.nombre;
     cout << "apellido paterno : " << juanpueblo.ap;
