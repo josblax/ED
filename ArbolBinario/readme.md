@@ -8,3 +8,17 @@ A diferencia de las listas, un arbol se define por ramas (branches), que serán 
 </p>
 fuente imagen: https://courses.cs.washington.edu/courses/cse143/21au/lectures/21
 
+```Cplusplus
+class Nodo {
+    int dato;
+    Nodo* izquierdo;
+    Nodo* derecho;
+    
+    Nodo(int dato) {
+        this.dato = dato;
+        this.izquierdo = NULL;
+        this.derecho = NULL;
+    }
+};
+
+```
