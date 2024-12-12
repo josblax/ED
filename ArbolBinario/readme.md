@@ -19,9 +19,9 @@ class Nodo {
     Nodo* derecho;
     
     Nodo(int dato) {
-        this.dato = dato;
-        this.izquierdo = NULL;
-        this.derecho = NULL;
+        this->dato = dato;
+        this->izquierdo = NULL;
+        this->derecho = NULL;
     }
 };
 
