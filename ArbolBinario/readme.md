@@ -30,7 +30,7 @@ ___
 
 ## Clase Arbol
 
-La clase árbol mantiene las funciones de inserción, recorrido, eliminación y administración del árbol.
+La clase árbol mantiene las funciones de inserción, recorrido, eliminación y administración del árbol. Su estructura inicial constituye un apuntador de tipo Nodo que apunta a Nulo. A partir de ahí se guardarán los valores iniciando con la raíz.
 
 ## Clase Arbol
 
