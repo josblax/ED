@@ -59,17 +59,17 @@ de un objeto con su clase.
 int main()
 {
     // crear una instancia de la estructura alumno
-    Alumno jose;
+    Alumno juanpueblo;
     // Agregar datos a la instancia jose
-    jose.nombre = "Jose Luis";
-    jose.ap = "Blancas";
-    jose.am = "Ruiz";
+    jose.nombre = "Juan";
+    jose.ap = "Pueblo";
+    jose.am = "Ciudadano";
     jose.cuenta = 123456;
-// imprimir los valores de la instancia jose
-    cout << "nombre : " << jose.nombre;
-    cout << "apellido paterno : " << jose.ap;
-    cout << "apellido materno : " << jose.am;
-    cout << "matricula : " << jose.cuenta;
+// imprimir los valores de la instancia juanpueblo
+    cout << "nombre : " << juanpueblo.nombre;
+    cout << "apellido paterno : " << juanpueblo.ap;
+    cout << "apellido materno : " << juanpueblo.am;
+    cout << "matricula : " << juanpueblo.cuenta;
 }
 
 ```
