@@ -44,6 +44,7 @@ struct Alumno
     string am;
     int cuenta;
 // Abajo se pueden añadir diferentes funciones, como añadir o dar de alta datos
+};
 ```
 
 ## Como se crea una instancia de mi estructura Alumno?
