@@ -8,6 +8,10 @@ A diferencia de las listas, un arbol se define por ramas (branches), que serán 
 </p>
 fuente imagen: https://courses.cs.washington.edu/courses/cse143/21au/lectures/21
 
+___
+
+## Declaración estructura
+
 ```Cplusplus
 class Nodo {
     int dato;
@@ -20,5 +24,29 @@ class Nodo {
         this.derecho = NULL;
     }
 };
+
+```
+
+## Función para insertar nodos basado en el valor del Nodo raiz
+
+```Cplusplus
+Nodo* insertar(Nodo* raiz, int valor) {
+
+   if (raiz == NULL)
+    {
+        return new Nodo(valor);
+    }
+    
+    if (valor < raiz->dato)
+    {
+        raiz->izquierdo = insertar(raiz->izquierdo, valor);
+    }
+       else if (valor > raiz->dato)
+    {
+        raiz->derecho = insertar(raiz->derecho, valor);
+    }
+    
+    return raiz;
+}
 
 ```
