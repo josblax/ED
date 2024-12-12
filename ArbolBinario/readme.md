@@ -26,27 +26,67 @@ class Nodo {
 };
 
 ```
+___
+
+## Clase Arbol
+
+La clase árbol mantiene las funciones de inserción, recorrido, eliminación y administración del árbol.
+
+## Clase Arbol
+
+```Cplusplus
+class Arbol 
+{
+public:
+    Nodo* raiz;
+public:
+    Arbol() 
+    {
+        this->raiz = NULL;
+    }
+
+// Funciones
+
+};
+```
 
 ## Función para insertar nodos basado en el valor del Nodo raiz
 
 ```Cplusplus
-Nodo* insertar(Nodo* raiz, int valor) {
-
-   if (raiz == NULL)
+void insertaNodo(int num) 
+{
+    // crear Nodo con el valor num
+    Nodo* nuevoNodo = new Nodo(num);
+    if (raiz == NULL) 
     {
-        return new Nodo(valor);
+        raiz = nuevoNodo;
     }
-    
-    if (valor < raiz->dato)
-    {
-        raiz->izquierdo = insertar(raiz->izquierdo, valor);
+    else 
+    {    
+        Nodo* temp = raiz;
+        Nodo* padre;
+        while (true) 
+        {
+            padre = temp;
+            if (num < temp->dato) 
+            {
+                temp = temp->izq;
+                if (temp == NULL) 
+                {
+                    padre->izq = nuevoNodo;
+                    break;
+                }
+            }
+            else 
+            {
+                temp = temp->der;
+                if (temp == NULL) 
+                {
+                    padre->der = nuevoNodo;
+                    break;
+                }
+            }
+        }
     }
-       else if (valor > raiz->dato)
-    {
-        raiz->derecho = insertar(raiz->derecho, valor);
-    }
-    
-    return raiz;
 }
-
 ```
