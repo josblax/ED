@@ -92,3 +92,25 @@ void insertaNodo(int num)
     }
 }
 ```
+
+### Funciones para recorrido de Arboles
+
+Los árboles se pueden recorrer de tres maneras:
+
+> En Orden. Se recorre el árbol de izquierda a derecha.
+
+```Cplusplus
+void enOrden(Nodo* temp) 
+{
+    if (temp == NULL) 
+    {
+        return;
+    }
+    if (temp != NULL) 
+    {
+        enOrden(temp->izq);
+        cout << temp->dato << " , ";
+        enOrden(temp->der);
+    }
+}
+```
