@@ -12,7 +12,7 @@ fuente imagen: https://courses.cs.washington.edu/courses/cse143/21au/lectures/21
 
 ___
 
-## Declaración de la estructura Nodo
+### Declaración de la estructura Nodo
 
 ```Cplusplus
 class Nodo {
