@@ -23,6 +23,7 @@ struct identificador
 {
 	// inserta aquí instrucciones de la función 2
 }
+};
 ```
 
 ## Ejemplo Declaración. 
