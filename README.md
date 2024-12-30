@@ -1,4 +1,4 @@
 # ED
 Estructura de Datos
 
-https://progress-bar.xyz/<thepercentage>?title=<title>
+![50%](https://progress-bar.xyz/50)
