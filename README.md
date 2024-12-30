@@ -5,9 +5,8 @@ Estructura de Datos
 
 - PART I: Fundamentos
   - 1\. Arreglos
-  - 2\. Basic Structures
-  - 3\. Trees
-  - 4\. Graphs
+  - 2\. Vectores
+  - 3\. Mapas
    - 1\. Analysis of Algorithms
   - 2\. Basic Structures
   - 3\. Trees
