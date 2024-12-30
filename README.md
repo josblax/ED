@@ -3,8 +3,12 @@ Estructura de Datos
 
 ![50%](https://progress-bar.xyz/70)
 
-- PART I: Fundamentals
+- PART I: Fundamentos
   - 1\. Analysis of Algorithms
+  - 2\. Basic Structures
+  - 3\. Trees
+  - 4\. Graphs
+   - 1\. Analysis of Algorithms
   - 2\. Basic Structures
   - 3\. Trees
   - 4\. Graphs
