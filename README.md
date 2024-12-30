@@ -4,13 +4,9 @@ Estructura de Datos
 ![50%](https://progress-bar.xyz/70)
 
 - PART I: Fundamentos
-  - 1\. Arreglos
-  - 2\. Vectores
-  - 3\. Mapas
-   - 1\. Analysis of Algorithms
-  - 2\. Basic Structures
-  - 3\. Trees
-  - 4\. Graphs
+   - 1\. Analisis de Algoritmos
+  - 2\. Estructuras Básicas
+  - 3\. Desarrollo de Tipos de datos abstractos
 - PART II: Priority Queues
   - 5\. Leftist Trees
   - 6\. Skew Heaps
