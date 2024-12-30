@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <div id="app">
+            <svg-progress-bar type='rect' value="60.29" :options="options"></svg-progress-bar>
+            <svg-progress-bar value="60.29" :options="options1"></svg-progress-bar>
+        </div>
+    </body>
+    <script src="https://cdn.bootcss.com/vue/2.5.9/vue.js"></script>
+    <script src="../dist/svg-progress-bar.js"></script>
+    <script>
+      new Vue({
+        el: '#app',
+        data: {},
+        computed: {
+          options: function () {
+            return {
+              radius: 80,
+              text: function (value) {
+                return this.htmlifyNumber(value) + '<span style="font-size: 0.4em;">%</span>';
+              },
+              rectWidth: 600,
+              rectHeight: 50,
+              rectRadius: 25,
+            }
+          },
+          options1: function () {
+            return {
+              radius: 80,
+              text: function (value) {
+                return this.htmlifyNumber(value) + '<span style="font-size: 0.4em;">%</span>';
+              },
+              duration: 200
+            }
+          }
+        }
+      })
+    </script>
+</html>
