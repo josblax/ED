@@ -20,6 +20,7 @@ ____
     ├── Funciones prototipo
         ├── Que es una función prototipo?
         ├── Declaración de funciones.
-        ├── Definición de una función
+        ├── Definición de una función.
+        ├── Diferencias claves entre definición y declaración de una función.
 ```
 
