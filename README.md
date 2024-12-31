@@ -15,7 +15,11 @@ ____
             ├── Modificadores
     ├── Apuntadores <*>
 ├── PARTE II Funciones
-    ├── Funciones Prototipo y definición de una función
-    ├──
+    ├── Que es una función?
+    ├── Estructura General de una función
+    ├── Funciones prototipo
+        ├── Que es una función prototipo?
+        ├── Declaración de funciones.
+        ├── Definición de una función
 ```
 
