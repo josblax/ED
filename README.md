@@ -3,6 +3,11 @@ Estructura de Datos
 
 ![50%](https://progress-bar.xyz/70)
 
+```bash
+|--- Analisis de Algoritmos
+|--- Estructura de Datos
+```
+
 - PART I: Fundamentos
    - 1\. Analisis de Algoritmos
   - 2\. Estructuras Básicas
