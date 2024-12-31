@@ -52,7 +52,7 @@ int suma(int num1, int num2);
 ```cplusplus
 int suma(int num1, int num2);
 ```
-Diferencias clave
+### Diferencias clave
 
 1. Contenido:
 * Declaración: Solo especifica la firma de la función.
