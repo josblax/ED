@@ -96,15 +96,16 @@ int suma(int num1, int num2)
 
 ___
 
-## Mi primera función.
+## Ejemplos de diferentes tipos de funciones.
 
-El ejercicio de hoy implica una serie de ejercicios que muestran algunas de las características de las funciones de C++, los ejercicios se dividen en dos categorías:
+El ejercicio de hoy __implica una serie de ejercicios__ que muestran algunas de las características de las funciones de C++, los ejercicios se dividen en dos categorías:
 
 * En la primera parte, comenzaremos explorando la naturaleza de los parámetros de función y qué reglas rigen la relación entre los parámetros y sus argumentos.
 * También examinaremos los diferentes tipos de parámetros disponibles en C ++.
 
-> RECUERDA. Un **parámetro** es cuando defines en la lista de parámetros, tanto en la función prototipo, como en la definición de la función. 
-Por el contrario, un argumento se define en la función, cuando esta es llamada y se asignan valores a los a la función dentro de los paréntesis ya sea como constantes o variables.
+> RECUERDA. Un **parámetro** es cuando defines en la lista de parámetros, tanto en la función prototipo, como en la definición de la función.
+>
+> Por el contrario, un argumento se define en la función, cuando esta es llamada y se asignan valores a los a la función dentro de los paréntesis ya sea como constantes o variables.
 
 * En la segunda parte, examinaremos la relación entre las definiciones que aparecen en diferentes funciones, y algunas de las reglas de alcance en C++.
 
