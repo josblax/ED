@@ -4,7 +4,7 @@ Estructura de Datos
 ![50%](https://progress-bar.xyz/70)
 
 ```bash
-|___ Analisis de Algoritmos
++--- Analisis de Algoritmos
 |___ Desarrollo de tipos de datos abstracto
 |___ Estructuras y funciones básicas
     |___ Arreglos
