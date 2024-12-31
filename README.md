@@ -23,5 +23,11 @@ ____
         ├── Declaración de funciones.
         ├── Definición de una función.
         ├── Diferencias claves entre definición y declaración de una función.
+    ├── Ejemplos de diferentes tipos de funciones.
+        ├── Función sin retorno y sin parámetros.
+        ├── Se puede definir una función dentro de otra función.
+        ├── Función con retorno y con parámetros.
+        ├── Función Prototipo.
+        ├── Ejemplo integral. Operaciones básicas de un cajero automático.
 ```
 
