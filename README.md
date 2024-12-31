@@ -1,9 +1,8 @@
-# ED1
-Estructura de Datos
+# ED Estructura de Datos
 
 ![50%](https://progress-bar.xyz/70)
 ____
-- 
+
 ```bash
 ├──PARTE I: Fundamentos
     ├── Analisis de Algoritmos
@@ -11,10 +10,10 @@ ____
     ├── Estructuras y funciones básicas
         ├── Arreglos
         ├── Clase Arreglo <array>
-        ├── Vectores
+        ├── Vectores <vector>
             ├── Iteradores
             ├── Modificadores
-    ├── Apuntadores <pointers>
+    ├── Apuntadores <*>
 ├── PARTE II Funciones
     ├── Funciones Prototipo y definición de una función
     ├──
