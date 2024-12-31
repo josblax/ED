@@ -2,7 +2,8 @@
 Estructura de Datos
 
 ![50%](https://progress-bar.xyz/70)
-
+____
+- PART I: Fundamentos
 ```bash
 ├── Analisis de Algoritmos
 ├── Desarrollo de tipos de datos abstracto
