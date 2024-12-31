@@ -4,8 +4,8 @@ Estructura de Datos
 ![50%](https://progress-bar.xyz/70)
 
 ```bash
-|--- Analisis de Algoritmos
-|--- Estructura de Datos
+|___ Analisis de Algoritmos
+|___ Estructura de Datos
 ```
 
 - PART I: Fundamentos
