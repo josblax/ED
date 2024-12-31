@@ -60,8 +60,9 @@ ___
 
 ## ARRAY CLASS
 La clase array es muy similar a la declaración de arreglos tradicional, con la diferencia que es orientada a objetos.
-Los objetos son entidades contenidas en sí mismos y tienen comportamientos (“behaviors”)
+Los objetos son entidades contenidas en sí mismos y tienen comportamientos (“behaviors”).
 La clase array es una secuencia de elementos de secuencia.
+
 ¿Se anexa alguna librería?
 
 ```C++
@@ -107,6 +108,10 @@ for (int i = 0; i < arr.size(); i++)
 }
 ```
 
+___
+
+
+
 # Indexación de un arreglo
 
 * La indexación de un arreglo es la definición de como accesar los valores de un arreglo.
@@ -124,7 +129,8 @@ Ejercicio uno. Se le pide crear un arreglo de 10 elementos de tipo int. Que alma
 > {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
 
 
-Código necesario.
+Código necesario para indexado un arreglo.
+
 1. Una variable que me sirva para almacenar los números naturales, desde cero hasta 9. En este caso será un arreglo que llamaremos “naturales”.
 2. El tipo de variable que usaremos, que en este caso será int, ya que lo que necesitamos almacenar los números naturales.
 3. El número de elementos que necesitamos, que será 10, ya que este es el número de elementos que necesitamos.
@@ -134,11 +140,16 @@ Código necesario.
 ## Asignación de valores
 
 Hay dos tipos de asignación, de un arreglo:
-1. En la declaración del arreglo, como se vio en la presentación anterior sería:
+
+
+## Primera forma de asignación:
+
+En la declaración del arreglo, como se vio en la presentación anterior sería:
    > int[ ] naturales = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9}; 
 Nota: De la declaración el cambio es que no se pone el número de elementos. 
 
 ## Segunda forma de asignación:
+
 La segunda manera sería una asignación manual asignando el valor usando los corchetes para indicar en que localidad queremos guardar el valor, ejemplos:
 > naturales[0] = 0;
 > naturales[1] = 1;
