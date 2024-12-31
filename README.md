@@ -4,14 +4,14 @@ Estructura de Datos
 ![50%](https://progress-bar.xyz/70)
 
 ```bash
-+--- Analisis de Algoritmos
-+--- Desarrollo de tipos de datos abstracto
-+--- Estructuras y funciones básicas
-    +--- Arreglos
-    +--- Clase Arreglo <array>
-    +--- Vectores
-         +--- Iteradores
-         +--- Modificadores
+├── Analisis de Algoritmos
+├── Desarrollo de tipos de datos abstracto
+├── Estructuras y funciones básicas
+    ├── Arreglos
+    ├── Clase Arreglo <array>
+    ├── Vectores
+         ├── Iteradores
+         ├── Modificadores
 ```
 
 - PART I: Fundamentos
