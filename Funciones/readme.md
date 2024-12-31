@@ -144,7 +144,7 @@ int main()
 
 ### Se puede definir una Función dentro de otra Función? 
 
-> No puedes definir una función dentro de otra función. Esto significa que las definiciones anidadas de funciones no están permitidas en el lenguaje estándar. Sin embargo, puedes lograr un comportamiento similar utilizando funciones lambda (funciones anónimas), que son soportadas desde C++11.
+> **No** puedes definir una función dentro de otra función. Esto significa que las definiciones anidadas de funciones no están permitidas en el lenguaje estándar. Sin embargo, puedes lograr un comportamiento similar utilizando funciones lambda (funciones anónimas), que son soportadas desde C++11.
 
 ___
 
