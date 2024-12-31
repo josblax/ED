@@ -148,7 +148,7 @@ int main()
 
 ___
 
-## Ejemplo de una función con retorno y con parámetros.
+### Ejemplo de una función con retorno y con parámetros.
 
  ```C++
 
@@ -165,7 +165,7 @@ int suma(int a, int b) {
 > La instrucción ***return*** es un componente que define el tipo de retorno del resultado que devuelve la función que se declara en la cabecera de la función.
 
 
-## Ejemplo de llamada de una función con retorno y con parámetros.
+### Ejemplo de llamada de una función con retorno y con parámetros.
 
 ```cpp
 
@@ -196,7 +196,7 @@ Donde \<tipo_variable> es un tipo válido, según las especificaciones del lengu
 
 ___
 
-## Ejemplo de una funcion prototipo.
+### Ejemplo de una funcion prototipo.
 
 Una funcion prototipo tiene multiples propositos, el mas basico es el hecho de poder mover la definicion de la funcion en la parte inferior de la funcion **main()** que genera un codigo de mas facil lectura.  
 
@@ -230,7 +230,7 @@ void imprime(vector<int> v)
 }
 ```
 
-## Ejemplo práctico integral: Establece las operaciones básicas de un cajero automático:
+### Ejemplo práctico integral: Establece las operaciones básicas de un cajero automático:
 
 
 > Realice un programa en C++ que represente las operaciones básicas de un cajero automático, que son consulta de saldo de una cuenta, y retiro de efectivo de una cuenta.
