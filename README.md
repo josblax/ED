@@ -29,5 +29,8 @@ ____
         ├── Función con retorno y con parámetros.
         ├── Función Prototipo.
         ├── Ejemplo integral. Operaciones básicas de un cajero automático.
+    ├── Parámetros por valor y parámetros por referencia.
+        ├── Definición de un parámetro x valor.
+        ├── Definición de un parámetro x referencia.
 ```
 
