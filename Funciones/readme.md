@@ -11,7 +11,14 @@ ___
 * Una función en C++ se define arriba de la función main(), pero es más común crear una función prototipo **arriba** de la función main(), y definir la función, es decir, el código necesario de la función **debajo** de la función main().
 
 ### Declaración de Funciones.
-En C++ una función debe ser declarada _arriba_ de la función main(), en otros lenguajes la función puede estar arriba o debajo de la función main(), pero, en C++ solo puede estar arriba, si deseamos poner nuestras funciones por debajo de la función, se debe usar la declaración de la función prototipo.
+
+**Próposito:** Le indica al compilador el nombre de la función, el tipo de retorno y parámetros sin proveer las instrucciones específicas o cuerpo de la función. 
+
+> En C++ una función debe ser declarada _arriba_ de la función main(), en otros lenguajes la función puede
+> estar arriba o debajo de la función main(), pero, en C++ solo puede estar arriba, si deseamos poner
+> nuestras funciones por debajo de la función, se debe usar la definición de la función prototipo.
+
+### Definición de una función
 
 ## Función prototipo. 
 
