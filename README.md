@@ -5,13 +5,13 @@ Estructura de Datos
 
 ```bash
 +--- Analisis de Algoritmos
-\___ Desarrollo de tipos de datos abstracto
-|___ Estructuras y funciones básicas
-    |___ Arreglos
-    |___ Clase Arreglo <array>
-    |___ Vectores
-         |___ Iteradores
-         |___ Modificadores
++--- Desarrollo de tipos de datos abstracto
++--- Estructuras y funciones básicas
+    +--- Arreglos
+    +--- Clase Arreglo <array>
+    +--- Vectores
+         +--- Iteradores
+         +--- Modificadores
 ```
 
 - PART I: Fundamentos
