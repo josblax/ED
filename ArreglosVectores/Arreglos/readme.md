@@ -1,4 +1,4 @@
-# Arreglos 1 dimensión
+/# Arreglos 1 dimensión
 
 Las arreglos y vectores son estructuras de datos que contienen más de un elemento. Tipos de estructuras:
 
@@ -214,7 +214,7 @@ La siguiente practica cuenta para el proyecto final.
 ![image](https://github.com/user-attachments/assets/78aff20e-2bf7-4627-a2aa-04923996daad)
 
 
-## Ejemplo crear un arreglo bidimensional (matriz) de tipo int de  4 elementos y dos dimensiones<img width="1248" 
+## Ejemplo crear un arreglo bidimensional (matriz) de tipo int de  4 elementos y dos dimensiones
 
 Ejercicio uno. Se le pide crear un matiz de 4 elementos de tipo int y de dos dimensiones, con los valores mostradas en la figura abajo.
 
