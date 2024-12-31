@@ -13,6 +13,7 @@ ____
     ├── Vectores
          ├── Iteradores
          ├── Modificadores
+    ├── Apuntadores <pointers>
 ```
 
 - PART I: Fundamentos
