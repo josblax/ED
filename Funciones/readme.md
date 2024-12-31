@@ -10,26 +10,35 @@ ___
 * Una función es un bloque de código que podemos usar cuando es necesario dentro de la ejecución de un programa.
 * Una función en C++ se define arriba de la función main(), pero es más común crear una función prototipo **arriba** de la función main(), y definir la función, es decir, el código necesario de la función **debajo** de la función main().
 
+
+## Función prototipo. 
+
+**Es la cabecera o primera línea de una función, seguido de un punto y coma. Adicionalmente debemos hacer la definición de la función**
+
 ### Declaración de Funciones.
 
-**Próposito:** Le indica al compilador el nombre de la función, el tipo de retorno y parámetros sin proveer las instrucciones específicas o cuerpo de la función. 
+**Propósito:** Le indica al compilador el nombre de la función, el tipo de retorno y parámetros sin proveer las instrucciones específicas o cuerpo de la función. 
 
 > En C++ una función debe ser declarada _arriba_ de la función main(), en otros lenguajes la función puede
 > estar arriba o debajo de la función main(), pero, en C++ solo puede estar arriba, si deseamos poner
 > nuestras funciones por debajo de la función, se debe usar la definición de la función prototipo.
-
-### Definición de una función
-
-## Función prototipo. 
-
-**Es la cabecera o primera línea de una función, seguido de un punto y coma.**
-
-### Declaración de la función prototipo:
+#### Estructura General de una función prototipo
 
 ```C++
 <tipo_retorno> nombrefuncion(Lista Parametros);
 ```
 
+#### Ejemplo
+
+```cplusplus
+int suma(int num1, int num2);
+```
+
+### Definición de una función
+
+**Propósito:** Es la implementación completa de la función, incluyendo el cuerpo, que define todas las instrucciones que cumplen el propósito de la función.
+
+___
 
 ## Mi primera función.
 
