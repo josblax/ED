@@ -30,7 +30,9 @@ int suma(int num1, int num2)
 	return num1+num2;
 }
 ```
+### Como se llama a una Función? 
 
+Una función puede ser llamada dentro de cualquier otra función, incluyendo la funcion **main()** y si esta tiene parametros debes anexar las variables o constantes que reciba la función separado por comas `,`
 ___
 
 ## Funciones prototipo
@@ -109,19 +111,10 @@ El ejercicio de hoy __implica una serie de ejercicios__ que muestran algunas de 
 
 * En la segunda parte, examinaremos la relación entre las definiciones que aparecen en diferentes funciones, y algunas de las reglas de alcance en C++.
 
+
 ___
 
-### Parte I: Estructura General de una función.
-
-La forma general de un encabezado de función de C++ es:
-
-```C++
-<tipo_retorno> nombrefuncion(Lista Parametros)
-{
-
-}
-```
-## Ejemplo de una función sin retorno y sin parámetros 
+### Ejemplo de una función sin retorno y sin parámetros 
 
 ```C++
 
@@ -136,11 +129,9 @@ void suma()
 }
 
 ```
-## Como se llama a una Función? 
 
-Una función puede ser llamada dentro de cualquier otra función, incluyendo la funcion **main()** y si esta tiene parametros debes anexar las variables o constantes que reciba la función separado por comas `,`
 
-## Ejemplo de llamada de una función sin retorno y sin parámetros.
+### Ejemplo de llamada de una función sin retorno y sin parámetros.
 
 ```cpp
 
