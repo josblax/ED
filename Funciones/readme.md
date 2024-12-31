@@ -82,7 +82,7 @@ int suma(int num1, int num2)
 	return num1+num2;
 }
 ```
-### Diferencias clave
+### Diferencias clave entre definición y declaración de funciones
 
 1. Contenido:
 * Declaración: Solo especifica la firma de la función.
