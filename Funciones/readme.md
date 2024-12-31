@@ -3,6 +3,8 @@
 * Las funciones son piezas de código reusable.
 * Las funciones pueden ser llamadas o invocadas cuando son necesitadas.
 * Ayuda a desglosar un problema en partes más manejables.
+
+
 ___
 
 ## Funciones prototipo y definición de una función.
@@ -37,6 +39,30 @@ int suma(int num1, int num2);
 ### Definición de una función
 
 **Propósito:** Es la implementación completa de la función, incluyendo el cuerpo, que define todas las instrucciones que cumplen el propósito de la función.
+
+```C++
+<tipo_retorno> nombrefuncion(Lista Parametros)
+{
+	// instrucciones de lo que actualmente hace la función
+}
+```
+
+#### Ejemplo
+
+```cplusplus
+int suma(int num1, int num2);
+```
+Diferencias clave
+
+1. Contenido:
+* Declaración: Solo especifica la firma de la función.
+* Definición: Incluye el cuerpo de la función con el código real.
+2. Propósito:
+* Declaración: Informa al compilador sobre la existencia de la función y su interfaz.
+* Definición: Informa al compilador de cómo funciona la función.
+3. Ubicación:
+* Declaración: Por lo general, se encuentra en archivos de encabezado (.h).
+* Definición: Por lo general, se encuentra en los archivos fuente (.cpp).
 
 ___
 
