@@ -3,7 +3,33 @@
 * Las funciones son piezas de código reusable.
 * Las funciones pueden ser llamadas o invocadas cuando son necesitadas.
 * Ayuda a desglosar un problema en partes más manejables.
+___
 
+## Estructura General de una función.
+
+La estructura general de una función en C++ implica varios componentes clave:
+1. Tipo de retorno: Indica qué tipo de valor devolverá la función.
+2. Nombre de la función: Un identificador único para la función.
+3. Lista de parámetros: Una lista separada por comas de entradas para la función (puede estar vacía).
+4. Cuerpo de la función: el bloque de código que define lo que hace la función.
+
+### Estructura General de una función prototipo
+
+```C++
+<tipo_retorno> nombrefuncion(Lista Parametros)
+{
+	// Cuerpo de la función
+}
+```
+
+### Ejemplo
+
+```cplusplus
+int suma(int num1, int num2)
+{
+	return num1+num2;
+}
+```
 
 ___
 
@@ -24,6 +50,7 @@ ___
 > En C++ una función debe ser declarada _arriba_ de la función main(), en otros lenguajes la función puede
 > estar arriba o debajo de la función main(), pero, en C++ solo puede estar arriba, si deseamos poner
 > nuestras funciones por debajo de la función, se debe usar la definición de la función prototipo.
+
 #### Estructura General de una función prototipo
 
 ```C++
@@ -50,7 +77,10 @@ int suma(int num1, int num2);
 #### Ejemplo
 
 ```cplusplus
-int suma(int num1, int num2);
+int suma(int num1, int num2)
+{
+	return num1+num2;
+}
 ```
 ### Diferencias clave
 
