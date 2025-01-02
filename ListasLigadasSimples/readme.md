@@ -1,8 +1,17 @@
 # Listas Simplemente Ligadas
 
+## Que es una LL simple?
+
 Una Lista Ligada Simple es una secuencia de items (desde datos simples hasta estructuras complejas) unidos uno a otro. La estructura base para guardar información se denomina **Nodo** que contiene la información y un apuntador al siguiente **Nodo**, este apuntador al primer **Nodo** se denomina _head_ o _cabecera_ que siempre nos indicara el inicio de la lista, dentro de la estructura apuntará a la dirección donde se encuentra el siguiente **Nodo** o apuntará a **NULL**
 
 ## Estructura Nodo
+
+Un nodo tiene al menos dos componentes:
+
+* Nodo:
+    * Dato o Estructura de Datos: Cualquier tipo de dato primitivo o estructura.
+    * Apuntador: Es una dirección de memoria que apunta al siguiente nodo de la lista.
+* Cabecera o Head: Es un apuntador que **SIEMPRE** apunta al primer nodo de la lista. En caso de no tener un nodo esta será una lista vacía que apunta a **NULL**  o **nullptr**
 
 ```Cplusplus
 class Nodo
