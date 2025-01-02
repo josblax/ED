@@ -40,5 +40,16 @@ ____
         ├── Ejemplo de declaración
         ├── Implementación de una estructura
     ├── Diagrama de Clases UML
+        ├── Definición de una clase.
+        ├── Atributos de una clase
+        ├── Métodos o funciones de una clase.
+        ├── Representación de visibilidad en un diagrama de clase.
+        ├── Dirección de los parámetros de una clase.
+    ├── Introducción a programación orientada a objetos.
+        ├── Paradigmas de la programación.
+        ├── Programación orientada a objetos.
+            ├── Encapsulación
+            ├── Herencia
+            ├── Polimorfismo
 ```
 
