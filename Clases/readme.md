@@ -77,19 +77,19 @@ También conocidos como Funciones u operaciones, representa el comportamiento o 
 
 En los diagramas de clase, la dirección de los parámetros se refiere a la indicación del flujo de la información entre clases, si es un parámetro de entrada, de salida o de ambos.
 
-### in (input):
+#### in (input):
 * Un parámetro de entrada es obtenido desde el objeto que llama a la función(cliente) al objeto llamado(servidor) durante el método de la invocación.
 * Es representado mediante una flecha con magnitud hacia la clase que recibe.
 out (ortput):
 * Un parámetro de salida es un pasado desde el objeto que llama (server) de regreso a la clase que llamo (cliente) después de que el método ha sido ejecutado.
 * Es representado mediante una flecha con la magnitud apuntando hacia afuera de la clase que recibió.
 
-### inout (entrada y salida):
+#### inout (entrada y salida):
 * Sirve como entrada y salida se maneja en ambos sentidos
 * La representación es doble flecha.
  
 
-### Ejemplo:
+#### Ejemplo:
 
 <p align="center">
 <img src="https://github.com/josblax/ED/blob/main/imagenes/clase2.jpg" alt="Layout app" width="200" height="200">
