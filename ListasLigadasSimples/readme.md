@@ -32,7 +32,7 @@ public:
 };
 ```
 
-## Declaracipn Lista Ligada Simple LL
+## Declaración de la clase para la Lista Ligada Simple LL
 
 ```Cplusplus
 class ListaLigada
