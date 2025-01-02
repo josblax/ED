@@ -57,27 +57,27 @@ Debido a la naturaleza y dominio es complejo.
 </p>
 
 
-## Clase. 
+### Definición de una Clase. 
 El nombre de la clase se define en la parte alta del rectángulo normalmente es centrada y en negritas.
 
-## Atributos. 
+### Atributos de una clase. 
 También conocidos como propiedades o campos, representa los elementos de datos de la clase.
 
-## Métodos ó funciones. 
+### Métodos ó funciones de una clase. 
 También conocidos como Funciones u operaciones, representa el comportamiento o funcionalidad de la clase. Se enumeran en el tercer compartimiento del rectángulo de la clase e incluye la visibilidad (público o privado), tipo de retorno y tipo de datos de cada atributo.
 
-## Representación de visibilidad
-
+### Representación de visibilidad de un diagrama de clases
+```bash
 + para el público (visible para todas las clases)
 - privado (visible solo dentro de la clase)
 # protegido (visible solo para subclases)
 ~ para paquetes o visibilidad por default (visible solo para las clases dentro del mismo paquete)
-
-## Dirección de los parámetros.
+```
+### Dirección de los parámetros de una clase.
 
 En los diagramas de clase, la dirección de los parámetros se refiere a la indicación del flujo de la información entre clases, si es un parámetro de entrada, de salida o de ambos.
 
-## in (input):
+### in (input):
 * Un parámetro de entrada es obtenido desde el objeto que llama a la función(cliente) al objeto llamado(servidor) durante el método de la invocación.
 * Es representado mediante una flecha con magnitud hacia la clase que recibe.
 out (ortput):
