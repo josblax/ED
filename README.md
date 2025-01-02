@@ -51,5 +51,8 @@ ____
             ├── Encapsulación
             ├── Herencia
             ├── Polimorfismo
+├── Lista Ligada Simple
+    ├── Definición de una Lista Ligada Simple
+    ├── Estructura básica de un nodo.
 ```
 
