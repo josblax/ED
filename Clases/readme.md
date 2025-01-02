@@ -3,23 +3,23 @@
 [UML 2.5](https://www.omg.org/spec/UML/2.5/PDF)
 
 ## ¿Cuál es el propósito del SW?
-•	Ejecutar tareas y cálculos complejos
-•	Reducir dicha complejidad
-•	Reducir intervención humana
-•	Reducir errores
-•	Hacer tareas monótonas.
+*	Ejecutar tareas y cálculos complejos
+*	Reducir dicha complejidad
+*	Reducir intervención humana
+*	Reducir errores
+*	Hacer tareas monótonas.
 
 ## Los objetos en el mundo real son por naturaleza complejos: 
-•	Órganos y estructuras en seres vivos.
-•	Sistemas que se encuentran en la naturaleza, Ríos, Océanos, Bosques, Ecosistemas, Clima etc.
+* Órganos y estructuras en seres vivos.
+* Sistemas que se encuentran en la naturaleza, Ríos, Océanos, Bosques, Ecosistemas, Clima etc.
 
 ## Esto aplica al SW también:
-•	Sistemas de Bases de Datos
-•	Sistemas Financieros
-•	Control de tráfico aéreo.
+* Sistemas de Bases de Datos
+* Sistemas Financieros
+* Control de tráfico aéreo.
 
-Esta complejidad es demasiado grande para ser entendida por una sola persona.
-La complejidad nunca puede ser eliminada, pero puede reducirse.
+> Esta complejidad es demasiado grande para ser entendida por una sola persona.
+> La complejidad nunca puede ser eliminada, pero puede reducirse.
 
 ¿Porque el SW es complejo?
 
