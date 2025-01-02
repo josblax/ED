@@ -462,7 +462,7 @@ int main() {
     return 0;
 }
 ```
-## Ejemplo de la calculadora usando funciones overloading. 
+### Ejemplo de la calculadora usando funciones overloading. 
 
 Usando todas las posibles combinaciones de tipos de variable, usando funciones overloading, solo se muestra la operación suma().
 
