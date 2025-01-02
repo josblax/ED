@@ -13,6 +13,8 @@ Un nodo tiene al menos dos componentes:
     * Apuntador: Es una dirección de memoria que apunta al siguiente nodo de la lista.
 * Cabecera o Head: Es un apuntador que **SIEMPRE** apunta al primer nodo de la lista. En caso de no tener un nodo esta será una lista vacía que apunta a **NULL**  o **nullptr**
 
+### Declaración de la clase Nodo 
+
 ```Cplusplus
 class Nodo
 {
@@ -30,7 +32,7 @@ public:
 };
 ```
 
-## Lista Ligada Simple LL
+## Declaracipn Lista Ligada Simple LL
 
 ```Cplusplus
 class ListaLigada
