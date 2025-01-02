@@ -34,5 +34,11 @@ ____
         ├── Definición de un parámetro x referencia.
     ├── Funciones Overloading
     ├── Funciones Recursivas
+├── PARTE III Clases y Objetos
+    ├── Estructuras <struct>
+        ├── Como se declara?
+        ├── Ejemplo de declaración
+        ├── Implementación de una estructura
+    ├── Diagrama de Clases UML
 ```
 
