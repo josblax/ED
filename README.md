@@ -51,8 +51,13 @@ ____
             ├── Encapsulación
             ├── Herencia
             ├── Polimorfismo
-├── Lista Ligada Simple
-    ├── Definición de una Lista Ligada Simple
-    ├── Estructura básica de un nodo.
+├── PARTE IV Listas y Árboles
+    ├── Lista Ligada Simple
+        ├── Definición de una Lista Ligada Simple
+        ├── Estructura básica de un nodo.
+        ├── Funciones Básicas de una lista Ligada Simple.
+    ├── Lista Ligada Doble
+        ├── Definición de una Lista Ligada Doble.
+        ├── Funciones Básicas de una lista Ligada Doble.
 ```
 
