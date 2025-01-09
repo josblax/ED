@@ -1,20 +1,30 @@
-# Vectores
+# VECTOR CLASS
 
-## VECTOR CLASS
+**La clase vector es un contenedor secuencial como la clase array.**
 
- ## La clase vector es un contenedor secuencial como la clase array.
-
+## Definicion
  * Consiste en espacios contiguos de memoria como los arreglos.
  * NO está limitado a tamaños fijos, al contrario, se puede cambiar el tamaño dinámicamente como se necesite para cambiar más elementos.
  * No necesitas especificar la capacidad inicial.
 
-¿Se anexa alguna librería?
+___
+
+## ¿Se anexa alguna librería?
+
+```cplusplus
 
 #include <vector>
 
-¿Como se declara?
+```
+___
+
+## ¿Como se declara?
+
+```cplusplus
 
 vector <tipo_variable > nombre_vector;
+
+```
 
 ```C++
 vector<int> mivector;
