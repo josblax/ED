@@ -71,9 +71,26 @@ vector es la una clase que contiene el contenedor vector y sus funciones. Se def
 
 Las funciones miembro de la clase std::vector proporcionan varias funcionalidades a los contenedores vectoriales. A continuación, se describen algunas funciones miembro de uso común:
 
-Iteradores:
-* begin() – Devuelve un iterador que apunta al primer elemento del vector
-* end() – Devuelve un iterador que apunta al elemento teórico que sigue al último elemento del vector
+## Iteradores:
+
+
+### begin() – Devuelve un iterador que apunta al primer elemento del vector
+### end() – Devuelve un iterador que apunta al elemento teórico que sigue al último elemento del vector
+
+Ejemplo:
+
+```C++
+vector<int> v1;
+
+    for (int i = 1; i <= 5; i++)
+        v1.push_back(i);
+
+    cout << "Salida de begin hasta end: " << endl;
+    for (auto i = v1.begin(); i != v1.end(); ++i)
+        cout << *i << " ";
+```
+___
+
 * rbegin() – Devuelve un iterador que apunta al elemento teórico que sigue al último elemento del vector.
 * rend() – Devuelve un iterador inverso que apunta al elemento teórico que precede al primer elemento del vector (considerado como extremo inverso)
 * cbegin() – Devuelve un iterador constante que apunta al primer elemento del vector.
@@ -82,7 +99,7 @@ Iteradores:
 * crend() – Devuelve un iterador inverso constante que apunta al elemento teórico que precede al primer elemento del vector (considerado como extremo inverso)
 
 
-```C++
+	```C++
 vector<int> v1;
 
     for (int i = 1; i <= 5; i++)
