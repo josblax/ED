@@ -91,8 +91,26 @@ vector<int> v1;
 ```
 ___
 
-* rbegin() – Devuelve un iterador que apunta al elemento teórico que sigue al último elemento del vector.
-* rend() – Devuelve un iterador inverso que apunta al elemento teórico que precede al primer elemento del vector (considerado como extremo inverso)
+### rbegin() – Devuelve un iterador que apunta al elemento teórico que sigue al último elemento del vector.
+### rend() – Devuelve un iterador inverso que apunta al elemento teórico que precede al primer elemento del vector (considerado como extremo inverso)
+
+Ejemplo: 
+
+```cplusplus
+
+vector<int> v1;
+
+    for (int i = 1; i <= 5; i++)
+        v1.push_back(i);
+
+    cout << "Salida de rbegin hasta rend: " << endl;
+    for (auto j = v1.rbegin(); j != v1.rend(); ++j)
+        cout << *j << " ";
+
+```
+
+___
+
 * cbegin() – Devuelve un iterador constante que apunta al primer elemento del vector.
 * cend() – Devuelve un iterador constante que apunta al elemento teórico que sigue al último elemento del vector.
 * crbegin() – Devuelve un iterador inverso constante que apunta al último elemento del vector (inicio inverso). Se mueve del último al primer elemento
