@@ -26,16 +26,19 @@ vector <tipo_variable > nombre_vector;
 
 ```
 
+Ejemplo:
+
 ```C++
 vector<int> mivector;
 ```
-vector<int> mivector;
+___
 
-¿Como se añaden elementos?
+## ¿Como se añaden elementos?
 
 Se usa la función .push_back(elemento);
 	
 Ejemplo:
+
 ```C++
 mivector.push_back(3);
 
@@ -46,10 +49,14 @@ for (int i=0; i <=mivector.size(); i++)
 	cout << mivector[i]<< endl;
 }
 ```
+___
  
-¿Se puede viajar en el arreglo de otra manera?
+## ¿Se puede viajar en el arreglo de otra manera?
 
 Se puede recorrer el arreglo de una manera diferente, usando la asociación llamada “referencia” del arreglo con el operador : (dos puntos)
+
+Ejemplo:
+
 ```C++
 for (int contador : mivector)
   {
