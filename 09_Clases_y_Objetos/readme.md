@@ -1,4 +1,4 @@
-# Introducción
+# Estructuras (Struct)
 
 C++ tiene dos tipos de tipos: tipos integrados y tipos de clase. Los tipos integrados son cualquier tipo que constituye el núcleo del lenguaje, como int, float y char. Los tipos de clase pueden considerarse como tipos definidos por el usuario; Estos son los tipos que creamos declarando clases, estructuras, uniones, etc. Las clases son la base de la programación orientada a objetos.
 
@@ -54,7 +54,7 @@ struct Alumno
 Es un objeto específico que se crea a partir de una clase. Esta ocupa memoria durante la ejecución de un programa y tiene su propio estado y comportamiento. La palabra instancia indica la relación 
 de un objeto con su clase.
 
-## Ejemplo:
+### Ejemplo:
 ```C++
 int main()
 {
@@ -138,7 +138,7 @@ struct Alumno
 
 ## Explicación: 
 
-## Definición de Variables: Se declaran variables para almacenar los datos del alumno:
+### Definición de Variables: Se declaran variables para almacenar los datos del alumno:
 
 	n1: nombre del alumno.
 
@@ -154,7 +154,7 @@ struct Alumno
 
 * Creación de un Objeto Alumno: Se declara un objeto obj1 de la clase Alumno.
 
-## Entrada de Datos:
+### Entrada de Datos:
 
 1. Se solicita y se lee el nombre del alumno.
 2. Se solicita y se lee el apellido paterno.
@@ -170,7 +170,7 @@ struct Alumno
 
 Este código es útil para agregar nuevos alumnos a una lista (vector) y mantener un registro de sus datos.
 
-# Diferencia Clases versus Structs.
+## Diferencia Clases versus Structs.
 
 En C++, puede elegir entre declarar un objeto como una estructura o una clase. 
 
