@@ -103,7 +103,7 @@ struct Alumno
 
 ```
 
-# Ejercicio Integral. Implementar una función que añada de alta nuevos alumnos pasando como parámetro un nuevo objeto.
+## Ejercicio Integral. Implementar una función que añada de alta nuevos alumnos pasando como parámetro un nuevo objeto.
 
 ```C++
     void altaAlumnos() 
