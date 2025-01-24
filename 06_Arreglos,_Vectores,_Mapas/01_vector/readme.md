@@ -208,7 +208,20 @@ imprime(v1);
 
 ___
 
-## erase() – Se utiliza para eliminar elementos de un contenedor de la posición o rango especificado.
+## erase() – Se utiliza para eliminar elementos de un contenedor de la posición o rango especificado. Tambien usa iteradores, puede usar dos parámetros para eliminar en base un rango y el indice hasta donde quieres.
+
+Ejemplo:
+
+```c++
+// borra el primer elemento del vector
+v.erase(v.begin());
+imprime(v);
+
+```
+
+___
+
+
 
 ## swap() – Se utiliza para intercambiar el contenido de un vector con otro vector del mismo tipo. Los tamaños pueden diferir.
 
