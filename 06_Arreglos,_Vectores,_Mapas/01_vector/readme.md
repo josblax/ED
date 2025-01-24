@@ -218,6 +218,10 @@ v.erase(v.begin());
 imprime(v);
 
 ```
+Respuesta:
+
+![image](https://github.com/user-attachments/assets/11edc638-9ccf-4af3-a88a-280bc0fcee28)
+
 
 > Que pasa si quiero borrar un rango?
 >
@@ -232,9 +236,26 @@ imprime(v1);
 ```
 ___
 
-
-
 ## swap() – Se utiliza para intercambiar el contenido de un vector con otro vector del mismo tipo. Los tamaños pueden diferir.
+
+Ejemplo:
+```c++
+// swap entre dos vectores
+    vector<int> v1, v2;
+    v1.push_back(1);
+    v1.push_back(2);
+    v2.push_back(3);
+    v2.push_back(4);
+    v1.swap(v2);
+    imprime(v1);
+    imprime(v2);
+```
+
+Resultado:
+
+![image](https://github.com/user-attachments/assets/d161ea4b-601b-485b-b7ff-a2c859294e7f)
+
+___
 
 ## clear() – Se utiliza para eliminar todos los elementos del contenedor vectorial.
 
