@@ -150,8 +150,16 @@ ___
 
 # Modificadores
 
+___
 ## assign() – Asigna un nuevo valor a los elementos vectoriales reemplazando los antiguos.
 
+```c++
+vector<int> v1;
+//llenar el vector con 0, cinco veces
+v1.assign(0, 5);
+imprime(v1);
+```
+___
 ## push_back() – Inserta los elementos en un vector desde la parte posterior.
 
 ## pop_back() – Se utiliza para eliminar elementos de un vector desde la parte posterior.
