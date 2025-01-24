@@ -190,19 +190,19 @@ Resultado:
 ### Porque tengo que poner la función .begin() a la posición?
 
 > Algunas funciones se valen de iteradores para determinar la posición de inicio y final de un vector, a partir de ahí uno puede posicionar sumando el número de indice donde quieres pocisionar un valor.
+>
+> Funciones de acceso  son:
+> * .begin() Se posiciona al inicio del vector.
+> * .end() Se posiciona al final del vector
 
 Ejemplo:
 
 ```c++
 // El iterador se crea de la siguiente manera, usando la función insert con un iterador, que se //declaran de tipo auto. El resultado es exactamente el mismo.
 
-cout << "usando la funcion insert() :" << endl;
+cout << "usando la funcion insert() e iterador:" << endl;
 auto it = v1.begin() + 7;
 v1.insert(it, 33);
-imprime(v1);
-
-
-v1.insert(v1.begin()+7, 33);
 imprime(v1);
 ```
 
