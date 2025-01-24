@@ -85,8 +85,6 @@ void imprime(vector<int> v)
         cout << elemento << " , ";
     }
     cout << endl;
-    /*system("pause");
-    system("cls");*/
 }
 ```
 ___
@@ -124,7 +122,29 @@ Resultado:
 
 ___
 
-## push_back() – Inserta los elementos en un vector desde la parte posterior.
+## push_back() – Inserta los elementos en un vector al final de los elementos.
+
+```c++
+// vectores
+// formato nombre_vector.push_back(elemento_a_añadir);
+vector<int> v1;
+v1.push_back(45);
+v1.push_back(32);
+v1.push_back(23);
+v1.push_back(79);
+v1.push_back(12);
+v1.push_back(4);
+v1.push_back(67);
+v1.push_back(22);
+v1.push_back(54);
+v1.push_back(10);
+ imprime(v1);
+```
+Resultado:
+
+![image](https://github.com/user-attachments/assets/f0f66414-9055-4588-b682-0cf110471c90)
+
+___
 
 ## pop_back() – Se utiliza para eliminar elementos de un vector desde la parte posterior.
 
