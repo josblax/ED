@@ -51,16 +51,16 @@ for (int i=0; i <=mivector.size(); i++)
 ```
 ___
  
-## ¿Se puede viajar en el arreglo de otra manera?
+## ¿Se puede viajar en el vector de otra manera?
 
 Se puede recorrer el arreglo de una manera diferente, usando la asociación llamada “referencia” del arreglo con el operador : (dos puntos)
 
 Ejemplo:
 
 ```C++
-for (int contador : mivector)
+for (int elemento : mivector)
   {
-    std::cout << contador << std::endl;
+    std::cout << elemento << std::endl;
   }
 ```
 Nota: El tipo de variable puede ser cambiado a auto.	
