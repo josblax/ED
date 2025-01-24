@@ -159,6 +159,10 @@ vector<int> v1;
 v1.assign(0, 5);
 imprime(v1);
 ```
+Resultado:
+
+![image](https://github.com/user-attachments/assets/c7c0f9b3-cc3a-44e2-a966-ae93070cef81)
+
 ___
 ## push_back() – Inserta los elementos en un vector desde la parte posterior.
 
