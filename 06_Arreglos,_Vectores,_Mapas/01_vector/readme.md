@@ -219,6 +219,17 @@ imprime(v);
 
 ```
 
+> Que pasa si quiero borrar un rango?
+>
+> Solo añade un segundo parámetro, con la finalización, esta puede hacerce con un número de posiciones determinado del inicio del vector
+
+Ejemplo:
+
+```c++
+// borra del primer elemento al 3ro del vector
+v1.erase(v1.begin(), v1.begin()+3);
+imprime(v1);
+```
 ___
 
 
