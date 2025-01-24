@@ -37,7 +37,7 @@ arreglo[4] = 5;
 ### ¿Como se imprime?
 ```C++
 
-for (int i=0; i <=TAMANO; i++)
+for (int i=0; i <TAMANO; i++)
 {
 	cout << arreglo[i]<< endl;
 }
