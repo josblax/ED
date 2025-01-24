@@ -148,6 +148,32 @@ ___
 
 ## pop_back() – Se utiliza para eliminar elementos de un vector desde la parte posterior.
 
+Ejemplo:
+
+```c++
+// formato nombre_vector.pop_back() , no lleva ningún parámetro en la función.
+
+vector<int> v1;
+v1.push_back(45);
+v1.push_back(32);
+v1.push_back(23);
+v1.push_back(79);
+v1.push_back(12);
+v1.push_back(4);
+v1.push_back(67);
+v1.push_back(22);
+v1.push_back(54);
+v1.push_back(10);
+imprime(v1);
+v1.pop_back();
+imprime(v1);
+```
+Resultado:
+
+![image](https://github.com/user-attachments/assets/79f5658d-ace1-4874-83ad-2d025e278e89)
+
+___
+
 ## insert() – Inserta nuevos elementos antes del elemento en la posición especificada.
 
 ## erase() – Se utiliza para eliminar elementos de un contenedor de la posición o rango especificado.
