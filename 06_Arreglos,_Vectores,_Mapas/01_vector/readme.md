@@ -187,6 +187,25 @@ Resultado:
 
 ![image](https://github.com/user-attachments/assets/c79f9766-3f70-4ed3-a747-30f78fb4a774)
 
+### Porque tengo que poner la función .begin() a la posición?
+
+> Algunas funciones se valen de iteradores para determinar la posición de inicio y final de un vector, a partir de ahí uno puede posicionar sumando el número de indice donde quieres pocisionar un valor.
+
+Ejemplo:
+
+```c++
+// El iterador se crea de la siguiente manera, usando la función insert con un iterador, que se //declaran de tipo auto. El resultado es exactamente el mismo.
+
+cout << "usando la funcion insert() :" << endl;
+auto it = v1.begin() + 7;
+v1.insert(it, 33);
+imprime(v1);
+
+
+v1.insert(v1.begin()+7, 33);
+imprime(v1);
+```
+
 ___
 
 ## erase() – Se utiliza para eliminar elementos de un contenedor de la posición o rango especificado.
