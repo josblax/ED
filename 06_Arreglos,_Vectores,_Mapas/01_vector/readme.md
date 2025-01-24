@@ -176,6 +176,19 @@ ___
 
 ## insert() – Inserta nuevos elementos antes del elemento en la posición especificada.
 
+```c++
+// inserta al principio en la posición posterior a 8 en el vector
+// formato vector.insert(iterador+posicion,valor)
+
+v1.insert(v1.begin()+7, 33);
+imprime(v1);
+```
+Resultado:
+
+![image](https://github.com/user-attachments/assets/c79f9766-3f70-4ed3-a747-30f78fb4a774)
+
+___
+
 ## erase() – Se utiliza para eliminar elementos de un contenedor de la posición o rango especificado.
 
 ## swap() – Se utiliza para intercambiar el contenido de un vector con otro vector del mismo tipo. Los tamaños pueden diferir.
@@ -226,9 +239,7 @@ int main()
     v.pop_back();
     imprime(v);
 
-    // inserta al principio 5 en el vector
-    v.insert(v.begin(), 5);
-    imprime(v);
+   
     // borra el primer elemento del vector
     v.erase(v.begin());
     imprime(v);
