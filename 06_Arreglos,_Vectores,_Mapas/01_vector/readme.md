@@ -71,7 +71,26 @@ ___
 
 # Modificadores
 
+> Para estos ejemplos se usará una función para imprimir los vectores, se anexa el código.
+
 ___
+
+Código:
+
+```c++
+void imprime(vector<int> v)
+{
+    for (auto elemento : v)
+    {
+        cout << elemento << " , ";
+    }
+    cout << endl;
+    /*system("pause");
+    system("cls");*/
+}
+```
+___
+
 ## assign() – Asigna un nuevo valor a los elementos vectoriales reemplazando los antiguos.
 
 ```c++
