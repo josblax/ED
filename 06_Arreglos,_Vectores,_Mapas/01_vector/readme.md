@@ -94,7 +94,7 @@ parametros --> void assign(size_type count, const T& value)
 ```c++
 vector<int> v1;
 //llenar el vector con 0, cinco veces
-v1.assign(0, 5);
+v1.assign(5, 0);
 imprime(v1);
 ```
 Resultado:
