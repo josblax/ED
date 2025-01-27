@@ -90,7 +90,7 @@ void imprime(vector<int> v)
 ___
 
 ## assign() – Asigna un nuevo valor a los elementos vectoriales reemplazando los antiguos.
-
+parametros --> void assign(size_type count, const T& value)
 ```c++
 vector<int> v1;
 //llenar el vector con 0, cinco veces
