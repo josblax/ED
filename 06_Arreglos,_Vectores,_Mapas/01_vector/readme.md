@@ -174,7 +174,7 @@ Resultado:
 
 ___
 
-## insert() – Inserta nuevos elementos antes del elemento en la posición especificada.
+## insert() – Inserta nuevos elementos después del elemento en la posición especificada.
 
 ```c++
 // inserta al principio en la posición posterior a 8 en el vector
