@@ -122,7 +122,7 @@ Resultado:
 
 ___
 
-## push_back() – Inserta los elementos en un vector al final de los elementos.
+## push_back() – Inserta los elementos en un al final del vector.
 
 ```c++
 // vectores
