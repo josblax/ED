@@ -13,7 +13,7 @@ La estructura general de una función en C++ implica varios componentes clave:
 3. Lista de parámetros: Una lista separada por comas de entradas para la función (puede estar vacía).
 4. Cuerpo de la función: el bloque de código que define lo que hace la función.
 
-### Estructura General de una función prototipo
+### Estructura General de una función
 
 ```C++
 <tipo_retorno> nombrefuncion(Lista Parametros)
@@ -22,7 +22,7 @@ La estructura general de una función en C++ implica varios componentes clave:
 }
 ```
 
-### Ejemplo
+Ejemplo:
 
 ```cplusplus
 int suma(int num1, int num2)
@@ -30,9 +30,10 @@ int suma(int num1, int num2)
 	return num1+num2;
 }
 ```
-### Como se llama a una Función? 
 
-Una función puede ser llamada dentro de cualquier otra función, incluyendo la funcion **main()** y si esta tiene parametros debes anexar las variables o constantes que reciba la función separado por comas `,`
+Como se llama a una Función? 
+
+> Una función puede ser llamada dentro de cualquier otra función, incluyendo la funcion **main()** y si esta tiene parametros debes anexar las variables o constantes que reciba la función separado por comas `,`
 ___
 
 ## Funciones prototipo
