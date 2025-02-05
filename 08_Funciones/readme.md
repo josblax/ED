@@ -81,7 +81,7 @@ int suma(int num1, int num2);
 }
 ```
 
-#### Ejemplo
+Ejemplo
 
 ```cplusplus
 int suma(int num1, int num2)
