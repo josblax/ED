@@ -35,6 +35,13 @@ int suma(int num1, int num2)
 Como se llama a una Función? 
 
 > Una función puede ser llamada dentro de cualquier otra función, incluyendo la funcion **main()** y si esta tiene parametros debes anexar las variables o constantes que reciba la función separado por comas `,`
+
+
+_Se puede definir una Función dentro de otra Función?_ 
+
+> **No** puedes definir una función dentro de otra función. Esto significa que las definiciones anidadas de funciones no están permitidas en el lenguaje estándar. Sin embargo, puedes lograr un comportamiento similar utilizando funciones lambda (funciones anónimas), que son soportadas desde C++11.
+
+
 ___
 
 ### Que es una función prototipo. 
@@ -111,8 +118,9 @@ El ejercicio de hoy __implica una serie de ejercicios__ que muestran algunas de 
 
 
 ___
+### Función sin retorno y sin parámetros.
 
-### Ejemplo de una función sin retorno y sin parámetros 
+_Ejemplo de una función sin retorno y sin parámetros_ 
 
 ```C++
 
@@ -129,7 +137,7 @@ void suma()
 ```
 
 
-### Ejemplo de llamada de una función sin retorno y sin parámetros.
+_Como se llama una función sin retorno y sin parámetros._
 
 ```cpp
 
@@ -140,9 +148,6 @@ int main()
 
 ```
 
-### Se puede definir una Función dentro de otra Función? 
-
-> **No** puedes definir una función dentro de otra función. Esto significa que las definiciones anidadas de funciones no están permitidas en el lenguaje estándar. Sin embargo, puedes lograr un comportamiento similar utilizando funciones lambda (funciones anónimas), que son soportadas desde C++11.
 
 ___
 
