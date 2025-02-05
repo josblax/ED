@@ -113,10 +113,9 @@ El ejercicio de hoy __implica una serie de ejercicios__ que muestran algunas de 
 > RECUERDA. Un **parámetro** es o son diferentes tipos de datos con su identificador dentro de la lista de parámetros, tanto en la función prototipo, como en la definición de la función.
 >
 > Por el contrario, un argumento se define en la función, cuando esta es llamada y se asignan valores a los a la función dentro de los paréntesis ya sea como constantes o variables.
+___
 
 * En la segunda parte, examinaremos la relación entre las definiciones que aparecen en diferentes funciones, y algunas de las reglas de alcance en C++.
-
-
 ___
 ### Función sin retorno y sin parámetros.
 
@@ -151,14 +150,18 @@ int main()
 
 ___
 
-### Ejemplo de una función con retorno y con parámetros.
+### Función con retorno y con parámetros.
+
+_Ejemplo de una función con retorno y con parámetros_
+
 
  ```C++
 
 #include <iostream>
 using namespace std;
 
-int suma(int a, int b) {
+int suma(int a, int b)
+{
     return a + b;
 }
 
@@ -168,7 +171,7 @@ int suma(int a, int b) {
 > La instrucción ***return*** es un componente que define el tipo de retorno del resultado que devuelve la función que se declara en la cabecera de la función.
 
 
-### Ejemplo de llamada de una función con retorno y con parámetros.
+_Ejemplo de llamada de una función con retorno y con parámetros._
 
 ```cpp
 
@@ -179,24 +182,6 @@ int main() {
 }
 
 ```
-
-___
-
-***Lista_Declaracion_Parametros*** Es una secuencia opcional de una o más declaraciones de parámetros separadas por comas, cada una de las cuales tiene la forma:
-
- ```C++
- int suma(int a, int b)
- {
- 
- }
- ```
-
-\<tipo_variable>  **nombre_parámetro**
-
-Donde \<tipo_variable> es un tipo válido, según las especificaciones del lenguaje y nombre_parámetro es un identificador válido.
-
-> Si tu función lleva más de un parámetro este debe estar separado por comas.
-
 ___
 
 ### Ejemplo de una funcion prototipo.
@@ -228,8 +213,6 @@ void imprime(vector<int> v)
         cout << elemento << " , ";
     }
     cout << endl;
-    system("pause");
-    system("cls");
 }
 ```
 
