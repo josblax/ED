@@ -318,7 +318,7 @@ ___
 
 ### Parámetro por valor: 
 
-Un parámetro cuyo Tipo NO va seguido de un signo ampersand (&) se denomina parámetro x valor. Un parámetro x valor es una variable local a la función, tal que cuando se llama a la función, recibe una copia del valor del argumento correspondiente.
+Un parámetro cuyo Tipo NO va seguido de un signo ampersand (&) se denomina parámetro x valor. Un parámetro x valor es una variable local a la función, tal que cuando se llama a la función, recibe una **copia del valor del argumento correspondiente**.
 
 ### Parámetro por referencia:
 
@@ -422,6 +422,9 @@ Una función con “firmas” consiste en el nombre de la función con una lista
 
 * Nunca una función overloading incluye un retorno. **return**.
 * Los parámetros pueden variar en número, tipo y orden.
+
+
+Ejemplo:
 
 ```C++
 #include <iostream>
