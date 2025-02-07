@@ -8,6 +8,9 @@ public:
     string nombre;
     string ap;
 public:
+   /*
+   Los metodos estaticos son usados cuando no se usan sin la creación de una instancia
+   */
     static void altaAlumno() 
     {
         Alumno objeto;
