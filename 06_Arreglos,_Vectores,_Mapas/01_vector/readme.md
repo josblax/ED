@@ -267,7 +267,7 @@ imprime(v1);
 ___
 
 
-```
+
 # ITERADORES
 
 Las funciones miembro de la clase std::vector proporcionan varias funcionalidades a los contenedores vectoriales. A continuación, se describen algunas funciones miembro de uso común:
