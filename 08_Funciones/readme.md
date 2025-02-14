@@ -324,6 +324,32 @@ Un parámetro cuyo Tipo NO va seguido de un signo ampersand (&) se denomina par�
 
 Un parámetro cuyo Tipo va seguido de un signo ampersand (&) se denomina parámetro x referencia. Un parámetro x referencia es un alias (por ejemplo, otro nombre) para su argumento correspondiente. Y el valor del argumento que se pasa, será modificado.
 
+Ejemplo simple:
+
+```C++
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+void suma(int& a) 
+{
+    cout << "numero en suma() " 
+        << a << endl;
+    a++;
+    cout << "numero en suma() "
+        << a << endl;
+}
+int main()
+{
+    int numero = 10;
+    suma(numero);
+    cout << "numero en main() " <<
+        numero << endl;
+}
+```
+
+____
 ### Ejemplo: Parámetros x valor y Parámetros por referencia.
 
 Haga un nuevo código que incluya las funciones prototipo y sus definiciones y use parametros por valor y por referencia, segun sea el caso. 
