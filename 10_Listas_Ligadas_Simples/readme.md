@@ -314,3 +314,8 @@ public:
 
 };
 ```
+
+
+## Método insertarOrdenado
+
+Este método inserta un nodo en la lista en la posición correcta para mantener la lista ordenada. Funciona comparando el valor del nodo a insertar (valor) con los valores existentes en la lista.
