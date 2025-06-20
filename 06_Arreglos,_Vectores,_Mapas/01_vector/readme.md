@@ -346,5 +346,29 @@ ___
         cout << *j << " ";
    
 ```
+___
 
+## Sort
+
+La función std::sort() de la librería <algorithm> reordena los elementos de un vector en orden ascendente, actuando directamente sobre él.
+
+### ¿Cómo se utiliza?
+
+Primero, necesitas incluir la librería adecuada:
+
+```C++
+
+#include <algorithm>
+#include <vector>
+
+
+sort(vector.begin(), vector.end());
+```
+
+> vector.begin() → apunta al primer elemento
+  vector.end() → apunta al “final” (posición siguiente al último elemento
+
+Si quieres ordenarlo al revéz
+
+sort(notas.begin(), notas.end(), greater<int>());
 ___
