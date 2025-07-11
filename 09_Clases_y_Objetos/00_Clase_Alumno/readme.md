@@ -2,14 +2,14 @@
 
 Algoritmo para registro y visualización de alumnos y sus materias
 1. Declarar estructuras y variables
-  •	Definir una clase Materias con:
-    o	materia: nombre de la materia (string)
-    o	calificacion: calificación (double)
-  •	Definir una clase Alumno con:
-    o	nombreCompleto: nombre del alumno (string)
-    o	nc: número de control (int)
-    o	v2: vector que almacena objetos tipo Materias
-  •	Declarar la variable global numMaterias para indicar cuántas materias tiene cada alumno.
+ * Definir una clase Materias con:
+    -materia: nombre de la materia (string)
+    - calificacion: calificación (double)
+  * Definir una clase Alumno con:
+    - nombreCompleto: nombre del alumno (string)
+    - nc: número de control (int)
+    - v2: vector que almacena objetos tipo Materias
+  * Declarar la variable global numMaterias para indicar cuántas materias tiene cada alumno.
 2. Función altaAlumno(vector &v1)
   •	Crear un objeto Alumno temporal llamado alumno.
   •	Solicitar al usuario:
