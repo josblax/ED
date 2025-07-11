@@ -3,7 +3,7 @@
 Algoritmo para registro y visualización de alumnos y sus materias
 1. Declarar estructuras y variables
  * Definir una clase Materias con:
-    -materia: nombre de la materia (string)
+    - materia: nombre de la materia (string)
     - calificacion: calificación (double)
   * Definir una clase Alumno con:
     - nombreCompleto: nombre del alumno (string)
