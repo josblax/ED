@@ -6,3 +6,8 @@
 
 * Una variable ocupa una posición en memoria.
 * Un apuntador es una variable que almacena la dirección de otra variable.
+
+```C++
+int x = 10;
+int* ptr = &x; // ptr apunta a x
+```
