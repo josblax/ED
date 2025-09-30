@@ -1,4 +1,4 @@
-/# Arreglos 1 dimensión
+# Arreglos 1 dimensión
 
 Las arreglos y vectores son estructuras de datos que contienen más de un elemento. Tipos de estructuras:
 
@@ -13,6 +13,20 @@ Un arreglo es una estructura simple que contiene elementos homogéneos o de un s
 ¿Se anexa alguna librería?
 
 NO
+
+int arr[5];
+
+## Ventajas
+* Son rápidos y sencillos de declarar
+* No necesitan una librería adicional
+* Sintaxis simple y directa
+
+## Desventajas
+
+* Tamaño fijo en tiempo de compilación.
+* No tienen métodos útiles .size()
+* No se pueden copiar directamente con =
+* No detectan errores cuando estan fuera de rango.
 
 ### ¿Como se declara?
 
@@ -68,6 +82,18 @@ La clase array es una secuencia de elementos de secuencia.
 ```C++
 #include <array>
 ```
+
+## Ventajas
+
+* Tamaño fijo pero con métodos útiles .size()
+* Se puede copiar con =
+* Compatible con algoritmos STL (como sort)
+* Más seguro
+
+ ## Desventajas
+
+* Tamaño fijo en tiempo de comparación
+* Requiere incluir la librería <array> 
 
 ### ¿Como se declara?
 
