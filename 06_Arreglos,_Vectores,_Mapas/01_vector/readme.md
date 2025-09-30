@@ -9,6 +9,20 @@
 
 ___
 
+## Ventajas
+
+* Tamaño dinámico: puedes agregar o quitar elementos
+* Métodos útiles como: .size(), .push_back(), at()
+* Compatible con algoritmos STL
+* Maneja memoria automáticamente
+
+## Desventajas
+
+* Ligeramente más lento que los arreglos fijos
+* Requiere incluir la librería <vector>
+* Puede tener overhead de memoria si se redimensiona frecuentemente
+
+
 ## ¿Se anexa alguna librería?
 
 ```cplusplus
