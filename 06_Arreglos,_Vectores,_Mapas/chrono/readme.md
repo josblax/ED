@@ -35,6 +35,5 @@ int main() {
 
     std::cout << "La tarea tardó: " << duration.count() << " milisegundos." << std::endl;
 
-    return 0;
 }
 ```
