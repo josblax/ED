@@ -7,14 +7,14 @@
 7. 	Define la función  calcularIVA() que fue declarada previamente, incluyendo su lógica de cálculo.
 8. 	Explica con código la diferencia entre declarar una función antes del main()  y definirla después.
 9. 	Implementa una función mostrarMenu() sin parámetros ni retorno que imprima un menú de opciones.
-10. 	Crea una función esPar()  que reciba un entero y retorne  si es par,  si no.
-11. 	Diseña una función sumarLista() que reciba un arreglo de enteros y retorne la suma total.
-12. 	Escribe una función convertirTemperatura()  que convierta grados Celsius a Fahrenheit usando parámetros.
-13. 	Escribe una función duplicarValor()  que reciba un entero por valor y lo duplique dentro de la función. ¿Qué sucede con el valor original?
-14. 	Escribe una función  duplicarReferencia() que reciba un entero por referencia y lo duplique. ¿Qué sucede con el valor original?
-15. 	Crea un programa que compare el comportamiento de pasar parámetros por valor y por referencia usando dos funciones distintas.
-16. 	Implementa una función recursiva factorial() que calcule el factorial de un número entero.
-17. 	Escribe una función recursiva fibonacci()  que retorne el n-ésimo número de la serie de Fibonacci.
-18. 	Modifica la función fibonacci()  para que imprima los primeros n términos de la serie.
-19. 	Define dos funciones mostrar() con el mismo nombre: una que reciba un entero y otra que reciba una cadena. Ambas deben imprimir el valor recibido.
-20. 	Crea una función calcularArea() sobrecargada: una versión para calcular el área de un círculo (recibe radio) y otra para un rectángulo (recibe base y altura).
+10. Crea una función esPar()  que reciba un entero y retorne  si es par,  si no.
+11. Diseña una función sumarLista() que reciba un arreglo de enteros y retorne la suma total.
+12. Escribe una función convertirTemperatura()  que convierta grados Celsius a Fahrenheit usando parámetros.
+13. Escribe una función duplicarValor()  que reciba un entero por valor y lo duplique dentro de la función. ¿Qué sucede con el valor original?
+14. Escribe una función  duplicarReferencia() que reciba un entero por referencia y lo duplique. ¿Qué sucede con el valor original?
+15. Crea un programa que compare el comportamiento de pasar parámetros por valor y por referencia usando dos funciones distintas.
+16. Implementa una función recursiva factorial() que calcule el factorial de un número entero.
+17. Escribe una función recursiva fibonacci()  que retorne el n-ésimo número de la serie de Fibonacci.
+18. Modifica la función fibonacci()  para que imprima los primeros n términos de la serie.
+19. Define dos funciones mostrar() con el mismo nombre: una que reciba un entero y otra que reciba una cadena. Ambas deben imprimir el valor recibido.
+20. Crea una función calcularArea() sobrecargada: una versión para calcular el área de un círculo (recibe radio) y otra para un rectángulo (recibe base y altura).
