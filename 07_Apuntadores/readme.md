@@ -120,38 +120,35 @@ int main() {
 * Manejo de arreglos dinámicos: Usar apuntadores para reservar memoria según el tamaño que el usuario indique.
 * Intercambio de valores: Usar funciones con apuntadores para intercambiar valores sin necesidad de retorno.
 
-### Actividad
+
+### Ejercicios:
 
 1. Implementar una función que reciba dos apuntadores a int y los intercambie.
-
-
-## Ejercicios:
-
-1. Declara una variable entera y un apuntador que apunte a ella. Muestra el valor de la variable usando el apuntador.
-2. Crea una variable float y un apuntador que la apunte. Muestra la dirección y el valor usando el apuntador.
-3. Declara una variable char, un apuntador a char, y muestra el carácter usando el apuntador.
-4. Declara una variable int y muestra su dirección de memoria usando &.
-5. Crea dos variables double y guarda sus direcciones en dos apuntadores. Muestra ambas direcciones.
-6. Declara una variable bool y usa & para asignar su dirección a un apuntador. Muestra la dirección en pantalla.
-7. Declara una variable int, un apuntador a int, y muestra el valor usando *.
-8. Modifica el valor de una variable usando su apuntador y el operador *.
-9. Crea una variable float, apunta a ella, y muestra el valor con *. Luego cambia el valor desde el apuntador.
-10. Declara un apuntador a int y asígnale nullptr. Verifica si está vacío antes de usarlo.
-11. Crea una función que reciba un apuntador. Si el apuntador es nullptr, muestra un mensaje de error.
-12. Declara un apuntador a char, asígnale nullptr, y luego asígnale la dirección de una variable válida.
-13. Declara una variable int, un apuntador a int, y un apuntador al apuntador. Muestra el valor usando **.
-14. Modifica el valor de una variable usando un apuntador de apuntador.
-15. Crea una función que reciba un apuntador de apuntador y cambie el valor de la variable original.
+2. Declara una variable entera y un apuntador que apunte a ella. Muestra el valor de la variable usando el apuntador.
+3. Crea una variable float y un apuntador que la apunte. Muestra la dirección y el valor usando el apuntador.
+4. Declara una variable char, un apuntador a char, y muestra el carácter usando el apuntador.
+5. Declara una variable int y muestra su dirección de memoria usando &.
+6. Crea dos variables double y guarda sus direcciones en dos apuntadores. Muestra ambas direcciones.
+7. Declara una variable bool y usa & para asignar su dirección a un apuntador. Muestra la dirección en pantalla.
+8. Declara una variable int, un apuntador a int, y muestra el valor usando *.
+9. Modifica el valor de una variable usando su apuntador y el operador *.
+10. Crea una variable float, apunta a ella, y muestra el valor con *. Luego cambia el valor desde el apuntador.
+11. Declara un apuntador a int y asígnale nullptr. Verifica si está vacío antes de usarlo.
+12. Crea una función que reciba un apuntador. Si el apuntador es nullptr, muestra un mensaje de error.
+13. Declara un apuntador a char, asígnale nullptr, y luego asígnale la dirección de una variable válida.
+14. Declara una variable int, un apuntador a int, y un apuntador al apuntador. Muestra el valor usando **.
+15. Modifica el valor de una variable usando un apuntador de apuntador.
+16. Crea una función que reciba un apuntador de apuntador y cambie el valor de la variable original.
 
 
 ## Caso 1: Modificar una variable desde una función
 
-16. Crea una función que reciba un apuntador a int y le asigne el valor 100.
-17. Implementa una función que reciba un apuntador a float y lo multiplique por 3.14.
-18. Diseña una función que reciba un apuntador a bool y lo cambie de true a false.
+17. Crea una función que reciba un apuntador a int y le asigne el valor 100.
+18. Implementa una función que reciba un apuntador a float y lo multiplique por 3.14.
+19. Diseña una función que reciba un apuntador a bool y lo cambie de true a false.
 
 ## Caso 2: Reservar memoria dinámica
-19. Crea una función que reciba un apuntador doble (int**) y reserve memoria con new.
-20. Implementa una función que reciba un apuntador doble a char y le asigne una letra.
-21. Diseña una función que reciba un apuntador doble a float, reserve memoria y asigne un valor decimal.
+20. Crea una función que reciba un apuntador doble (int**) y reserve memoria con new.
+21. Implementa una función que reciba un apuntador doble a char y le asigne una letra.
+22. Diseña una función que reciba un apuntador doble a float, reserve memoria y asigne un valor decimal.
 
