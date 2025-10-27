@@ -205,7 +205,17 @@ for (int i=0 ; i <=9 ;  i++ ){
 2. Imprime el arreglo usando la instrucción “for” usando el índice y accesa el arreglo meses e imprime los valores del arreglo, debe imprimir “enero”, “febrero”, etc.
 3. Generar el código necesario en C++ para declarar un arreglo que contenga los nombres de los planetas del sistema solar y asignar dichos valores a cada posición. Tip : Usar tipo de variable “string” y asina el nombre a cada posición relativa, es decir la posición cero corresponde a “mercurio”, la posición relativa uno corresponde a “venus” etc. 
 3. Imprime el arreglo usando la instrucción “for” usando el índice y accesa el arreglo planetas e imprime los valores del arreglo, debe imprimir “mercurio”, “venus”, etc.
-
+4. Capturar 10 números enteros en un arreglo y mostrar cuántos son positivos, negativos y ceros
+5. Múltiplos de 3 Generar un arreglo de 20 elementos con los primeros 20 múltiplos de 3 y mostrarlos en pantalla.
+6. Calificaciones y promedio Capturar 12 calificaciones en un arreglo, calcular el promedio y mostrar cuántas están por encima del promedio.
+7. Orden inverso Llenar un arreglo con los números del 1 al 10 y mostrar el contenido en orden inverso.
+8. Clasificación de edades Capturar 15 edades en un arreglo y determinar cuántas personas son menores, adultas o mayores de 65 años.
+9. Serie de impares Generar un arreglo con los primeros 25 términos de la serie de números impares.
+10. Nombres largos Capturar 10 nombres en un arreglo de tipo `string` y mostrar cuántos tienen más de 5 caracteres.
+11. Cuadrados múltiplos de 4 Llenar un arreglo con los cuadrados de los números del 1 al 20 y mostrar solo los que sean múltiplos de 4.
+12. Diferencia de temperaturas Capturar 10 temperaturas en un arreglo y mostrar la diferencia entre la mayor y la menor.
+13. Números primos Generar un arreglo con los primeros 30 números primos y mostrarlos en pantalla.
+14. Capturar 10 municipios en un arreglo de tipo string y mostrar cuántos tienen más de pertenecen al estado de Mexico.
 ___
 
 # Arreglos dos dimensiones
