@@ -48,3 +48,13 @@ Esta tabla resume los pilares fundamentales aplicados en los ejercicios de progr
 Porque el struct es el puente. Una vez que entienden que un objeto puede tener datos y funciones, el salto a la Programación Orientada a Objetos es mucho más sencillo: solo les faltará añadir "seguridad" (modificadores como private y public).
 
 # Guía de Errores Comunes: Estructuras en C++
+
+## 1. El punto y coma olvidado (;)
+Es el error número uno. En C++, después de cerrar la llave de un struct, debe ir un punto y coma. De lo contrario, el compilador pensará que estás intentando declarar una variable de ese tipo de forma inmediata.
+
+´´´
+struct Estudiante {
+    string nombre;
+    float promedio;
+} // <--- ¡ERROR! Falta el ;
+´´´
