@@ -92,7 +92,7 @@ for(int i = 0; i < 5; i++) {
 ```
 
 #### Con Crecimiento Dinámico (push_back)
-```
+```cpp
 vector<Estudiante> lista; // Tamaño 0
 for(int i = 0; i < 5; i++) {
     Estudiante aux;
@@ -107,7 +107,7 @@ for(int i = 0; i < 5; i++) {
 ## 1. El punto y coma olvidado (;)
 Es el error número uno. En C++, después de cerrar la llave de un struct, debe ir un punto y coma. De lo contrario, el compilador pensará que estás intentando declarar una variable de ese tipo de forma inmediata.
 
-```
+```cpp
 struct Estudiante {
     string nombre;
     float promedio;
@@ -123,7 +123,7 @@ Por qué ocurre: cin >> deja el carácter de "Enter" (\n) en el buffer. getline 
 
 Solución: Usar cin.ignore() antes del getline.
 
-```
+```cpp
 cin >> edad;
 cin.ignore(); // Limpia el rastro del Enter
 getline(cin, nombreCompleto);
@@ -133,7 +133,7 @@ getline(cin, nombreCompleto);
 
 Si defines una función dentro del struct, debes llamarla exactamente igual. Un error de dedo en una mayúscula o una letra hará que el struct no reconozca el miembro.
 
-```
+```cpp
 struct Punto {
     void mostrarDato();
 };
@@ -148,7 +148,7 @@ C++ no sabe cómo comparar dos objetos completos por sí solo. No puedes hacer i
 
 Solución: Debes comparar el miembro específico que te interesa (el promedio, el sueldo, la edad).
 
-```
+```cpp
 if (e1.promedio > e2.promedio) // Correcto
 if (e1 > e2) // ERROR: El compilador no sabe qué comparar.
 ```
@@ -157,7 +157,7 @@ if (e1 > e2) // ERROR: El compilador no sabe qué comparar.
 
 Intentar usar una variable que no definiste dentro del molde del struct.
 
-```
+```cpp
 struct Libro { string titulo; };
 
 Libro miLibro;
@@ -170,7 +170,7 @@ Cuando declaras variables (como un vector o un struct) dentro de un case de un s
 
 > Solución: Siempre encierra el código de cada case entre llaves { }.
 
-```
+```cpp
 case 1: { // Abrir llaves para crear un ámbito local
     Estudiante e;
     // ... código ...
@@ -182,7 +182,7 @@ case 1: { // Abrir llaves para crear un ámbito local
 
 Si creas una función fuera del struct para modificarlo (como reponerStock) y olvidas el símbolo &, los cambios solo ocurrirán en una copia temporal.
 
-```
+```cpp
 void vender(Item it) { // Sin el &, esto es una copia
     it.stock -= 10; 
 } // Al salir de aquí, ¡el stock original sigue igual!
@@ -194,8 +194,9 @@ A diferencia de otros lenguajes, si no inicializas una variable numérica dentro
 
 Buen hábito: Siempre inicializa tus variables a 0 o valores vacíos.
 
+```cpp
 struct Producto {
     double precio = 0.0;
     int cantidad = 0;
 };
-
+```
