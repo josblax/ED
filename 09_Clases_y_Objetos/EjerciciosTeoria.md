@@ -65,7 +65,7 @@ Cómo funciona: Cada vez que llamas a push_back(objeto), el vector se "estira", 
 
 Analogía: Es como un salón vacío donde cada vez que llega un alumno, tú tienes que traer un pupitre nuevo de la bodega y ponerlo al final.
 
-# Gestión de Vectores en C++: Memoria Estática vs. Dinámica
+### Gestión de Vectores en C++: Memoria Estática vs. Dinámica
 
 Al trabajar con la librería `<vector>`, existen dos estrategias para almacenar objetos de una estructura (`struct`). La elección depende de si conocemos el tamaño de la colección de antemano.
 
@@ -89,6 +89,18 @@ vector<Estudiante> lista(5); // Crea 5 espacios ya listos
 for(int i = 0; i < 5; i++) {
     lista[i].leer(); // Accede al espacio 'i'
 }
+```
+
+#### Con Crecimiento Dinámico (push_back)
+```
+vector<Estudiante> lista; // Tamaño 0
+for(int i = 0; i < 5; i++) {
+    Estudiante aux;
+    aux.leer();
+    lista.push_back(aux); // Crea el espacio 'i' en este momento
+}
+```
+
 
 # Guía de Errores Comunes: Estructuras en C++
 
