@@ -47,6 +47,49 @@ Esta tabla resume los pilares fundamentales aplicados en los ejercicios de progr
 ## 4. ¿Por qué aprender esto antes de Clases (POO)?
 Porque el struct es el puente. Una vez que entienden que un objeto puede tener datos y funciones, el salto a la Programación Orientada a Objetos es mucho más sencillo: solo les faltará añadir "seguridad" (modificadores como private y public).
 
+
+## 5. Vectores 
+
+### Acceso por Índice
+Cuando declaras vector<Estudiante> lista(3);, le estás diciendo a C++: "Reserva espacio para 3 estudiantes ahora mismo". El vector nace con 3 "casillas" vacías pero ya existentes.
+
+Cómo funciona: Accedes directamente a la posición de memoria: lista[0], lista[1], etc.
+
+Analogía: Es como llegar a un salón de clases que ya tiene 3 pupitres fijos. Tú solo llegas y sientas a los alumnos en ellos.
+
+### Uso de push_back (Crecimiento Dinámico)
+
+Si declaras el vector vacío vector<Estudiante> lista;, el vector nace con tamaño 0. No puedes usar lista[0] porque esa casilla no existe y el programa fallaría (error de segmentation fault).
+
+Cómo funciona: Cada vez que llamas a push_back(objeto), el vector se "estira", crea una nueva casilla al final y copia el objeto ahí.
+
+Analogía: Es como un salón vacío donde cada vez que llega un alumno, tú tienes que traer un pupitre nuevo de la bodega y ponerlo al final.
+
+# Gestión de Vectores en C++: Memoria Estática vs. Dinámica
+
+Al trabajar con la librería `<vector>`, existen dos estrategias para almacenar objetos de una estructura (`struct`). La elección depende de si conocemos el tamaño de la colección de antemano.
+
+| Característica | Acceso por Índice (`lista[i]`) | Uso de `push_back()` |
+| :--- | :--- | :--- |
+| **Estado Inicial** | El vector nace con un tamaño fijo: `vector<T> v(n);`. | El vector nace vacío: `vector<T> v;`. |
+| **Gestión de Memoria** | Reserva todo el espacio necesario en RAM desde el inicio. | Reserva memoria dinámicamente conforme se añaden elementos. |
+| **Inserción de Datos** | Se asigna directamente a una "casilla" ya existente. | Se añade un nuevo elemento al final, expandiendo el contenedor. |
+| **Sintaxis de Llenado** | `cin >> v[i].miembro;` | `aux.leer(); v.push_back(aux);` |
+| **Rendimiento** | **Más rápido:** Evita realojamientos de memoria constantes. | **Flexible:** Ideal cuando el número de datos es desconocido. |
+| **Riesgo Común** | Intentar acceder a un índice mayor al declarado (`Out of bounds`). | Intentar usar `v[i]` antes de haber hecho un `push_back`. |
+| **Uso Ideal** | Listas con cupo limitado (Ej. "Los 10 mejores alumnos"). | Listas abiertas (Ej. "Carrito de compras" o "Lista de contactos"). |
+
+---
+
+### Ejemplo de Diferencia en Código
+
+#### Con Tamaño Predefinido (Acceso Directo)
+```cpp
+vector<Estudiante> lista(5); // Crea 5 espacios ya listos
+for(int i = 0; i < 5; i++) {
+    lista[i].leer(); // Accede al espacio 'i'
+}
+
 # Guía de Errores Comunes: Estructuras en C++
 
 ## 1. El punto y coma olvidado (;)
