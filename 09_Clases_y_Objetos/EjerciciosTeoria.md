@@ -58,3 +58,89 @@ struct Estudiante {
     float promedio;
 } // <--- ¡ERROR! Falta el ;
 ```
+Error del compilador: expected ';' after struct definition.
+
+## 2. El "Salto" del getline (Buffer Sucio)
+
+Cuando usas cin >> para leer un número y luego getline() para leer un texto con espacios (como el título de un libro), el programa parece saltarse la lectura del texto.
+
+Por qué ocurre: cin >> deja el carácter de "Enter" (\n) en el buffer. getline lo lee inmediatamente y piensa que terminaste.
+
+Solución: Usar cin.ignore() antes del getline.
+
+```
+cin >> edad;
+cin.ignore(); // Limpia el rastro del Enter
+getline(cin, nombreCompleto);
+```
+
+## 3. El error del "Case-Sensitive" en Métodos
+
+Si defines una función dentro del struct, debes llamarla exactamente igual. Un error de dedo en una mayúscula o una letra hará que el struct no reconozca el miembro.
+
+```
+struct Punto {
+    void mostrarDato();
+};
+
+// ... en el main ...
+p.mostrardato(); // ERROR: C++ distingue entre mayúsculas y minúsculas.
+```
+
+## 4. Comparar Estructuras Completas
+
+C++ no sabe cómo comparar dos objetos completos por sí solo. No puedes hacer if (estudiante1 > estudiante2).
+
+Solución: Debes comparar el miembro específico que te interesa (el promedio, el sueldo, la edad).
+
+```
+if (e1.promedio > e2.promedio) // Correcto
+if (e1 > e2) // ERROR: El compilador no sabe qué comparar.
+```
+
+## 5. Acceso a Miembros Inexistentes
+
+Intentar usar una variable que no definiste dentro del molde del struct.
+
+```
+struct Libro { string titulo; };
+
+Libro miLibro;
+miLibro.autor = "Cervantes"; // ERROR: 'autor' no existe en la estructura Libro.
+```
+
+## 6. Olvidar el Ámbito (Scope) en el Switch
+
+Cuando declaras variables (como un vector o un struct) dentro de un case de un switch, C++ puede confundirse sobre dónde empieza y termina esa variable.
+
+> Solución: Siempre encierra el código de cada case entre llaves { }.
+
+```
+case 1: { // Abrir llaves para crear un ámbito local
+    Estudiante e;
+    // ... código ...
+    break;
+} // Cerrar llaves
+```
+
+## 7. Paso por Valor en Funciones Externas
+
+Si creas una función fuera del struct para modificarlo (como reponerStock) y olvidas el símbolo &, los cambios solo ocurrirán en una copia temporal.
+
+```
+void vender(Item it) { // Sin el &, esto es una copia
+    it.stock -= 10; 
+} // Al salir de aquí, ¡el stock original sigue igual!
+```
+
+## 8. Inicialización de Miembros
+
+A diferencia de otros lenguajes, si no inicializas una variable numérica dentro de un struct, esta contendrá "basura" (un número aleatorio que quedó en la memoria).
+
+Buen hábito: Siempre inicializa tus variables a 0 o valores vacíos.
+
+struct Producto {
+    double precio = 0.0;
+    int cantidad = 0;
+};
+
