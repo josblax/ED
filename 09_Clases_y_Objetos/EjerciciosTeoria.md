@@ -52,9 +52,9 @@ Porque el struct es el puente. Una vez que entienden que un objeto puede tener d
 ## 1. El punto y coma olvidado (;)
 Es el error número uno. En C++, después de cerrar la llave de un struct, debe ir un punto y coma. De lo contrario, el compilador pensará que estás intentando declarar una variable de ese tipo de forma inmediata.
 
-´´´
+```
 struct Estudiante {
     string nombre;
     float promedio;
 } // <--- ¡ERROR! Falta el ;
-´´´
+```
