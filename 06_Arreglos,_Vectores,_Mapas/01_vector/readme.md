@@ -141,7 +141,6 @@ ___
 
 ## Ejemplo 1: Declaración Básica y Agregado de Elementos (Línea de Tiempo de Keyframes)
 
-Que son los keyframes?
 
 ### [Que es un keyframe?](https://youtu.be/seAx5WnCZPI?si=LEw118M-qgTvz0kf)
 
