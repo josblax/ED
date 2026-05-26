@@ -137,7 +137,7 @@ Resultado:
 
 ___
 
-# Ejercicios
+# Ejemplos
 
 ## Ejemplo 1: Declaración Básica y Agregado de Elementos (Línea de Tiempo de Keyframes)
 
@@ -279,10 +279,142 @@ ___
 ​
 ### Lógica en C++: Usamos dos vectores paralelos: uno para la posición en X y otro para el color. Con un ciclo for, revisamos las posiciones. Si la posición es mayor o igual al límite del muro (decisión if), cambiamos el color en el mismo índice. (if (posicionesX[i] >= limiteMuro) colores[i] = "Rojo";).
 
+___
 
-
+## 2. Gravedad y Aterrizaje (Límites de Suelo)
+​
+### Contexto en Unity: Un personaje con Rigidbody cae hasta que colisiona con el suelo, deteniendo su velocidad en Y.
+​
+### Simula la caída libre de tres objetos. Recorre sus alturas y réstales una fuerza de gravedad constante. Si el resultado provoca que un objeto traspase el nivel del piso (valores menores a cero), fuerza matemáticamente su posición para que aterrice exactamente en cero.
+​
+### Convención de Variables a usar:
+* vector<float> posicionesY
+* float gravedad
+​
+### Lógica en C++: Recorremos un vector de posiciones en el eje Y restando un valor de "gravedad". Si la posición baja de cero (el suelo), la forzamos a quedarse en cero para evitar que el objeto caiga infinitamente al vacío. (if (posicionesY[i] <= 0.0f) posicionesY[i] = 0.0f;).
 
 
 ___
 
+## 3. Zonas de Aceleración (Speed Boost)
+​
 
+### Contexto en Unity: Un vehículo entra en un área (Trigger) que duplica su velocidad, como en los juegos de carreras.
+​
+### Desarrolla un algoritmo que analice la ubicación espacial de un grupo de vehículos. Si un vehículo se encuentra dentro de un rango numérico estrictamente delimitado (entre un inicio y un fin), su velocidad actual debe multiplicarse por dos.
+​
+### Convención de Variables a usar:
+
+* vector<float> posicionesX
+* vector<float> velocidades
+* float inicioZona
+* float finZona
+​
+### Lógica en C++: Evaluamos si la posición actual de un vehículo está dentro de un rango numérico específico usando el operador lógico &&. Si es verdadero, multiplicamos su velocidad en el vector paralelo. (if (posicionesX[i] > inicioZona && posicionesX[i] < finZona) velocidades[i] *= 2.0f;).
+
+
+___
+
+## 4. Recolección de Monedas (Destrucción Lógica)
+​
+### Contexto en Unity: El jugador toca una moneda, esta desaparece de la escena y el contador de puntos aumenta.
+​
+### Implementa un sistema de recolección utilizando valores booleanos. Evalúa una lista de monedas; si el sistema detecta que una moneda sigue activa, debe cambiar su estado a inactiva y aumentar el contador global de puntaje del jugador.
+​
+### Convención de Variables a usar:
+
+* vector<bool> monedasActivas
+* int puntaje
+​
+### Lógica en C++: Usamos un vector de booleanos para representar si las monedas están activas. Si el jugador pasa por el índice de una moneda activa, la vuelve falsa y suma puntos. (if (monedasActivas[i] == true) { monedasActivas[i] = false; puntaje++; }).
+
+___
+
+## 5. Efecto Pac-Man (Teletransporte en Bordes)
+​
+### Contexto en Unity: Cuando un personaje sale por el borde derecho de la pantalla, reaparece inmediatamente en el borde izquierdo.
+​
+### Crea una rutina que limite el avance infinito de los personajes. Compara la posición horizontal de cada uno; si esta sobrepasa el ancho total de la pantalla, reinicia su coordenada inmediatamente a cero para simular el teletransporte.
+​
+### Convención de Variables a usar:
+
+* vector<float> posicionesX
+* float anchoPantalla
+​
+### Lógica en C++: Durante el ciclo de movimiento, comprobamos si la posición superó el límite máximo de la pantalla. De ser así, reiniciamos la variable a cero. (if (posicionesX[i] > anchoPantalla) posicionesX[i] = 0.0f;).
+
+___
+
+## 6. Animación de Crecimiento (Escalar hasta un Tope)
+​
+### Contexto en Unity: Una explosión o un escudo mágico crece gradualmente pero debe detenerse en un tamaño máximo para no cubrir toda la cámara.
+​
+### Codifica la expansión de diferentes efectos visuales. Suma gradualmente una velocidad de crecimiento a la escala actual de los objetos, asegurándote mediante una barrera de decisión que ningún objeto rebase la escala máxima permitida en el diseño del juego.
+​
+### Convención de Variables a usar:
+
+* vector<float> escalas
+* float escalaMaxima
+* float velocidadCrecimiento
+​
+### Lógica en C++: Incrementamos el valor dentro del vector de escalas, pero usamos un if para asegurarnos de que la suma solo ocurra mientras el tamaño sea menor al límite permitido. (if (escalas[i] < escalaMaxima) escalas[i] += velocidadCrecimiento;).
+
+___
+
+## 7. Parpadeo de Luces (Toggle Boolean)
+​
+### Contexto en Unity: Luces de neón o faroles parpadeantes en un escenario nocturno que se encienden y apagan en cada fotograma.
+​
+### Diseña un sistema intermitente para elementos ambientales. Recorre una lista que controla el estado de encendido de varias luces e invierte su valor lógico en cada iteración para lograr un efecto de alternancia. Imprime el resultado.
+​
+### Convención de Variables a usar:
+
+* vector<bool> lucesEncendidas
+​
+### Lógica en C++: Recorremos un vector de booleanos e invertimos su estado actual usando el operador lógico NOT (!). (lucesEncendidas[i] = !lucesEncendidas[i];) 
+
+___
+
+## 8. Desgaste de Barra de Vida (Clamp)
+
+### Contexto en Unity: Un enemigo recibe daño por fuego prolongado. Su vida baja, pero la interfaz gráfica (UI) no debe mostrar números negativos.
+​
+### Simula el desgaste de salud de un escuadrón enemigo aplicando una penalización de daño constante. Para evitar el colapso visual de las barras de salud, verifica que la vida resultante nunca descienda por debajo de cero; si lo hace, ajústala al valor nulo.
+​
+### Convención de Variables a usar:
+
+* vector<float> saludEnemigos
+* float danoFuego
+​
+### Lógica en C++: Restamos el daño a un vector de salud. Si la salud resultante es menor a cero, la fijamos en cero (comportamiento clásico de la función Clamp en motores gráficos). (if (saludEnemigos[i] < 0) saludEnemigos[i] = 0;).
+
+___
+
+## 9. Desactivar Objetos Lejanos (Culling Básico)
+​
+### Contexto en Unity: Para ahorrar memoria, los objetos que están demasiado lejos de la cámara se vuelven invisibles o inactivos.
+​
+### Optimiza los recursos del motor gráfico apagando los elementos lejanos. Evalúa la profundidad espacial (coordenada Z) de la lista de objetos; aquellos cuya distancia supere la capacidad de visión máxima de la cámara deberán cambiar su estado a ocultos.
+​
+### Convención de Variables a usar:
+
+* vector<float> profundidadZ
+* vector<bool> esVisible
+* float distanciaMaxima
+​
+### Lógica en C++: Comparamos la posición Z de varios elementos. Si la distancia supera nuestro umbral de visión, marcamos un vector paralelo de visibilidad como falso. (if (profundidadZ[i] > distanciaMaxima) esVisible[i] = false;).
+
+___
+
+## 10. Seleccionar un Objeto (Hover)
+
+### Contexto en Unity: El jugador pasa el mouse sobre un objeto del inventario y este se resalta, mientras los demás vuelven a su estado normal.
+​
+### Modela la selección dinámica en un menú de interfaz de usuario. Al recorrer la lista de botones disponibles, verifica si el iterador actual coincide con el índice que señala el cursor del usuario. Si coinciden, sobrescribe el estado del botón a "Resaltado"; de lo contrario, asegúrate de que permanezca o vuelva a su estado "Normal".
+​
+### Convención de Variables a usar:
+
+* vector<string> estados
+* int indiceMouse
+​
+### Lógica en C++: En un ciclo, comparamos el índice actual (que representaría la posición del mouse) con el vector de IDs. Si coinciden, marcamos "Resaltado", y si no (usando else), marcamos "Normal". (if (i == indiceMouse) estados[i] = "Resaltado"; else estados[i] = "Normal";).
