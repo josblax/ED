@@ -186,6 +186,17 @@ Resultado:
 
 ![image](https://github.com/user-attachments/assets/79f5658d-ace1-4874-83ad-2d025e278e89)
 
+
+## Ejercicios
+
+### Ejemplo 1: Declaración Básica y Agregado de Elementos (Línea de Tiempo de Keyframes)
+
+Que son los keyframes?
+
+#### [Que es un keyframe?](https://youtu.be/seAx5WnCZPI?si=LEw118M-qgTvz0kf)
+
+
+
 ___
 
 ## insert() – Inserta nuevos elementos después del elemento en la posición especificada.
