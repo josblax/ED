@@ -190,13 +190,13 @@ ___
 
 # Ejercicios
 
-### Ejemplo 1: Declaración Básica y Agregado de Elementos (Línea de Tiempo de Keyframes)
+## Ejemplo 1: Declaración Básica y Agregado de Elementos (Línea de Tiempo de Keyframes)
 
 Que son los keyframes?
 
-#### [Que es un keyframe?](https://youtu.be/seAx5WnCZPI?si=LEw118M-qgTvz0kf)
+### [Que es un keyframe?](https://youtu.be/seAx5WnCZPI?si=LEw118M-qgTvz0kf)
 
-#### Contexto en Animación: Una línea de tiempo de animación (Timeline) no siempre tiene eventos en cada fotograma. A veces solo necesitamos guardar los fotogramas clave (Keyframes) donde ocurre un cambio de pose.
+### Contexto en Animación: Una línea de tiempo de animación (Timeline) no siempre tiene eventos en cada fotograma. A veces solo necesitamos guardar los fotogramas clave (Keyframes) donde ocurre un cambio de pose.
 
 ```cplusplus
 
@@ -222,16 +222,59 @@ int main() {
 
 ```
 
-#### Explicación:
+### Explicación:
 ​
-##### Sintaxis y Contenedores: 
+#### Sintaxis y Contenedores: 
 
 * Usamos #include <vector> para importar la librería.
 * Al declarar vector<int>, le decimos al compilador el tipo exacto de variable que almacenará.
 ​
-##### Comportamiento Dinámico:
+#### Comportamiento Dinámico:
 
 * A diferencia de un arreglo estático int arr[3], el vector nace vacío y crece dinámicamente usando la palabra reservada push_back().
+
+___
+
+## Ejemplo 2 Eliminación Dinámica (Gestión de un Sistema de Partículas)
+
+### Contexto en Animación: Al crear un efecto visual (como fuego o humo), las partículas nacen (se agregan) y luego mueren cuando su opacidad llega a cero para liberar memoria.
+
+```cplusplus
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    // Vector pre-llenado con la vida útil (opacidad) de 3 partículas
+    vector<float> opacidadParticulas = {1.0f, 0.5f, 0.0f}; 
+
+    // Estructura de Decisión: Verificamos si la última partícula "murió"
+    if (opacidadParticulas.back() == 0.0f) {
+        // Eliminamos la partícula muerta del final de la lista
+        opacidadParticulas.pop_back(); 
+        cout << "Particula eliminada. Memoria liberada." << endl;
+    }
+
+    cout << "Particulas activas en pantalla: " << opacidadParticulas.size() << endl;
+
+
+}
+
+```
+
+### Explicación:
+​
+#### Tipos de Variables: 
+* Usamos float porque la opacidad (Alpha) en la programación gráfica se suele medir con números fraccionarios de precisión simple (de 0.0 a 1.0) para mantener un bajo peso en memoria.
+​
+#### Operadores y Decisión: 
+* Utilizamos el operador lógico de igualdad absoluta == dentro de la estructura condicional if para ramificar el código. La función pop_back() se encarga de destruir el último elemento dinámicamente.
+
+
+```
+
 ___
 
 ## insert() – Inserta nuevos elementos después del elemento en la posición especificada.
