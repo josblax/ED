@@ -198,13 +198,15 @@ Que son los keyframes?
 
 #### Contexto en Animación: Una línea de tiempo de animación (Timeline) no siempre tiene eventos en cada fotograma. A veces solo necesitamos guardar los fotogramas clave (Keyframes) donde ocurre un cambio de pose.
 
-​#### Explicación:
+#### Explicación:
 ​
-Sintaxis y Contenedores: 
+##### Sintaxis y Contenedores: 
+
 * Usamos #include <vector> para importar la librería.
 * Al declarar vector<int>, le decimos al compilador el tipo exacto de variable que almacenará.
 ​
-Comportamiento Dinámico:
+##### Comportamiento Dinámico:
+
 * A diferencia de un arreglo estático int arr[3], el vector nace vacío y crece dinámicamente usando la palabra reservada push_back().
 ___
 
