@@ -198,6 +198,31 @@ Que son los keyframes?
 
 #### Contexto en Animación: Una línea de tiempo de animación (Timeline) no siempre tiene eventos en cada fotograma. A veces solo necesitamos guardar los fotogramas clave (Keyframes) donde ocurre un cambio de pose.
 
+```cplusplus
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    // 1. Declaración: Creamos un vector vacío para guardar enteros (fotogramas)
+    vector<int> fotogramasClave;
+
+    // 2. Inserción: Agregamos los fotogramas donde el personaje cambia de pose
+    fotogramasClave.push_back(1);   // Pose inicial
+    fotogramasClave.push_back(12);  // Salto
+    fotogramasClave.push_back(24);  // Aterrizaje
+
+    // 3. Salida Secuencial: Imprimimos el tamaño dinámico del vector
+    cout << "Total de keyframes registrados: " << fotogramasClave.size() << endl;
+
+    return 0;
+}
+
+
+```
+
 #### Explicación:
 ​
 ##### Sintaxis y Contenedores: 
