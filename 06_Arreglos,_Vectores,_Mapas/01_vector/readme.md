@@ -272,9 +272,9 @@ ___
 ​
 ### Convención de Variables a usar:
 
-* vector<float> posicionesX
-* vector<string> colores
-* float limiteMuro
+* vector<float> posicionesX {2.0f, 8.5f, 12.0f}
+* vector<string> colores {"Verde", "Verde", "Verde"}
+* float limiteMuro 10.0f
 ​
 ### Lógica en C++: Usamos dos vectores paralelos: uno para la posición en X y otro para el color. Con un ciclo for, revisamos las posiciones. Si la posición es mayor o igual al límite del muro (decisión if), cambiamos el color en el mismo índice. (if (posicionesX[i] >= limiteMuro) colores[i] = "Rojo";).
 
@@ -287,8 +287,8 @@ ___
 ### Simula la caída libre de tres objetos. Recorre sus alturas y réstales una fuerza de gravedad constante. Si el resultado provoca que un objeto traspase el nivel del piso (valores menores a cero), fuerza matemáticamente su posición para que aterrice exactamente en cero.
 ​
 ### Convención de Variables a usar:
-* vector<float> posicionesY
-* float gravedad
+* vector<float> posicionesY {10.0f, 1.5f, -2.0f}
+* float gravedad 2.0f
 ​
 ### Lógica en C++: Recorremos un vector de posiciones en el eje Y restando un valor de "gravedad". Si la posición baja de cero (el suelo), la forzamos a quedarse en cero para evitar que el objeto caiga infinitamente al vacío. (if (posicionesY[i] <= 0.0f) posicionesY[i] = 0.0f;).
 
@@ -304,10 +304,10 @@ ___
 ​
 ### Convención de Variables a usar:
 
-* vector<float> posicionesX
-* vector<float> velocidades
-* float inicioZona
-* float finZona
+* vector<float> posicionesX {5.0f, 15.0f, 25.0f}
+* vector<float> velocidades {10.0f, 10.0f, 10.0f}
+* float inicioZona 10.0f
+* float finZona 20.0f
 ​
 ### Lógica en C++: Evaluamos si la posición actual de un vehículo está dentro de un rango numérico específico usando el operador lógico &&. Si es verdadero, multiplicamos su velocidad en el vector paralelo. (if (posicionesX[i] > inicioZona && posicionesX[i] < finZona) velocidades[i] *= 2.0f;).
 
@@ -322,8 +322,8 @@ ___
 ​
 ### Convención de Variables a usar:
 
-* vector<bool> monedasActivas
-* int puntaje
+* vector<bool> monedasActivas {true, true, true}
+* int puntaje 0
 ​
 ### Lógica en C++: Usamos un vector de booleanos para representar si las monedas están activas. Si el jugador pasa por el índice de una moneda activa, la vuelve falsa y suma puntos. (if (monedasActivas[i] == true) { monedasActivas[i] = false; puntaje++; }).
 
@@ -337,8 +337,8 @@ ___
 ​
 ### Convención de Variables a usar:
 
-* vector<float> posicionesX
-* float anchoPantalla
+* vector<float> posicionesX {100.0f, 790.0f, 850.0f}
+* float anchoPantalla 800.0f
 ​
 ### Lógica en C++: Durante el ciclo de movimiento, comprobamos si la posición superó el límite máximo de la pantalla. De ser así, reiniciamos la variable a cero. (if (posicionesX[i] > anchoPantalla) posicionesX[i] = 0.0f;).
 
@@ -352,9 +352,9 @@ ___
 ​
 ### Convención de Variables a usar:
 
-* vector<float> escalas
-* float escalaMaxima
-* float velocidadCrecimiento
+* vector<float> escalas {1.0f, 2.8f, 5.0f}
+* float escalaMaxima 0.5f
+* float velocidadCrecimiento 3.0f
 ​
 ### Lógica en C++: Incrementamos el valor dentro del vector de escalas, pero usamos un if para asegurarnos de que la suma solo ocurra mientras el tamaño sea menor al límite permitido. (if (escalas[i] < escalaMaxima) escalas[i] += velocidadCrecimiento;).
 
@@ -368,7 +368,7 @@ ___
 ​
 ### Convención de Variables a usar:
 
-* vector<bool> lucesEncendidas
+* vector<bool> lucesEncendidas {true, false, true}
 ​
 ### Lógica en C++: Recorremos un vector de booleanos e invertimos su estado actual usando el operador lógico NOT (!). (lucesEncendidas[i] = !lucesEncendidas[i];) 
 
@@ -382,8 +382,8 @@ ___
 ​
 ### Convención de Variables a usar:
 
-* vector<float> saludEnemigos
-* float danoFuego
+* vector<float> vidaEnemigos {50.0f, 10.0f, 5.0f}
+* float danoFuego 15.0f
 ​
 ### Lógica en C++: Restamos el daño a un vector de salud. Si la salud resultante es menor a cero, la fijamos en cero (comportamiento clásico de la función Clamp en motores gráficos). (if (saludEnemigos[i] < 0) saludEnemigos[i] = 0;).
 
@@ -397,9 +397,9 @@ ___
 ​
 ### Convención de Variables a usar:
 
-* vector<float> profundidadZ
-* vector<bool> esVisible
-* float distanciaMaxima
+* vector<float> profundidadZ {20.0f, 150.0f, 80.0f}
+* vector<bool> esVisible {true, true, true}
+* float distanciaMaxima 100.0f
 ​
 ### Lógica en C++: Comparamos la posición Z de varios elementos. Si la distancia supera nuestro umbral de visión, marcamos un vector paralelo de visibilidad como falso. (if (profundidadZ[i] > distanciaMaxima) esVisible[i] = false;).
 
@@ -413,7 +413,7 @@ ___
 ​
 ### Convención de Variables a usar:
 
-* vector<string> estados
-* int indiceMouse
+* vector<string> estados {"Normal", "Normal", "Normal", "Normal"}
+* int indiceMouse 2
 ​
 ### Lógica en C++: En un ciclo, comparamos el índice actual (que representaría la posición del mouse) con el vector de IDs. Si coinciden, marcamos "Resaltado", y si no (usando else), marcamos "Normal". (if (i == indiceMouse) estados[i] = "Resaltado"; else estados[i] = "Normal";).
