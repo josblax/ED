@@ -323,6 +323,7 @@ ___
 #### Escribe un programa que utilice un ciclo para evaluar la posición horizontal de tres objetos interactivos. Si la posición de un objeto es mayor o igual al límite físico de un muro, su color correspondiente debe cambiar de "Verde" a "Rojo".
 ​
 ### Convención de Variables a usar:
+
 ​* vector<float> posicionesX
 ​* vector<string> colores
 ​* float limiteMuro
