@@ -217,7 +217,6 @@ int main() {
     // 3. Salida Secuencial: Imprimimos el tamaño dinámico del vector
     cout << "Total de keyframes registrados: " << fotogramasClave.size() << endl;
 
-    return 0;
 }
 
 
