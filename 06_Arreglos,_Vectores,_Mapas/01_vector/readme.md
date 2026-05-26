@@ -324,9 +324,9 @@ ___
 ​
 ### Convención de Variables a usar:
 
-​* vector<float> posicionesX
-​* vector<string> colores
-​* float limiteMuro
+* vector<float> posicionesX
+* vector<string> colores
+* float limiteMuro
 ​
 ### Lógica en C++: Usamos dos vectores paralelos: uno para la posición en X y otro para el color. Con un ciclo for, revisamos las posiciones. Si la posición es mayor o igual al límite del muro (decisión if), cambiamos el color en el mismo índice. (if (posicionesX[i] >= limiteMuro) colores[i] = "Rojo";).
 
