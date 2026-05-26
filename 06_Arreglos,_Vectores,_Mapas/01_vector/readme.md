@@ -273,7 +273,43 @@ int main() {
 * Utilizamos el operador lógico de igualdad absoluta == dentro de la estructura condicional if para ramificar el código. La función pop_back() se encarga de destruir el último elemento dinámicamente.
 
 
+___
+
+## Ejemplo 3 : Ciclos y Mutación de Datos (Traslación de Vértices 2D)
+
+### ​Contexto en Animación: Para mover una figura plana (un cuadrado, por ejemplo) a través de la pantalla, el motor necesita recorrer todos sus vértices y sumarles una velocidad (offset).
+
+```cplusplus
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    // Coordenadas X locales de los vértices de un Sprite
+    vector<float> verticesX = {10.5f, 20.5f, 20.5f, 10.5f};
+    float velocidad = 5.0f;
+
+    // Estructura Iterativa: Recorremos el vector para aplicar la traslación
+    cout << "Nuevas posiciones en pantalla:" << endl;
+    for (int i = 0; i < verticesX.size(); i++) {
+        verticesX[i] += velocidad; // Operador de asignación compuesta
+        cout << "Vertice " << i << ": " << verticesX[i] << "px" << endl;
+    }
+
+}
+
 ```
+
+### Explicación:
+​
+#### Estructuras Iterativas: 
+* Introducimos el ciclo for. Es un ciclo controlado ideal para recorrer rangos finitos (como los elementos de nuestro vector).
+
+#### Operadores: 
+* El operador de asignación compuesta += toma el valor de la coordenada local, le suma la velocidad y lo guarda en la misma variable de memoria virtual, actualizando la coordenada espacial absoluta de nuestro gráfico.
+
 
 ___
 
