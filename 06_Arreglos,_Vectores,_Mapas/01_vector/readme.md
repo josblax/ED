@@ -313,6 +313,28 @@ int main() {
 
 ___
 
+
+# P2 Ejercicios
+
+## 1. Colisión contra un Muro (Cambio de Color)
+
+### Contexto en Unity: Cuando un objeto toca un Collider, cambia su material o color (ej. de verde a rojo para indicar daño).
+​
+#### Escribe un programa que utilice un ciclo para evaluar la posición horizontal de tres objetos interactivos. Si la posición de un objeto es mayor o igual al límite físico de un muro, su color correspondiente debe cambiar de "Verde" a "Rojo".
+​
+### Convención de Variables a usar:
+​* vector<float> posicionesX
+​* vector<string> colores
+​* float limiteMuro
+​
+### Lógica en C++: Usamos dos vectores paralelos: uno para la posición en X y otro para el color. Con un ciclo for, revisamos las posiciones. Si la posición es mayor o igual al límite del muro (decisión if), cambiamos el color en el mismo índice. (if (posicionesX[i] >= limiteMuro) colores[i] = "Rojo";).
+
+
+
+
+
+___
+
 ## insert() – Inserta nuevos elementos después del elemento en la posición especificada.
 
 ```c++
