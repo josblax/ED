@@ -186,8 +186,9 @@ Resultado:
 
 ![image](https://github.com/user-attachments/assets/79f5658d-ace1-4874-83ad-2d025e278e89)
 
+___
 
-## Ejercicios
+# Ejercicios
 
 ### Ejemplo 1: Declaración Básica y Agregado de Elementos (Línea de Tiempo de Keyframes)
 
@@ -195,8 +196,16 @@ Que son los keyframes?
 
 #### [Que es un keyframe?](https://youtu.be/seAx5WnCZPI?si=LEw118M-qgTvz0kf)
 
+#### Contexto en Animación: Una línea de tiempo de animación (Timeline) no siempre tiene eventos en cada fotograma. A veces solo necesitamos guardar los fotogramas clave (Keyframes) donde ocurre un cambio de pose.
 
-
+​#### Explicación:
+​
+Sintaxis y Contenedores: 
+* Usamos #include <vector> para importar la librería.
+* Al declarar vector<int>, le decimos al compilador el tipo exacto de variable que almacenará.
+​
+Comportamiento Dinámico:
+* A diferencia de un arreglo estático int arr[3], el vector nace vacío y crece dinámicamente usando la palabra reservada push_back().
 ___
 
 ## insert() – Inserta nuevos elementos después del elemento en la posición especificada.
