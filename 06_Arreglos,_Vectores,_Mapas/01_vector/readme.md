@@ -346,6 +346,8 @@ ___
 
 ## 6. Animación de Crecimiento (Escalar hasta un Tope)
 ​
+[Video sobre Particulas](https://www.youtube.com/watch?v=oPUxv-zClNA)
+
 ### Contexto en Unity: Una explosión o un escudo mágico crece gradualmente pero debe detenerse en un tamaño máximo para no cubrir toda la cámara.
 ​
 ### Codifica la expansión de diferentes efectos visuales. Suma gradualmente una velocidad de crecimiento a la escala actual de los objetos, asegurándote mediante una barrera de decisión que ningún objeto rebase la escala máxima permitida en el diseño del juego.
