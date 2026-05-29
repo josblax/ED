@@ -346,7 +346,7 @@ ___
 
 ## 6. Animación de Crecimiento (Escalar hasta un Tope)
 ​
-[Video sobre Particulas](https://www.youtube.com/watch?v=oPUxv-zClNA)
+[Video sobre Particulas en Unity](https://www.youtube.com/watch?v=oPUxv-zClNA)
 
 ### Contexto en Unity: Una explosión o un escudo mágico crece gradualmente pero debe detenerse en un tamaño máximo para no cubrir toda la cámara.
 ​
@@ -364,6 +364,8 @@ ___
 
 ## 7. Parpadeo de Luces (Toggle Boolean)
 ​
+[Video sobre parpadeo de luces en Unity](https://www.youtube.com/watch?v=5K2uG7bVJAQ)
+
 ### Contexto en Unity: Luces de neón o faroles parpadeantes en un escenario nocturno que se encienden y apagan en cada fotograma.
 ​
 ### Diseña un sistema intermitente para elementos ambientales. Recorre una lista que controla el estado de encendido de varias luces e invierte su valor lógico en cada iteración para lograr un efecto de alternancia. Imprime el resultado.
