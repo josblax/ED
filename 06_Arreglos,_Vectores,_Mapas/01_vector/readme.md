@@ -396,6 +396,8 @@ ___
 ## 9. Desactivar Objetos Lejanos (Culling Básico)
 ​
 ### Contexto en Unity: Para ahorrar memoria, los objetos que están demasiado lejos de la cámara se vuelven invisibles o inactivos.
+
+[Ocluding Basico](https://www.youtube.com/watch?v=7bZ4OIA0wRQ)
 ​
 ### Optimiza los recursos del motor gráfico apagando los elementos lejanos. Evalúa la profundidad espacial (coordenada Z) de la lista de objetos; aquellos cuya distancia supere la capacidad de visión máxima de la cámara deberán cambiar su estado a ocultos.
 ​
