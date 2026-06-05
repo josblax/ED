@@ -90,9 +90,9 @@ int main()
 ```
 ___
 
-​### Funciones sin retorno y con parámetros (void)
+### Funciones sin retorno y con parámetros (void)
 ​
-Concepto Clave: Aquí seguimos usando void (ejecutamos una acción sin esperar respuesta matemática), pero ahora los paréntesis contienen "ingredientes" (parámetros). Esto hace que la función sea dinámica: la misma función nos sirve para resolver diferentes problemas dependiendo de los datos que le inyectemos al llamarla.
+Aquí seguimos usando void (ejecutamos una acción sin esperar respuesta matemática), pero ahora los paréntesis contienen "ingredientes" (parámetros). Esto hace que la función sea dinámica: la misma función nos sirve para resolver diferentes problemas dependiendo de los datos que le inyectemos al llamarla.
 ​Ejemplo en C++ (Imprimir la suma de dos números):
 
 ```cpp
