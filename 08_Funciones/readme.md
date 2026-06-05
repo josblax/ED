@@ -196,9 +196,67 @@ int main() {
 
 > La instrucción ***return*** es un componente que define el tipo de retorno del resultado que devuelve la función que se declara en la cabecera de la función.
 
+___
 
+## Practica #3
 
+### I. Funciones sin retorno y sin parámetros (void, ())
 
+ 
+ * **Ejercicio 1: Generador del Escenario Base**
+   * **Enunciado:** Escribe un programa que utilice una función básica para simular la creación de un elemento 3D en el origen del mundo. La función debe llamarse instanciarCuboBase y simplemente imprimirá en consola que el cubo (el suelo de nuestro nivel) ha sido creado en las coordenadas absolutas (0, 0, 0).
+ 
+ * **Ejercicio 2: Reiniciar la Cámara**
+
+   * **Enunciado:** Crea una función llamada resetearCamara. En la animación 3D, es común perder de vista al personaje. Esta función no recibe datos, pero al llamarse, debe imprimir en pantalla: *"La cámara principal ha regresado a su posición por defecto frente al escenario"*. Llámala desde tu función principal.
+ 
+ * **Ejercicio 3: Interfaz de Herramientas**
+
+   * **Enunciado:** Imagina que estás programando el menú de un software de animación. Diseña una función llamada mostrarMenuAnimacion que imprima tres opciones en consola: *"1. Trasladar | 2. Rotar | 3. Escalar"*. El programa principal debe ejecutar esta función al inicio para mostrarle las herramientas al artista.
+
+### II. Funciones sin retorno y con parámetros (void, (parametros))
+
+ * **Ejercicio 4: Trasladar al Héroe**
+
+   * **Enunciado:** Crea una función llamada trasladarObjeto que reciba tres parámetros numéricos con decimales (float): x, y, z. La función debe imprimir la nueva posición absoluta del objeto, simulando que movimos a nuestro personaje principal en el espacio 3D hacia esas coordenadas exactas.
+
+ * **Ejercicio 5: Impacto y Cambio de Material**
+ 
+   * **Enunciado:** Cuando un objeto choca, suele cambiar su material (por ejemplo, ponerse rojo para indicar daño). Diseña la función aplicarColorDano que reciba una cadena de texto (string) con el nombre de un color. La función debe imprimir: *"¡Colisión detectada! El material del personaje ha cambiado a color: [Color Recibido]"*.
+ 
+ * **Ejercicio 6: Opacidad de un Fantasma**
+
+   * **Enunciado:** Escribe una función llamada modificarTransparencia que reciba un número fraccionario entre 0.0 y 1.0 (donde 0 es invisible y 1 es sólido). La función debe simular el renderizado de un fantasma imprimiendo en pantalla: *"La opacidad del modelo 3D se ha ajustado al [Valor] %"*. *(Pista: Multiplica el parámetro por 100 dentro del cout).*
+
+### III. Funciones con retorno y sin parámetros (Tipo, ())
+
+ * **Ejercicio 7: Simulador de Escombros**
+ 
+   * **Enunciado:** Para que una explosión se vea natural, las partículas no pueden caer idénticas; necesitan rotar de forma caótica. Diseña la función generarRotacionAleatoria que no reciba parámetros, pero devuelva (return) un número fraccionario aleatorio entre 0.0 y 360.0. Atrapa ese valor en el main e imprímelo simulando la rotación de una roca. *(Nota: Puedes retornar un valor fijo como 45.5 solo para comprobar la estructura de la función).*
+ 
+ * **Ejercicio 8: Gravedad Universal**
+ 
+   * **Enunciado:** En todo motor de físicas, la gravedad tira de los objetos hacia abajo. Crea una función llamada obtenerGravedadNativa que retorne el valor decimal -9.8. En tu función principal, guarda este retorno en una variable e imprime: *"La fuerza de atracción del escenario está configurada en: [Valor]"*.
+
+ * **Ejercicio 9: Sincronización de Fotogramas (Frames)**
+ 
+   * **Enunciado:** Escribe una función leerFotogramaActual que simule leer la línea de tiempo de una animación y retorne el número entero 60 (representando que estamos en el frame 60). Captura este valor en el main y utilízalo para imprimir: *"Renderizando el fotograma número: 60"*.
+
+### IV. Funciones con retorno y con parámetros (Tipo, (parametros))
+
+ * **Ejercicio 10: El Escudo Mágico (Escalado)**
+ 
+   * **Enunciado:** Escribe la función calcularEscalaFinal que reciba el tamaño base de una esfera de energía (float) y un multiplicador de poder de magia (float). La función debe multiplicar ambos valores y retornar el resultado, el cual deberás atrapar e imprimir en la función principal para simular cuánto creció el escudo en pantalla.
+ 
+ * **Ejercicio 11: Fotograma Intermedio (Interpolación)**
+
+   * **Enunciado:** La animación fluida requiere calcular posiciones intermedias. Crea la función calcularPuntoMedio que reciba dos parámetros decimales: la posicionA y la posicionB de un objeto. La función debe sumar ambas posiciones, dividirlas entre dos, y **retornar** ese resultado numérico. Imprímelo en el main indicando que ese es el fotograma intermedio generado.
+ 
+ * **Ejercicio 12: Desgaste de Barra de Salud (Clamp)**
+ 
+   * **Enunciado:** Un enemigo recibe daño por fuego prolongado. Crea una función calcularSaludRestante que reciba la salud actual del enemigo y el daño por quemadura. Resta el daño a la salud. Antes de retornar, usa una decisión (if) para asegurar que si la salud es menor a cero, se fije en cero para evitar que la barra visual colapse. Retorna el valor final y muéstralo en la consola.
+
+___
 
 ### Que es una función prototipo. 
 
