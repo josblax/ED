@@ -88,8 +88,35 @@ int main()
 }
 
 ```
+___
+
+​### Funciones sin retorno y con parámetros (void)
+​
+Concepto Clave: Aquí seguimos usando void (ejecutamos una acción sin esperar respuesta matemática), pero ahora los paréntesis contienen "ingredientes" (parámetros). Esto hace que la función sea dinámica: la misma función nos sirve para resolver diferentes problemas dependiendo de los datos que le inyectemos al llamarla.
+​Ejemplo en C++ (Imprimir la suma de dos números):
+
+```cpp
+#include <iostream>
+using namespace std;
+
+// Declaración de función sin retorno (void) pero que exige dos enteros (parámetros)
+void imprimirSuma(int a, int b) {
+    int suma = a + b;
+    cout << "La suma calculada internamente es: " << suma << endl;
+}
+
+int main() {
+    // Llamamos a la función inyectándole los "ingredientes" (5 y 10)
+    imprimirSuma(5, 10);
+    
+    // Podemos reutilizarla con datos distintos
+    imprimirSuma(100, 250);
+    
+    return 0;
+}
 
 
+```
 ___
 
 ### Función con retorno y con parámetros.
