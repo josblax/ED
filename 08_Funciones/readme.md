@@ -59,41 +59,46 @@ ___
 
 * En la segunda parte, examinaremos la relación entre las definiciones que aparecen en diferentes funciones, y algunas de las reglas de alcance en C++.
 ___
-### Función sin retorno y sin parámetros.
 
-_Ejemplo de una función sin retorno y sin parámetros_ 
+### 1. Función sin retorno y sin parámetros.
+
+#### Esta es la estructura más básica. Utilizamos void para indicarle al compilador que la función ejecutará una acción directa (como imprimir en pantalla), pero no devolverá ningún valor matemático al programa principal. Al tener los paréntesis vacíos (), tampoco recibe "ingredientes" o datos externos; toda la información que necesita para operar debe estar declarada internamente.
+​
+Ejemplo en C++ (Imprimir una suma fija internamente):
 
 ```C++
 
-void suma()
-{
-   int n1, n2;
-   cout << "Ingresa el numero 1 : ";
-   cin >> n1;
-   cout << "INgresa el numero 2 : ";
-   cin >> n2;
-   cout << "La suma es : " << (n1+n2) << endl;
+#include <iostream>
+using namespace std;
+
+// Declaración de función sin retorno (void) y sin parámetros ()
+void imprimirSumaFija() {
+    // La función define sus propios datos internamente
+    int a = 8;
+    int b = 12;
+    int suma = a + b;
+    
+    // Ejecuta la acción y termina
+    cout << "La suma calculada internamente es: " << suma << endl;
 }
 
-```
-
-
-_Como se llama una función sin retorno y sin parámetros._
-
-```cpp
-
-int main()
-{
-   suma();
+int main() {
+    // Al llamarla, simplemente ejecuta su bloque de código encapsulado
+    imprimirSumaFija();
+    
+    // Podemos llamarla varias veces, pero siempre hará exactamente lo mismo
+    imprimirSumaFija();
+    
 }
 
 ```
 ___
 
-### Funciones sin retorno y con parámetros (void)
+### 2. Funciones sin retorno y con parámetros (void)
 ​
-Aquí seguimos usando void (ejecutamos una acción sin esperar respuesta matemática), pero ahora los paréntesis contienen "ingredientes" (parámetros). Esto hace que la función sea dinámica: la misma función nos sirve para resolver diferentes problemas dependiendo de los datos que le inyectemos al llamarla.
-​Ejemplo en C++ (Imprimir la suma de dos números):
+#### Aquí seguimos usando void (ejecutamos una acción sin esperar respuesta matemática), pero ahora los paréntesis contienen "ingredientes" (parámetros). Esto hace que la función sea dinámica: la misma función nos sirve para resolver diferentes problemas dependiendo de los datos que le inyectemos al llamarla.
+​
+Ejemplo en C++ (Imprimir la suma de dos números):
 
 ```cpp
 #include <iostream>
@@ -117,11 +122,48 @@ int main() {
 
 
 ```
+
 ___
 
-### Función con retorno y con parámetros.
+### 3. Funciones con retorno y sin parámetros
+​
+Cambiamos void por un tipo de dato (por ejemplo, int). Esto significa que la función funciona como una "calculadora" que promete entregarnos un número. La palabra reservada return es obligatoria aquí. Al no tener parámetros en sus paréntesis, la función busca la información internamente o captura datos de su entorno, los procesa y nos entrega un resultado limpio que podemos guardar en una variable.
 
-_Ejemplo de una función con retorno y con parámetros_
+```cpp
+#include <iostream>
+using namespace std;
+
+// Declaración de función que devuelve un entero (int) pero no pide parámetros ()
+int obtenerSumaFija() {
+    int valor1 = 20;
+    int valor2 = 30;
+    
+    // El return procesa internamente y "escupe" el resultado hacia afuera
+    return valor1 + valor2;
+}
+
+int main() {
+    // La función no imprime nada por sí sola, debemos atrapar su valor
+    int resultado = obtenerSumaFija();
+    
+    cout << "El valor retornado por la función es: " << resultado << endl;
+    
+    return 0;
+}
+
+
+```
+
+___
+
+### 4. Función con retorno y con parámetros.
+
+#### Este es el estándar de oro en el diseño de algoritmos modulares. En lugar de void, utilizamos un tipo de dato explícito (como int o float) indicando que la función es una "máquina procesadora" que obligatoriamente debe usar la palabra reservada return para devolvernos un resultado.
+
+#### Al exigir parámetros en sus paréntesis, se vuelve altamente dinámica: inyectamos datos externos desde el main, la función realiza el cálculo a puerta cerrada y nos entrega un resultado limpio que podemos atrapar en una variable.
+​
+Ejemplo en C++ (Calcular y devolver la suma de datos inyectados):
+
 
 
  ```C++
@@ -129,10 +171,25 @@ _Ejemplo de una función con retorno y con parámetros_
 #include <iostream>
 using namespace std;
 
-int suma(int a, int b)
-{
+// Declaración con retorno (int) y con parámetros (int a, int b)
+int calcularSuma(int a, int b) {
+    // Procesa los "ingredientes" recibidos y devuelve el resultado matemático
     return a + b;
 }
+
+int main() {
+    // Inyectamos los valores 15 y 25. 
+    // Como la función "escupe" un valor, debemos atraparlo en una nueva variable.
+    int resultadoTotal = calcularSuma(15, 25);
+    
+    // Ahora podemos usar ese dato en el flujo principal de nuestro programa
+    cout << "El resultado procesado y devuelto al main es: " << resultadoTotal << endl;
+    
+    // También podemos imprimir el retorno directamente sin guardarlo
+    cout << "Otra suma rápida es: " << calcularSuma(50, 50) << endl;
+    
+}
+
 
  ```
 
@@ -140,18 +197,8 @@ int suma(int a, int b)
 > La instrucción ***return*** es un componente que define el tipo de retorno del resultado que devuelve la función que se declara en la cabecera de la función.
 
 
-_Ejemplo de llamada de una función con retorno y con parámetros._
 
-```cpp
 
-int main() {
-    int resultado = suma(5, 3);
-    cout << "Suma: " << resultado << endl;
-    return 0;
-}
-
-```
-___
 
 ### Que es una función prototipo. 
 
