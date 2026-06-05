@@ -44,64 +44,6 @@ _Se puede definir una Función dentro de otra Función?_
 
 ___
 
-### Que es una función prototipo. 
-
-**Es la cabecera o primera línea de una función, seguido de un punto y coma. Adicionalmente debemos hacer la definición de la función**
-
-***Generalidades de las funciones prototipo:***
-
-* Es una función que solo contiene el tipo de retorno, nombre de la función y sus parámetros, seguido de un punto y coma.
-* Una función en C++ se define arriba de la función main(), pero es más común crear una función prototipo **arriba** de la función main(), y definir la función, es decir, el código necesario de la función **debajo** de la función main().
-* Porque se divide en dos? Le informa al compilador que existe una función y ayuda al compilador a ser más eficiente.
-
-> En C++ una función debe ser declarada _arriba_ de la función main(), en otros lenguajes la función puede
-> estar arriba o debajo de la función main(), pero, en C++ solo puede estar arriba, si deseamos poner
-> nuestras funciones por debajo de la función, se debe usar la definición de la función prototipo.
-
-***Estructura General de una función prototipo***
-
-```C++
-<tipo_retorno> nombrefuncion(Lista Parametros);
-```
-
-Ejemplo:
-
-```cplusplus
-int suma(int num1, int num2);
-```
-
-### Definición de una función que usa en conjunto con la función prototipo.
-
-**Propósito:** Es la implementación completa de la función, incluyendo el cuerpo, que define todas las instrucciones que cumplen el propósito de la función.
-
-```C++
-<tipo_retorno> nombrefuncion(Lista Parametros)
-{
-	// instrucciones de lo que actualmente hace la función
-}
-```
-
-Ejemplo
-
-```cplusplus
-int suma(int num1, int num2)
-{
-	return num1+num2;
-}
-```
-### Diferencias clave entre definición y declaración de funciones
-
-1. Contenido:
-* Declaración: Solo especifica la firma de la función.
-* Definición: Incluye el cuerpo de la función con el código real.
-2. Propósito:
-* Declaración: Informa al compilador sobre la existencia de la función y su interfaz.
-* Definición: Informa al compilador de cómo funciona la función.
-3. Ubicación:
-* Declaración: Por lo general, se encuentra en archivos de encabezado (.h).
-* Definición: Por lo general, se encuentra en los archivos fuente (.cpp).
-
-___
 
 ## Ejemplos de diferentes tipos de funciones.
 
@@ -182,6 +124,65 @@ int main() {
 }
 
 ```
+___
+
+### Que es una función prototipo. 
+
+**Es la cabecera o primera línea de una función, seguido de un punto y coma. Adicionalmente debemos hacer la definición de la función**
+
+***Generalidades de las funciones prototipo:***
+
+* Es una función que solo contiene el tipo de retorno, nombre de la función y sus parámetros, seguido de un punto y coma.
+* Una función en C++ se define arriba de la función main(), pero es más común crear una función prototipo **arriba** de la función main(), y definir la función, es decir, el código necesario de la función **debajo** de la función main().
+* Porque se divide en dos? Le informa al compilador que existe una función y ayuda al compilador a ser más eficiente.
+
+> En C++ una función debe ser declarada _arriba_ de la función main(), en otros lenguajes la función puede
+> estar arriba o debajo de la función main(), pero, en C++ solo puede estar arriba, si deseamos poner
+> nuestras funciones por debajo de la función, se debe usar la definición de la función prototipo.
+
+***Estructura General de una función prototipo***
+
+```C++
+<tipo_retorno> nombrefuncion(Lista Parametros);
+```
+
+Ejemplo:
+
+```cplusplus
+int suma(int num1, int num2);
+```
+
+### Definición de una función que usa en conjunto con la función prototipo.
+
+**Propósito:** Es la implementación completa de la función, incluyendo el cuerpo, que define todas las instrucciones que cumplen el propósito de la función.
+
+```C++
+<tipo_retorno> nombrefuncion(Lista Parametros)
+{
+	// instrucciones de lo que actualmente hace la función
+}
+```
+
+Ejemplo
+
+```cplusplus
+int suma(int num1, int num2)
+{
+	return num1+num2;
+}
+```
+### Diferencias clave entre definición y declaración de funciones
+
+1. Contenido:
+* Declaración: Solo especifica la firma de la función.
+* Definición: Incluye el cuerpo de la función con el código real.
+2. Propósito:
+* Declaración: Informa al compilador sobre la existencia de la función y su interfaz.
+* Definición: Informa al compilador de cómo funciona la función.
+3. Ubicación:
+* Declaración: Por lo general, se encuentra en archivos de encabezado (.h).
+* Definición: Por lo general, se encuentra en los archivos fuente (.cpp).
+
 ___
 
 ### Ejemplo de una funcion prototipo.
