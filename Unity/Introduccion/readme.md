@@ -69,7 +69,7 @@ Haz clic en el cuadro blanco. Se abrirá una rueda de colores. Selecciona un ton
 
 Finalmente, haz clic izquierdo sobre tu Material_AzulCielo en la ventana Project, arrástralo y suéltalo directamente sobre tu Cubo_Visual (ya sea en la vista 3D o en la jerarquía).
 
-### Modificación del Fotograma Clave (Keyframe)
+### Paso 7 Modificación del Fotograma Clave (Keyframe)
 
 * Selecciona tu objeto: En la ventana Hierarchy, haz clic sobre tu cubo para que Unity sepa qué animación cargar.
 * Abre la ventana de Animación: Presiona Ctrl+6 (Windows) o Cmd+6 (Mac) para ver la línea de tiempo.
