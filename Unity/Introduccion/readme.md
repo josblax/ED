@@ -68,3 +68,14 @@ Antes de empezar, debes familiarizarte con los componentes que forman cualquier 
 Haz clic en el cuadro blanco. Se abrirá una rueda de colores. Selecciona un tono azul claro/celeste (Si prefieres usar código Hexadecimal, puedes escribir #87CEFA en la casilla "Hex").
 
 Finalmente, haz clic izquierdo sobre tu Material_AzulCielo en la ventana Project, arrástralo y suéltalo directamente sobre tu Cubo_Visual (ya sea en la vista 3D o en la jerarquía).
+
+### Modificación del Fotograma Clave (Keyframe)
+
+* Selecciona tu objeto: En la ventana Hierarchy, haz clic sobre tu cubo para que Unity sepa qué animación cargar.
+* Abre la ventana de Animación: Presiona Ctrl+6 (Windows) o Cmd+6 (Mac) para ver la línea de tiempo.
+* Ubica el cabezal de tiempo: Haz clic en la regla superior de la línea de tiempo para mover la línea blanca vertical exactamente hasta la marca de 1:00 (justo encima de donde está tu rombo o fotograma clave actual).
+* Activa la grabación: Haz clic en el botón rojo circular (Record) en la esquina superior izquierda de la ventana de animación. Al hacerlo, notarás que la línea de tiempo se tiñe de rojo, indicando que estás en modo de sobreescritura.
+* Cambia el valor: Tienes dos formas de aplicar el número negativo:
+* Desde el Inspector: Ve a la ventana Inspector, busca el componente Transform, y en la fila de Rotation, cambia el valor de Y a -360.
+* Desde la Animación: En la lista del lado izquierdo de la ventana de animación, despliega las propiedades de Transform, busca Rotation.y, haz clic directamente sobre el número 360 y escribe -360.
+* Guarda los cambios: Vuelve a hacer clic en el botón rojo circular para detener la grabación y salir del modo de edición.
