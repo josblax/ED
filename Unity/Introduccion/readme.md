@@ -27,7 +27,7 @@ Antes de empezar, debes familiarizarte con los componentes que forman cualquier 
 * Ve a la ventana Hierarchy (generalmente a la izquierda).
 * Haz clic derecho en un espacio vacío y selecciona Create Empty (Crear Vacío).
 * Selecciona el nuevo objeto. En la ventana Inspector (a la derecha), cambia su nombre en la parte superior a Controlador_Cubo.
-* En el componente Transform, busca la fila Position y cambia el valor de Y a 5. (Dejar X y Z en 0).
+* En el componente Transform, busca la fila Position y cambia el valor de Y a 3. (Dejar X y Z en 0).
 
 ### Paso 2: Crear la Geometría (El Cubo)
 
