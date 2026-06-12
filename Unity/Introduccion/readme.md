@@ -117,3 +117,17 @@ public class Cylinder : MonoBehaviour
     [Tooltip("El color hexadecimal estilo 'Mario' para la moneda.")]
      public string colorHexMoneda = "#87CEFA";
 ```
+
+#### Explicacion
+
+* **[Header(...)] y [Tooltip(...)]:** Son etiquetas decorativas. Ayudan a que el Inspector de Unity se vea organizado y agregan pequeños textos de ayuda para los diseñadores del juego.
+
+**public float:** Al ser public, esta variable se vuelve visible en Unity para cambiar la velocidad sin tocar el código. float significa que acepta números con decimales.
+
+**Vector3:** Es una estructura de datos que guarda tres valores espaciales: X (Ancho), Y (Alto), Z (Profundidad). Aquí define el tamaño del objeto.
+
+**private GameObject:** Esta variable es private (oculta en Unity). Es una memoria interna del script que recordará al cubo geométrico que vamos a crear en código.
+
+**string:** Es un tipo de dato para guardar texto. Aquí guarda un código de color Hexadecimal (Azul cielo).
+
+
