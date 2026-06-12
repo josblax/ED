@@ -80,6 +80,9 @@ Finalmente, haz clic izquierdo sobre tu Material_AzulCielo en la ventana Project
 * Desde la Animación: En la lista del lado izquierdo de la ventana de animación, despliega las propiedades de Transform, busca Rotation.y, haz clic directamente sobre el número 360 y escribe -360.
 * Guarda los cambios: Vuelve a hacer clic en el botón rojo circular para detener la grabación y salir del modo de edición.
 
+___
+
+# Guia de Script (Automatizacion de Instrucciones)
 
 ## Objetivo Principal del Script
 
