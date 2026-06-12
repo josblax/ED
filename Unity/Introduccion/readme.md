@@ -79,3 +79,41 @@ Finalmente, haz clic izquierdo sobre tu Material_AzulCielo en la ventana Project
 * Desde el Inspector: Ve a la ventana Inspector, busca el componente Transform, y en la fila de Rotation, cambia el valor de Y a -360.
 * Desde la Animación: En la lista del lado izquierdo de la ventana de animación, despliega las propiedades de Transform, busca Rotation.y, haz clic directamente sobre el número 360 y escribe -360.
 * Guarda los cambios: Vuelve a hacer clic en el botón rojo circular para detener la grabación y salir del modo de edición.
+
+
+## Objetivo Principal del Script
+
+### El objetivo de este código es actuar como un "Constructor Automatizado". En lugar de armar el objeto manualmente haciendo clics en Unity, este script se encarga de:
+
+Mover el objeto invisible (el controlador) a una altura específica en el cielo.
+
+Crear un cubo geométrico 3D desde cero y conectarlo al controlador.
+
+Pintarlo de un color azul cielo específico.
+
+Hacerlo girar de manera continua y fluida en cuanto arranca el juego.
+
+### Explicación del Código Paso a Paso
+
+1. **La Estructura Base**
+
+```C#
+using UnityEngine;
+
+public class Cylinder : MonoBehaviour
+```
+
+* **using UnityEngine;:** Es como pedir prestada una caja de herramientas. Le dice al código que usaremos las funciones matemáticas y gráficas exclusivas de Unity.
+
+* **public class Cylinder : MonoBehaviour:** Aquí nombramos nuestro script (Cylinder). MonoBehaviour significa que este script está autorizado para ser arrastrado como un componente a un GameObject dentro del entorno gráfico de Unity.
+
+2. **Variables de Configuración (El Menú del Inspector)**
+
+```C#
+// [Header("Configuración")]
+    public float velocidadDeRotacion = 100.0f;
+    public Vector3 escalaMoneda = new Vector3(1f, 1f, 1f);
+    private GameObject monedaVisual;
+//  [Tooltip("El color hexadecimal estilo 'Mario' para la moneda.")]
+     public string colorHexMoneda = "#87CEFA";
+```
