@@ -112,10 +112,10 @@ public class Cylinder : MonoBehaviour
 ```C#
  [Header("Configuración")]
     public float velocidadDeRotacion = 100.0f;
-    public Vector3 escalaMoneda = new Vector3(1f, 1f, 1f);
-    private GameObject monedaVisual;
+    public Vector3 escalaCubo = new Vector3(1f, 1f, 1f);
+    private GameObject cubo;
     [Tooltip("El color hexadecimal estilo 'Mario' para la moneda.")]
-     public string colorHexMoneda = "#87CEFA";
+     public string colorCubo = "#87CEFA";
 ```
 
 #### Explicacion
@@ -130,4 +130,86 @@ public class Cylinder : MonoBehaviour
 
 **string:** Es un tipo de dato para guardar texto. Aquí guarda un código de color Hexadecimal (Azul cielo).
 
+
+3. **El Método Start() (La Configuración Inicial)**
+
+Este bloque de código solo se ejecuta una única vez, exactamente en el instante en que el objeto nace en la pantalla.
+
+```C#
+void Start()
+    {
+        this.transform.position = Vector3.up * 5;
+```
+* **this.transform.position:** Modifica la posición del objeto vacío que contiene este script.
+
+* **Vector3.up * 5:** Es el equivalente matemático a (0, 5, 0). Mueve el objeto 5 metros hacia arriba en el mundo 3D.
+
+```C#
+        cubo = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        cubo.transform.SetParent(this.transform);
+```
+
+* **CreatePrimitive:** Es una fábrica de Unity. Aquí le ordenamos crear un modelo geométrico de tipo Cube (Cubo) y lo guardamos en la memoria monedaVisual.
+
+* **SetParent:** Sistema de Jerarquía. Convierte a nuestro nuevo cubo visual en Hijo del controlador invisible. Si el padre se mueve o rota, el hijo lo obedece.
+
+___
+> El Concepto de this (Este objeto)
+En Unity, para que un script (como tu clase Cylinder) pueda hacer algo, es un requisito obligatorio arrastrarlo y asignarlo a un GameObject que ya exista en tu ventana de Hierarchy (Jerarquía). Un script no puede flotar en la nada; necesita un "cuerpo" físico o virtual donde vivir.
+
+> Cuando preparaste tu escena para probar este código, tuviste que haber creado un objeto vacío en Unity y arrastrarle este script. Ese objeto vacío que tú creaste manualmente es el Padre.
+
+En el código, cuando llegamos a la línea de la jerarquía:
+
+```C#
+cubo.transform.SetParent(this.transform);
+```
+
+La palabra clave fundamental aquí es **this** (que en programación orientada a objetos significa "esta instancia" o "yo mismo").
+
+this: Se refiere al propio script.
+
+this.transform: Le dice a la computadora: "Busca las coordenadas y la entidad física del GameObject al que estoy pegado".
+
+#### Comparación: Proceso Manual vs. Script
+
+En el proceso manual: Tú creaste al Padre (**Controlador_Cubo**), luego creaste al Hijo (**Cubo_Visual**), y finalmente con el mouse arrastraste al hijo dentro del padre. Tuviste que hacer los tres pasos.
+
+En el proceso con Script: Tú creas al Padre manualmente en Unity y le metes el script como si fuera su "cerebro". Cuando le das a Play, el cerebro (el código) fabrica al Hijo de la nada (CreatePrimitive(Cube)) y le da la orden: "Oye, métete dentro del cuerpo en el que yo estoy viviendo" (SetParent(this.transform)).
+
+___
+
+```C#
+        cubo.transform.localPosition = Vector3.zero; 
+        cubo.transform.localScale = escalaMoneda;
+        Destroy(monedaVisual.GetComponent<Collider>());
+```
+
+* **localPosition:** Posiciona al hijo exactamente en el centro (0,0,0) relativo de su nuevo padre.
+
+* **localScale:** Aplica la escala o el tamaño que configuramos arriba al cubo.
+
+* **Destroy(...Collider):** Los colliders son escudos físicos para calcular choques. Como el objeto es solo decorativo, lo destruimos para ahorrar memoria de la computadora.
+
+4. **La Sección de Renderizado (Aplicando Color)**
+
+```C#
+Renderer cuboRenderizado = cubo.GetComponent<Renderer>();
+```
+
+* **GetComponent<Renderer>()**: Busca al "pintor" del objeto. El Renderer es el componente gráfico responsable de que podamos ver el objeto en pantalla.
+
+```C#
+if (monedaRenderer != null)
+        {
+            Color colorCubo;
+            if (ColorUtility.TryParseHtmlString(colorCubo, out colorCubo))
+            {
+                cuboRenderizado.material.color = colorCubo;
+            }
+```
+
+* **ColorUtility.TryParseHtmlString:** Toma nuestro texto ("#87CEFA") y lo traduce a matemáticas de color que la tarjeta gráfica pueda entender.
+
+* **cuboRenderizado.material.color = colorCubo;:** Aplica el color azul directamente a la pintura del objeto.
 
