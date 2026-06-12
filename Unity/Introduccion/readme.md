@@ -184,8 +184,8 @@ ___
 
 ```C#
         cubo.transform.localPosition = Vector3.zero; 
-        cubo.transform.localScale = escalaMoneda;
-        Destroy(monedaVisual.GetComponent<Collider>());
+        cubo.transform.localScale = escalaCubo;
+        Destroy(cubo.GetComponent<Collider>());
 ```
 
 * **localPosition:** Posiciona al hijo exactamente en el centro (0,0,0) relativo de su nuevo padre.
