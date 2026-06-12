@@ -110,10 +110,10 @@ public class Cylinder : MonoBehaviour
 2. **Variables de Configuración (El Menú del Inspector)**
 
 ```C#
-// [Header("Configuración")]
+ [Header("Configuración")]
     public float velocidadDeRotacion = 100.0f;
     public Vector3 escalaMoneda = new Vector3(1f, 1f, 1f);
     private GameObject monedaVisual;
-//  [Tooltip("El color hexadecimal estilo 'Mario' para la moneda.")]
+    [Tooltip("El color hexadecimal estilo 'Mario' para la moneda.")]
      public string colorHexMoneda = "#87CEFA";
 ```
