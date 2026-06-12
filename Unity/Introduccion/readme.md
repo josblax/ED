@@ -213,3 +213,49 @@ if (monedaRenderer != null)
 
 * **cuboRenderizado.material.color = colorCubo;:** Aplica el color azul directamente a la pintura del objeto.
 
+5. **Los Métodos Update (Animación Continua)**
+
+A diferencia de Start(), los métodos tipo Update se ejecutan una y otra vez en un bucle infinito (muchas veces por segundo, como los cuadros de una película).
+
+```C#
+    void Update()
+    {
+        this.transform.Rotate(Vector3.up * -velocidadDeRotacion * Time.deltaTime);
+    }
+```
+
+* **this.transform.Rotate:** Ordena al objeto girar matemáticamente. Al girar al padre, el cubo hijo gira con él.
+
+**Vector3.up:** Le indica que pivote sobre el Eje Y (como un trompo sobre una mesa).
+
+**Time.deltaTime:** *¡Concepto Vital!* Multiplicar por este valor sincroniza la rotación con el reloj real de la vida, evitando que el cubo gire demasiado rápido si tu computadora es muy potente, o demasiado lento si tu computadora es vieja. Hace que el movimiento sea fluido.
+
+### Cuales son los fps por default de los metodos update?
+
+Representa uno de los conceptos más importantes que debes comprender sobre la arquitectura de Unity y los motores gráficos en general.
+
+Para responder de forma directa: Los métodos Update() y LateUpdate() no tienen un FPS (Frames Per Second) por defecto. A continuación, se explica cómo funciona la gestión del tiempo en los diferentes métodos de actualización dentro de Unity.
+
+### Métodos Dependientes del Fotograma (Update y LateUpdate)**
+
+Estos métodos se ejecutan exactamente una vez por cada fotograma renderizado. Su frecuencia depende completamente del poder de procesamiento de la computadora (o consola/móvil) y de la complejidad matemática y visual de tu escena.
+
+* **Computadora muy potente:** Puede procesar tu escena muy rápido, ejecutando el Update() a 144 FPS (144 veces por segundo).
+
+* **Computadora antigua (o escena muy pesada):** Tardará más en calcular todo, ejecutando el Update() a 30 FPS (30 veces por segundo).
+
+### ¿Por qué usamos Time.deltaTime?
+
+Como el Update() no tiene un límite fijo, si le dices a un cubo que avance "1 metro por Update", en la computadora potente avanzará 144 metros en un segundo, y en la vieja solo 30 metros. Al multiplicar por Time.deltaTime (que mide el tiempo que pasó entre un cuadro y otro), normalizamos el movimiento para que avance a la misma velocidad real en cualquier hardware.
+
+### ¿Se puede limitar el FPS de Update()?
+
+Sí, aunque por defecto corra tan rápido como pueda, puedes forzar al motor gráfico a respetar un límite de fotogramas mediante código. Esto es muy útil en juegos para móviles para evitar que la batería se agote rápidamente.
+
+Si quisieras fijar el juego entero a 60 FPS, puedes incluir esta instrucción en tu método Start():
+
+```C#
+Application.targetFrameRate = 60;
+```
+
+> Nota: Esta instrucción funcionará siempre y cuando no tengas activada la Sincronización Vertical (VSync) en la configuración de calidad del motor gráfico, ya que el VSync obligará a Unity a igualar la tasa de refresco de tu monitor.
