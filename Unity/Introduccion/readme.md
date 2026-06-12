@@ -85,13 +85,13 @@ Finalmente, haz clic izquierdo sobre tu Material_AzulCielo en la ventana Project
 
 ### El objetivo de este código es actuar como un "Constructor Automatizado". En lugar de armar el objeto manualmente haciendo clics en Unity, este script se encarga de:
 
-Mover el objeto invisible (el controlador) a una altura específica en el cielo.
+* Mover el objeto invisible (el controlador) a una altura específica en el cielo.
 
-Crear un cubo geométrico 3D desde cero y conectarlo al controlador.
+* Crear un cubo geométrico 3D desde cero y conectarlo al controlador.
 
-Pintarlo de un color azul cielo específico.
+* Pintarlo de un color azul cielo específico.
 
-Hacerlo girar de manera continua y fluida en cuanto arranca el juego.
+* Hacerlo girar de manera continua y fluida en cuanto arranca el juego.
 
 ### Explicación del Código Paso a Paso
 
