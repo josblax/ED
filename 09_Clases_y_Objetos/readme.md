@@ -447,6 +447,42 @@ ___
 * **Paso 7:** Actualiza la talla a 27.0f con tu función *setter* y usa *getters* dentro de un `cout` para imprimir el resultado de tu inventario.
 > **Mini-Rúbrica:** Atributos privados (20%) | Constructor funcional (20%) | Setters correctos (20%) | Getters correctos (20%) | Instanciación e impresión en main (20%).
 
+
+___
+
+
+# Work in progress...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+___
 # Estructuras (Struct)
 
 C++ tiene dos tipos: tipos devdatos integrados y estructuras. Los tipos de datos son cualquier tipo que constituye el núcleo del lenguaje, como int, float y char. Los tipos estructurad pueden considerarse como tipos definidos por el usuario; Estos son los tipos que creamos declarando clases, estructuras, funciones, etc. Las clases son la base de la programación orientada a objetos.
