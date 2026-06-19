@@ -223,6 +223,230 @@ int main() {
 * **Importancia en la POO:** Aquí es donde la teoría se convierte en práctica. El "molde" cobra vida y ocupa memoria. Cada instancia es independiente; si creáramos otro alumno (Alumno estudiante2("Juan", 6789);), sus datos y estados estarían completamente separados de los de "Ana".
 ___
 
+# Practica #4 Clases, Encapsulación y Métodos de Acceso
+
+## A continuación, se presentan 20 ejercicios diseñados para dominar la creación de clases en C++. Para cada ejercicio, deberás seguir los pasos detalladamente y escribir el código correspondiente en tu entorno de desarrollo.
+
+### Ejercicio 1: La Clase Robot
+**Enunciado:** Construye un programa en C++ que modele un robot básico de limpieza.
+* **Paso 1:** Define una clase llamada `Robot`.
+* **Paso 2:** Crea la sección `private:` y declara dos atributos: un `string` llamado `nombre` y un `float` llamado `nivelBateria`.
+* **Paso 3:** Crea la sección `public:` y declara un constructor que reciba dos parámetros (un texto y un decimal) para inicializar los atributos `nombre` y `nivelBateria` al momento de "encender" el robot.
+* **Paso 4:** Escribe dos métodos *setter* (`setNombre` y `setNivelBateria`). En el setter de batería, asegúrate de que el valor asignado no sea menor a 0 ni mayor a 100.
+* **Paso 5:** Escribe dos métodos *getter* (`getNombre` y `getNivelBateria`) que retornen el valor de cada atributo.
+* **Paso 6:** En la función `main()`, instancia un objeto llamado `miRobot` pasando valores iniciales a tu constructor (ej. "Astro", 100.0f).
+* **Paso 7:** Usa el método *setter* para simular que el robot gastó energía (baja su batería a 45.5f) y usa un `cout` apoyándote de los *getters* para imprimir en consola el estado final del robot.
+> **Mini-Rúbrica:** Atributos privados (20%) | Constructor funcional (20%) | Setters con validación básica (20%) | Getters correctos (20%) | Instanciación e impresión en main (20%).
+
+### Ejercicio 2: La Clase Auto
+**Enunciado:** Construye un programa en C++ que modele un automóvil.
+* **Paso 1:** Define una clase llamada `Auto`.
+* **Paso 2:** Crea la sección `private:` y declara dos atributos: un `string` llamado `marca` y un `int` llamado `velocidadActual`.
+* **Paso 3:** Crea la sección `public:` y declara un constructor que reciba dos parámetros para inicializar `marca` y `velocidadActual` cuando el auto sale de la agencia.
+* **Paso 4:** Escribe dos métodos *setter* (`setMarca` y `setVelocidadActual`). 
+* **Paso 5:** Escribe dos métodos *getter* (`getMarca` y `getVelocidadActual`) para poder leer los datos desde fuera.
+* **Paso 6:** En la función `main()`, crea un objeto llamado `autoFamiliar` enviando una marca (ej. "Toyota") y una velocidad de 0 al constructor.
+* **Paso 7:** Usa `setVelocidadActual` para simular que el auto aceleró a 80 km/h. Luego, usa `cout` y los *getters* para imprimir la marca y la velocidad actual.
+> **Mini-Rúbrica:** Atributos privados (20%) | Constructor funcional (20%) | Setters correctos (20%) | Getters correctos (20%) | Instanciación e impresión en main (20%).
+
+### Ejercicio 3: La Clase Docente
+**Enunciado:** Construye un programa en C++ que modele el perfil de un profesor.
+* **Paso 1:** Define una clase llamada `Docente`.
+* **Paso 2:** En la sección `private:`, declara un `string` llamado `materia` y un `int` llamado `aniosExperiencia`.
+* **Paso 3:** En la sección `public:`, programa un constructor que reciba la materia que imparte y sus años de experiencia para inicializar el objeto.
+* **Paso 4:** Construye dos métodos *setter* (`setMateria` y `setAniosExperiencia`).
+* **Paso 5:** Construye dos métodos *getter* (`getMateria` y `getAniosExperiencia`).
+* **Paso 6:** En el `main()`, instancia un objeto llamado `profesorProgramacion` con valores iniciales (ej. "Matemáticas", 5).
+* **Paso 7:** Utiliza los *setters* para actualizar la materia a "Estructuras de Datos" y la experiencia a 6. Imprime los datos usando `cout` y los *getters*.
+> **Mini-Rúbrica:** Atributos privados (20%) | Constructor funcional (20%) | Setters correctos (20%) | Getters correctos (20%) | Instanciación e impresión en main (20%).
+
+### Ejercicio 4: La Clase Mascota
+**Enunciado:** Modela los datos de una mascota en una clínica veterinaria.
+* **Paso 1:** Define la clase `Mascota`.
+* **Paso 2:** En `private:`, declara un `string` para `nombre` y un `int` para `edad`.
+* **Paso 3:** En `public:`, crea un constructor que reciba el nombre y la edad de la mascota para asignarlos a los atributos privados.
+* **Paso 4:** Desarrolla los métodos *setter* para ambos atributos (`setNombre`, `setEdad`).
+* **Paso 5:** Desarrolla los métodos *getter* para ambos atributos (`getNombre`, `getEdad`).
+* **Paso 6:** Dentro de `main()`, crea la instancia `miPerro` con nombre "Firulais" y edad 3.
+* **Paso 7:** El perro cumplió años. Usa el setter correspondiente para cambiar su edad a 4. Usa `cout` junto a los getters para mostrar el mensaje: "La mascota [Nombre] ahora tiene [Edad] años".
+> **Mini-Rúbrica:** Atributos privados (20%) | Constructor funcional (20%) | Setters correctos (20%) | Getters correctos (20%) | Instanciación e impresión en main (20%).
+
+### Ejercicio 5: La Clase Libro
+**Enunciado:** Modela un libro para un sistema de biblioteca.
+* **Paso 1:** Crea la clase `Libro`.
+* **Paso 2:** Declara como privados los atributos: `string titulo` e `int numeroPaginas`.
+* **Paso 3:** Crea un constructor público que inicialice ambos atributos recibiendo sus valores como parámetros.
+* **Paso 4:** Programa los métodos `setTitulo` y `setNumeroPaginas`. (Asegúrate de que no se puedan ingresar páginas negativas).
+* **Paso 5:** Programa los métodos `getTitulo` y `getNumeroPaginas`.
+* **Paso 6:** En `main()`, instancia `libroAventura` pasándole el título "El Hobbit" y 300 páginas.
+* **Paso 7:** Usa el setter para corregir el número de páginas a 310. Muestra la información final en consola usando `cout` y los getters.
+> **Mini-Rúbrica:** Atributos privados (20%) | Constructor funcional (20%) | Setters con validación de páginas (20%) | Getters correctos (20%) | Instanciación e impresión en main (20%).
+
+### Ejercicio 6: La Clase Celular
+**Enunciado:** Modela el estado de un teléfono móvil.
+* **Paso 1:** Nombra a tu clase `Celular`.
+* **Paso 2:** Establece en `private:` los atributos `string modelo` e `int porcentajeBateria`.
+* **Paso 3:** Declara el constructor público que reciba el modelo y el porcentaje de batería inicial.
+* **Paso 4:** Crea los métodos `setModelo` y `setPorcentajeBateria`.
+* **Paso 5:** Crea los métodos `getModelo` y `getPorcentajeBateria`.
+* **Paso 6:** En `main()`, instancia `miTelefono` con valores como "Galaxy S23" y batería al 100.
+* **Paso 7:** Simula que usaste el teléfono: llama al setter de batería para bajarla al 15%. Imprime una alerta en consola con el modelo y la batería usando los getters.
+> **Mini-Rúbrica:** Atributos privados (20%) | Constructor funcional (20%) | Setters correctos (20%) | Getters correctos (20%) | Instanciación e impresión en main (20%).
+
+### Ejercicio 7: La Clase Videojuego
+**Enunciado:** Modela un artículo de una tienda de juegos.
+* **Paso 1:** Define la clase `Videojuego`.
+* **Paso 2:** Protege en la sección `private:` los datos `string titulo` y `float precio`.
+* **Paso 3:** Crea el constructor que pida el título y el precio al momento de crear el objeto.
+* **Paso 4:** Escribe las funciones de acceso `setTitulo` y `setPrecio`.
+* **Paso 5:** Escribe las funciones de lectura `getTitulo` y `getPrecio`.
+* **Paso 6:** En el `main()`, crea la instancia `juegoEstreno` con título "Zelda" y precio 1200.50.
+* **Paso 7:** El juego tiene descuento. Usa el setter para cambiar el precio a 900.00. Muestra en pantalla el nuevo precio usando los getters.
+> **Mini-Rúbrica:** Atributos privados (20%) | Constructor funcional (20%) | Setters correctos (20%) | Getters correctos (20%) | Instanciación e impresión en main (20%).
+
+### Ejercicio 8: La Clase Computadora
+**Enunciado:** Modela las especificaciones básicas de una PC.
+* **Paso 1:** Define la clase `Computadora`.
+* **Paso 2:** En la sección privada, declara `string procesador` e `int memoriaRAM` (en GB).
+* **Paso 3:** Programa el constructor público para asignar el procesador y la RAM.
+* **Paso 4:** Implementa los métodos `setProcesador` y `setMemoriaRAM`.
+* **Paso 5:** Implementa los métodos `getProcesador` y `getMemoriaRAM`.
+* **Paso 6:** En `main()`, instancia `miPC` con procesador "Core i5" y 8 GB de RAM.
+* **Paso 7:** Simula una actualización de hardware: usa el setter para cambiar la RAM a 16 GB. Imprime las nuevas especificaciones con los getters.
+> **Mini-Rúbrica:** Atributos privados (20%) | Constructor funcional (20%) | Setters correctos (20%) | Getters correctos (20%) | Instanciación e impresión en main (20%).
+
+### Ejercicio 9: La Clase Cancion
+**Enunciado:** Modela una pista de audio para un reproductor musical.
+* **Paso 1:** Crea la clase `Cancion`.
+* **Paso 2:** Crea los atributos privados `string nombre` e `int duracionSegundos`.
+* **Paso 3:** Crea el constructor que solicite el nombre y los segundos de duración.
+* **Paso 4:** Codifica los métodos *setter* para modificar los datos.
+* **Paso 5:** Codifica los métodos *getter* para leer los datos.
+* **Paso 6:** En el `main()`, crea la instancia `pista1` con "Bohemian Rhapsody" y 354 segundos.
+* **Paso 7:** Usa el setter para corregir la duración a 355 segundos y muestra la información en consola usando los getters.
+> **Mini-Rúbrica:** Atributos privados (20%) | Constructor funcional (20%) | Setters correctos (20%) | Getters correctos (20%) | Instanciación e impresión en main (20%).
+
+### Ejercicio 10: La Clase Pelicula
+**Enunciado:** Modela una película para una plataforma de streaming.
+* **Paso 1:** Define la clase `Pelicula`.
+* **Paso 2:** Oculta mediante `private:` los atributos `string titulo` e `int anioEstreno`.
+* **Paso 3:** Haz un constructor público que reciba y asigne ambos valores.
+* **Paso 4:** Escribe las puertas de entrada seguras: `setTitulo` y `setAnioEstreno`.
+* **Paso 5:** Escribe las puertas de lectura: `getTitulo` y `getAnioEstreno`.
+* **Paso 6:** En `main()`, genera el objeto `peliClasica` con los datos "Matrix" y 1999.
+* **Paso 7:** Cambia el título usando el setter a "The Matrix" y muestra el resultado en consola.
+> **Mini-Rúbrica:** Atributos privados (20%) | Constructor funcional (20%) | Setters correctos (20%) | Getters correctos (20%) | Instanciación e impresión en main (20%).
+
+### Ejercicio 11: La Clase CuentaBancaria
+**Enunciado:** Simula la seguridad de una cuenta de banco básica.
+* **Paso 1:** Crea la clase `CuentaBancaria`.
+* **Paso 2:** Declara los atributos privados `string titular` y `float saldo`.
+* **Paso 3:** Programa un constructor para definir quién es el titular y con qué saldo abre su cuenta.
+* **Paso 4:** Crea los métodos `setTitular` y `setSaldo`.
+* **Paso 5:** Crea los métodos `getTitular` y `getSaldo`.
+* **Paso 6:** Instancia en `main()` el objeto `miCuenta` con tu nombre y un saldo de 500.50.
+* **Paso 7:** Simula un depósito: suma 200 al saldo actual y actualízalo usando `setSaldo`. Muestra el balance final con `cout` y los getters.
+> **Mini-Rúbrica:** Atributos privados (20%) | Constructor funcional (20%) | Setters correctos (20%) | Getters correctos (20%) | Instanciación e impresión en main (20%).
+
+### Ejercicio 12: La Clase Reloj
+**Enunciado:** Modela un reloj digital sencillo.
+* **Paso 1:** Nombra la clase `Reloj`.
+* **Paso 2:** Protege los datos con `private:` usando `string marca` y `string horaActual` (ej. "14:30").
+* **Paso 3:** Inicializa el reloj con un constructor que pida marca y hora.
+* **Paso 4:** Genera los métodos de escritura (*setters*).
+* **Paso 5:** Genera los métodos de lectura (*getters*).
+* **Paso 6:** En la función principal, crea un objeto `relojMano` de la marca "Casio" a las "12:00".
+* **Paso 7:** El tiempo avanza; usa el setter de hora para ponerlo en "12:01" e imprime la hora usando getters.
+> **Mini-Rúbrica:** Atributos privados (20%) | Constructor funcional (20%) | Setters correctos (20%) | Getters correctos (20%) | Instanciación e impresión en main (20%).
+
+### Ejercicio 13: La Clase Bicicleta
+**Enunciado:** Modela una bicicleta en una tienda deportiva.
+* **Paso 1:** Define la clase `Bicicleta`.
+* **Paso 2:** En la sección privada coloca `string tipo` (ej. Montaña, Ruta) y `int rodada`.
+* **Paso 3:** Escribe un constructor público que reciba el tipo y la rodada.
+* **Paso 4:** Implementa los setters para poder modificar los datos del objeto.
+* **Paso 5:** Implementa los getters para poder leer la información.
+* **Paso 6:** En `main()`, crea la instancia `bici1` como tipo "Urbana" rodada 26.
+* **Paso 7:** Usa el setter para cambiar la rodada a 29 e imprime en consola el estado final.
+> **Mini-Rúbrica:** Atributos privados (20%) | Constructor funcional (20%) | Setters correctos (20%) | Getters correctos (20%) | Instanciación e impresión en main (20%).
+
+### Ejercicio 14: La Clase Avion
+**Enunciado:** Modela un avión comercial para una torre de control.
+* **Paso 1:** Construye la clase `Avion`.
+* **Paso 2:** Oculta la información usando `private: string aerolinea` e `int capacidadPasajeros`.
+* **Paso 3:** Define el constructor público para configurar el avión al crearlo.
+* **Paso 4:** Programa los métodos setter para los atributos.
+* **Paso 5:** Programa los métodos getter para obtener los atributos.
+* **Paso 6:** Dentro de `main()`, instancia `vuelo101` de la aerolínea "AeroMexico" con 150 pasajeros.
+* **Paso 7:** Modifica la aerolínea usando el setter e imprime los detalles con `cout`.
+> **Mini-Rúbrica:** Atributos privados (20%) | Constructor funcional (20%) | Setters correctos (20%) | Getters correctos (20%) | Instanciación e impresión en main (20%).
+
+### Ejercicio 15: La Clase Camara
+**Enunciado:** Crea una estructura orientada a objetos para una cámara fotográfica.
+* **Paso 1:** Define la clase `Camara`.
+* **Paso 2:** Declara como privados `string marca` y `float megapixeles`.
+* **Paso 3:** Escribe el constructor que reciba ambos parámetros al nacer el objeto.
+* **Paso 4:** Escribe las interfaces seguras de modificación (setters).
+* **Paso 5:** Escribe las interfaces seguras de lectura (getters).
+* **Paso 6:** En `main()`, instancia `camaraFotos` de marca "Canon" con 18.0f megapixeles.
+* **Paso 7:** Cambia los megapixeles a 24.5f con el setter y muestra los datos en consola.
+> **Mini-Rúbrica:** Atributos privados (20%) | Constructor funcional (20%) | Setters correctos (20%) | Getters correctos (20%) | Instanciación e impresión en main (20%).
+
+### Ejercicio 16: La Clase Mochila
+**Enunciado:** Modela un contenedor básico como una mochila.
+* **Paso 1:** Crea la clase `Mochila`.
+* **Paso 2:** En la sección privada, añade `string color` y `float capacidadLitros`.
+* **Paso 3:** Genera un constructor para dar color y capacidad.
+* **Paso 4:** Crea los setters `setColor` y `setCapacidadLitros`.
+* **Paso 5:** Crea los getters correspondientes.
+* **Paso 6:** Instancia en `main()` el objeto `mochilaEscolar` ("Negra", 20.0f).
+* **Paso 7:** Usa el setter para cambiar el color a "Azul" y despliega la información con `cout`.
+> **Mini-Rúbrica:** Atributos privados (20%) | Constructor funcional (20%) | Setters correctos (20%) | Getters correctos (20%) | Instanciación e impresión en main (20%).
+
+### Ejercicio 17: La Clase Guitarra
+**Enunciado:** Modela un instrumento musical.
+* **Paso 1:** Define la clase `Guitarra`.
+* **Paso 2:** Usa `private:` para declarar `string tipo` (ej. Acústica, Eléctrica) e `int numeroCuerdas`.
+* **Paso 3:** Haz que el constructor reciba y asigne el tipo y el número de cuerdas.
+* **Paso 4:** Escribe los métodos para establecer (setters) la información.
+* **Paso 5:** Escribe los métodos para obtener (getters) la información.
+* **Paso 6:** En `main()`, crea `miGuitarra` como tipo "Acústica" con 6 cuerdas.
+* **Paso 7:** Modifica el tipo a "Eléctrica" usando el setter e imprime la información final.
+> **Mini-Rúbrica:** Atributos privados (20%) | Constructor funcional (20%) | Setters correctos (20%) | Getters correctos (20%) | Instanciación e impresión en main (20%).
+
+### Ejercicio 18: La Clase Restaurante
+**Enunciado:** Modela la calificación de un restaurante en una aplicación de mapas.
+* **Paso 1:** Define la clase `Restaurante`.
+* **Paso 2:** Protege los datos `string nombre` y `float calificacion` (del 1 al 5).
+* **Paso 3:** Escribe un constructor público que pida nombre y calificación inicial.
+* **Paso 4:** Crea los métodos *setter* para cambiar ambos valores.
+* **Paso 5:** Crea los métodos *getter* para leer ambos valores.
+* **Paso 6:** Crea el objeto `localPizzas` ("Pizzeria Luigi", 4.2f) en el `main()`.
+* **Paso 7:** Recibió buenas reseñas. Cambia la calificación a 4.8f mediante el setter y muéstrala en consola.
+> **Mini-Rúbrica:** Atributos privados (20%) | Constructor funcional (20%) | Setters correctos (20%) | Getters correctos (20%) | Instanciación e impresión en main (20%).
+
+### Ejercicio 19: La Clase Planeta
+**Enunciado:** Modela los datos básicos de un cuerpo celeste.
+* **Paso 1:** Define la clase `Planeta`.
+* **Paso 2:** En la sección privada, escribe `string nombre` y `double distanciaSol` (en millones de km).
+* **Paso 3:** Elabora un constructor público que exija el nombre y la distancia.
+* **Paso 4:** Redacta las funciones *setter* para editar los datos de forma encapsulada.
+* **Paso 5:** Redacta las funciones *getter* para acceder a la información.
+* **Paso 6:** En `main()`, instancia el objeto `planetaRojo` ("Marte", 227.9).
+* **Paso 7:** Cambia el nombre a "Marte (Ares)" con el setter e imprime los datos completos en consola.
+> **Mini-Rúbrica:** Atributos privados (20%) | Constructor funcional (20%) | Setters correctos (20%) | Getters correctos (20%) | Instanciación e impresión en main (20%).
+
+### Ejercicio 20: La Clase Zapato
+**Enunciado:** Modela un artículo de inventario de una tienda de calzado.
+* **Paso 1:** Crea la clase `Zapato`.
+* **Paso 2:** Declara de forma privada `string marca` y `float talla`.
+* **Paso 3:** Escribe el constructor que reciba e inicialice ambos valores.
+* **Paso 4:** Genera los métodos para establecer los valores (setters).
+* **Paso 5:** Genera los métodos para retornar los valores (getters).
+* **Paso 6:** En el código principal, instancia el objeto `tenisDeporte` ("Nike", 26.5f).
+* **Paso 7:** Actualiza la talla a 27.0f con tu función *setter* y usa *getters* dentro de un `cout` para imprimir el resultado de tu inventario.
+> **Mini-Rúbrica:** Atributos privados (20%) | Constructor funcional (20%) | Setters correctos (20%) | Getters correctos (20%) | Instanciación e impresión en main (20%).
+
 # Estructuras (Struct)
 
 C++ tiene dos tipos: tipos devdatos integrados y estructuras. Los tipos de datos son cualquier tipo que constituye el núcleo del lenguaje, como int, float y char. Los tipos estructurad pueden considerarse como tipos definidos por el usuario; Estos son los tipos que creamos declarando clases, estructuras, funciones, etc. Las clases son la base de la programación orientada a objetos.
