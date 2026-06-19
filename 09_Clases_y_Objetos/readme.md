@@ -42,54 +42,130 @@ ___
 #include <iostream>
 #include <string>
 using namespace std;
-
-class Alumno {
-// 1. ATRIBUTOS (Privados por defecto o por declaración explícita)
-// Son los datos internos. Están ocultos y protegidos.
+// Clases
+class Alumno
+{
+    // Modificadores
 private:
+    // atributos
     string nombre;
     int matricula;
-    float calificacion;
-
-// 2. MÉTODOS Y CONSTRUCTORES (Públicos)
-// Son las interfaces mediante las cuales el mundo exterior interactúa con el objeto.
+    float calificación;
+// Constructor. Creador de un objeto con valores iniciales
 public:
-    // A. Constructor: Se ejecuta automáticamente al "nacer" el objeto.
-    Alumno(string nom, int mat) {
-        nombre = nom;
-        matricula = mat;
-        calificacion = 0.0f; // Valor por defecto
+    Alumno(string nom, int mat) 
+    {
+        this->nombre = nom;
+        this->matricula = mat;
+        this->calificación = 0.0;
     }
+    // Getter (Imprimir o Procesar) informacion de la clase 
+    // Setter (Guardar) informacion de la clase
 
-    // B. Setter: Función para modificar un dato de forma segura y controlada.
-    void setCalificacion(float nuevaCalificacion) {
-        if (nuevaCalificacion >= 0 && nuevaCalificacion <= 10) {
-            calificacion = nuevaCalificacion;
-        } else {
-            cout << "Error: Calificación inválida." << endl;
+// Setter Funcion para moficar un dato de forma segura
+// y controlada
+
+    void setCalificacion(float cal) 
+    {
+        if (cal >= 0 && cal <= 10) 
+        {
+            this->calificación = cal;
+        } else
+        {
+            cout << "Error en calificacion " << endl;
         }
     }
 
-    // C. Getter: Función para leer un dato sin poder modificarlo.
-    float getCalificacion() {
-        return calificacion;
+    void setNombre(string nombre) 
+    {
+        this->nombre = nombre;
     }
 
-    // D. Función / Comportamiento: Acciones que el objeto puede realizar.
-    void mostrarDatos() {
-        cout << "Alumno: " << nombre << " | Matrícula: " << matricula << endl;
+    // Getter. Obtener la informacion dentro del la clase
+
+    float getCalificacion() 
+    {
+        return this->calificación;
+    }
+
+    void datosAlumno() 
+    {
+        cout << "Alumno: " << this->nombre <<
+            " | Matricula : " << this->matricula <<
+            " | Calificacion : " << this->calificación
+            << endl;
+    }
+
+
+    
+};
+
+class Docente 
+{
+private:
+    string materia;
+    int aniosExperiencia;
+public:
+    Docente(string mat, int exp) 
+    {
+        this->materia = mat;
+        this->aniosExperiencia = exp;
+    }
+    //Setters
+    void setMateria(string mat) 
+    {
+        this->materia = mat;
+    }
+    void setExp(int exp) 
+    {
+        this->aniosExperiencia = exp;
+    }
+    //getters
+    string getMateria() 
+    {
+        return this->materia;
+    }
+    int getAniosExperiencia() 
+    {
+        return this->aniosExperiencia;
     }
 };
 
-int main() {
-    // Creación de una Instancia (Un objeto real nacido del molde)
-    Alumno estudianteAnimacion("Ana", 12345);
-    
-    // Interactuando a través de los métodos seguros
-    estudianteAnimacion.setCalificacion(9.5f);
-    estudianteAnimacion.mostrarDatos();
+int main()
+{
+    // Que es jose un objeto de una clase (instancia)
+    Alumno jose("Jose Luis Blancas ", 12345);
 
+    jose.datosAlumno();
+
+    jose.setCalificacion(9.70);
+
+    jose.datosAlumno();
+
+    jose.setNombre("Juan Jose Blancas");
+
+    jose.datosAlumno();
+
+    // Creando un nuevo alumno
+
+    Alumno petra("Petronila Castro", 23456);
+
+    petra.datosAlumno();
+
+    petra.nombre = "Luisa Castro";
+
+    petra.datosAlumno();
+
+    Docente profesorProgramacion("Matematicas", 5);
+
+    profesorProgramacion.setMateria("Estructura Datos");
+    profesorProgramacion.setExp(6);
+
+    cout << profesorProgramacion.getMateria() <<
+        " " << profesorProgramacion.getAniosExperiencia() << endl;
 }
+
+
 
 ```
 
