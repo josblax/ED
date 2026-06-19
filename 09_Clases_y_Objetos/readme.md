@@ -96,6 +96,7 @@ int main() {
 ### Anatomía de una Clase: Entendiendo el Código Paso a Paso
 Vamos a analizar el código de nuestra clase Alumno y descubrir por qué cada sección es fundamental en la Programación Orientada a Objetos.
 
+___
 A. **La Definición de la Clase (class Alumno { ... };)**
 
 ```C++
@@ -109,7 +110,7 @@ class Alumno {
 * **¿Qué es class?** Es la palabra clave que le indica a C++ que estamos creando un nuevo tipo de dato personalizado.
 
 > **Importancia en la POO (Abstracción):** Una clase actúa como un "molde" o un "plano". Define las características y comportamientos generales que tendrán todos los objetos de ese tipo, abstrayendo la complejidad. Es como el diseño de un personaje antes de ponerlo en el nivel de un juego.
-
+___
 B. **Modificadores de Acceso (private: y public:)**
 
 ```C++
@@ -122,10 +123,105 @@ public:
 * **¿Qué son private y public?** Palabras clave que determinan quién puede ver y modificar los datos y métodos que están dentro de la clase.
 
 * **Importancia en la POO (Encapsulación)**: Este es el corazón de la POO. Al hacer los datos private, los protegemos (encapsulamos) de modificaciones accidentales o no autorizadas desde fuera de la clase. Todo lo que es public funciona como la "interfaz" oficial mediante la cual el exterior puede interactuar con el objeto de forma segura.
+___ 
+C. **Los Atributos (Datos Privados)**
 
+```C++
+private:
+    string nombre;
+    int matricula;
+    float calificacion;
+```
 
+* **¿Qué son?** Las variables que pertenecen a la clase y que guardan el estado de cada objeto individual.
+
+* **Importancia en la POO:** Representan las propiedades de la entidad que estamos modelando. Mantenerlos en private es crucial para que otras partes del programa (u otros desarrolladores) no puedan, por ejemplo, cambiar la calificacion a un valor irreal como 5000 sin pasar por las reglas de la clase.
+
+D. **El Constructor**
+
+```C++
+public:
+    Alumno(string nom, int mat) {
+        nombre = nom;
+        matricula = mat;
+        calificacion = 0.0f;
+    }
+```
+
+* **¿Qué es un constructor?** Un método especial que tiene exactamente el mismo nombre que la clase y no devuelve ningún valor. Se ejecuta una única vez: justo en el momento en que el objeto "nace" (es instanciado).
+
+* **Importancia en la POO (Inicialización):** Garantiza que cada objeto empiece su existencia en un estado válido. En Unity, es similar a cuando arrastras un Prefab a la escena: el constructor asegura que tenga sus variables base listas antes de empezar a funcionar.
 ___
 
+E. **Métodos Getter y Setter**
+
+```C++
+// Setter
+    void setCalificacion(float nuevaCalificacion) {
+        if (nuevaCalificacion >= 0 && nuevaCalificacion <= 10) {
+            calificacion = nuevaCalificacion;
+        } else {
+            cout << "Error: Calificación inválida." << endl;
+        }
+    }
+
+    // Getter
+    float getCalificacion() {
+        return calificacion;
+    }
+
+
+// Setter
+    void setCalificacion(float nuevaCalificacion) {
+        if (nuevaCalificacion >= 0 && nuevaCalificacion <= 10) {
+            calificacion = nuevaCalificacion;
+        } else {
+            cout << "Error: Calificación inválida." << endl;
+        }
+    }
+
+    // Getter
+    float getCalificacion() {
+        return calificacion;
+    }
+```
+
+* **¿Qué son los getters y los setters?** Métodos públicos que actúan como "puertas de acceso" controladas a los atributos privados.
+
+* **Setters (Establecer):** Permiten modificar un atributo, pero a menudo incluyen lógica de validación (como revisar que la calificación esté entre 0 y 10).
+
+* **Getters (Obtener):** Permiten leer el valor de un atributo sin dar permiso para alterarlo directamente.
+
+* **Importancia en la POO:** Son la implementación práctica de la encapsulación. Mantienen los datos seguros mientras permiten una interacción controlada.
+
+F. **Métodos de Comportamiento**
+
+```C++
+void mostrarDatos() {
+        cout << "Alumno: " << nombre << " | Matrícula: " << matricula << endl;
+    }
+```
+
+* **¿Qué son?** Funciones que definen lo que el objeto puede hacer.
+
+* **Importancia en la POO:** Un objeto no es solo un contenedor de datos; es una entidad viva que realiza acciones. Estos métodos encapsulan la lógica relacionada con esos datos.
+
+G. **Instanciación en main()**
+
+```C++
+int main() {
+    Alumno estudianteAnimacion("Ana", 12345);
+    
+    estudianteAnimacion.setCalificacion(9.5f);
+    estudianteAnimacion.mostrarDatos();
+    
+}
+```
+
+* **¿Qué es una instanciación?** El proceso de crear un objeto real y concreto (estudianteAnimacion) a partir del molde abstracto de la clase (Alumno).
+
+* **Importancia en la POO:** Aquí es donde la teoría se convierte en práctica. El "molde" cobra vida y ocupa memoria. Cada instancia es independiente; si creáramos otro alumno (Alumno estudiante2("Juan", 6789);), sus datos y estados estarían completamente separados de los de "Ana".
+___
 
 # Estructuras (Struct)
 
