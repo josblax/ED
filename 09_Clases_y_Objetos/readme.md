@@ -1,3 +1,30 @@
+
+# Objetivos de Aprendizaje
+
+## Objetivo General:
+
+### El alumno construirá arquitecturas de datos fundamentales mediante el paradigma orientado a objetos en C++, para comprender la lógica interna de los componentes, transformaciones y renderizado de los motores de videojuegos modernos.
+
+### Subobjetivos:
+
+* Identificar: Diferenciar la estructura y niveles de acceso entre una struct y una class.
+
+* Aplicar: Implementar el principio de encapsulación mediante constructores, atributos privados y métodos públicos.
+
+* Relacionar: Vincular la lógica de las clases en C++ con el comportamiento de los GameObjects y Components nativos de Unity mediante C#.
+
+
+## 1. El Molde de los Datos: Clases y Estructuras
+
+### En la animación digital, no lidiamos con variables sueltas. Un personaje de un videojuego no es solo un int vida, es un conjunto complejo de mallas, texturas, coordenadas y comportamientos. Para agrupar todo esto, C++ nos ofrece dos herramientas fundamentales: Estructuras (Structs) y Clases (Classes).
+
+### Ambas funcionan como "planos" o "moldes" para crear objetos en la memoria, pero tienen una diferencia crucial en su nivel de seguridad por defecto.
+
+Característica,Estructura (struct),Clase (class)
+Acceso por defecto,Público: Cualquiera puede ver y modificar sus datos desde afuera.,Privado: Los datos están ocultos y protegidos por defecto.
+Uso en C++,Agrupar datos simples.,Modelar entidades complejas con comportamientos.
+Equivalente en Unity (C#),"Vector3, Color, Quaternion (Datos matemáticos pequeños y rápidos).","Transform, GameObject, Renderer (Sistemas complejos y pesados)."
+
 # Estructuras (Struct)
 
 C++ tiene dos tipos: tipos devdatos integrados y estructuras. Los tipos de datos son cualquier tipo que constituye el núcleo del lenguaje, como int, float y char. Los tipos estructurad pueden considerarse como tipos definidos por el usuario; Estos son los tipos que creamos declarando clases, estructuras, funciones, etc. Las clases son la base de la programación orientada a objetos.
