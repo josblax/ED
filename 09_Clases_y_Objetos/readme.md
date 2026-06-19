@@ -26,6 +26,78 @@
 | **Uso en C++** | Agrupar datos simples. | Modelar entidades complejas con comportamientos. |
 | **Equivalente en Unity (C#)** | `Vector3`, `Color`, `Quaternion` (Datos matemáticos pequeños y rápidos). | `Transform`, `GameObject`, `Renderer` (Sistemas complejos y pesados). |
 
+___
+
+## 2. Anatomía de una Clase (De lo cotidiano a lo técnico)
+
+### Para entender cómo se construye una clase, primero modelaremos algo del mundo real: un estudiante.
+
+### El pilar fundamental aquí es la Encapsulación. Esto significa que protegeremos los datos sensibles (como la calificación) para que nadie pueda alterarlos accidentalmente desde afuera, y solo permitiremos su lectura o modificación a través de canales oficiales.
+
+#### Ejemplo Nivel 1: La Clase Alumno (C++)
+
+**Observa cómo dividimos la clase en secciones específicas:**
+
+```C++
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Alumno {
+// 1. ATRIBUTOS (Privados por defecto o por declaración explícita)
+// Son los datos internos. Están ocultos y protegidos.
+private:
+    string nombre;
+    int matricula;
+    float calificacion;
+
+// 2. MÉTODOS Y CONSTRUCTORES (Públicos)
+// Son las interfaces mediante las cuales el mundo exterior interactúa con el objeto.
+public:
+    // A. Constructor: Se ejecuta automáticamente al "nacer" el objeto.
+    Alumno(string nom, int mat) {
+        nombre = nom;
+        matricula = mat;
+        calificacion = 0.0f; // Valor por defecto
+    }
+
+    // B. Setter: Función para modificar un dato de forma segura y controlada.
+    void setCalificacion(float nuevaCalificacion) {
+        if (nuevaCalificacion >= 0 && nuevaCalificacion <= 10) {
+            calificacion = nuevaCalificacion;
+        } else {
+            cout << "Error: Calificación inválida." << endl;
+        }
+    }
+
+    // C. Getter: Función para leer un dato sin poder modificarlo.
+    float getCalificacion() {
+        return calificacion;
+    }
+
+    // D. Función / Comportamiento: Acciones que el objeto puede realizar.
+    void mostrarDatos() {
+        cout << "Alumno: " << nombre << " | Matrícula: " << matricula << endl;
+    }
+};
+
+int main() {
+    // Creación de una Instancia (Un objeto real nacido del molde)
+    Alumno estudianteAnimacion("Ana", 12345);
+    
+    // Interactuando a través de los métodos seguros
+    estudianteAnimacion.setCalificacion(9.5f);
+    estudianteAnimacion.mostrarDatos();
+    
+    return 0;
+}
+
+```
+
+
+___
+
+
 # Estructuras (Struct)
 
 C++ tiene dos tipos: tipos devdatos integrados y estructuras. Los tipos de datos son cualquier tipo que constituye el núcleo del lenguaje, como int, float y char. Los tipos estructurad pueden considerarse como tipos definidos por el usuario; Estos son los tipos que creamos declarando clases, estructuras, funciones, etc. Las clases son la base de la programación orientada a objetos.
