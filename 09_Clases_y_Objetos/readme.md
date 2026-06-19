@@ -88,11 +88,40 @@ int main() {
     // Interactuando a través de los métodos seguros
     estudianteAnimacion.setCalificacion(9.5f);
     estudianteAnimacion.mostrarDatos();
-    
-    return 0;
+
 }
 
 ```
+
+### Anatomía de una Clase: Entendiendo el Código Paso a Paso
+Vamos a analizar el código de nuestra clase Alumno y descubrir por qué cada sección es fundamental en la Programación Orientada a Objetos.
+
+A. **La Definición de la Clase (class Alumno { ... };)**
+
+```C++
+
+class Alumno {
+// ... contenido de la clase ...
+};
+
+```
+
+* **¿Qué es class?** Es la palabra clave que le indica a C++ que estamos creando un nuevo tipo de dato personalizado.
+
+> **Importancia en la POO (Abstracción):** Una clase actúa como un "molde" o un "plano". Define las características y comportamientos generales que tendrán todos los objetos de ese tipo, abstrayendo la complejidad. Es como el diseño de un personaje antes de ponerlo en el nivel de un juego.
+
+B. **Modificadores de Acceso (private: y public:)**
+
+```C++
+private:
+    // ...
+public:
+    // ...
+```
+
+* **¿Qué son private y public?** Palabras clave que determinan quién puede ver y modificar los datos y métodos que están dentro de la clase.
+
+* **Importancia en la POO (Encapsulación)**: Este es el corazón de la POO. Al hacer los datos private, los protegemos (encapsulamos) de modificaciones accidentales o no autorizadas desde fuera de la clase. Todo lo que es public funciona como la "interfaz" oficial mediante la cual el exterior puede interactuar con el objeto de forma segura.
 
 
 ___
