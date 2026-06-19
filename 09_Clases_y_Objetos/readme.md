@@ -20,10 +20,11 @@
 
 ### Ambas funcionan como "planos" o "moldes" para crear objetos en la memoria, pero tienen una diferencia crucial en su nivel de seguridad por defecto.
 
-Característica,Estructura (struct),Clase (class)
-Acceso por defecto,Público: Cualquiera puede ver y modificar sus datos desde afuera.,Privado: Los datos están ocultos y protegidos por defecto.
-Uso en C++,Agrupar datos simples.,Modelar entidades complejas con comportamientos.
-Equivalente en Unity (C#),"Vector3, Color, Quaternion (Datos matemáticos pequeños y rápidos).","Transform, GameObject, Renderer (Sistemas complejos y pesados)."
+| Característica | Estructura (`struct`) | Clase (`class`) |
+| :--- | :--- | :--- |
+| **Acceso por defecto** | **Público:** Cualquiera puede ver y modificar sus datos desde afuera. | **Privado:** Los datos están ocultos y protegidos por defecto. |
+| **Uso en C++** | Agrupar datos simples. | Modelar entidades complejas con comportamientos. |
+| **Equivalente en Unity (C#)** | `Vector3`, `Color`, `Quaternion` (Datos matemáticos pequeños y rápidos). | `Transform`, `GameObject`, `Renderer` (Sistemas complejos y pesados). |
 
 # Estructuras (Struct)
 
